@@ -14,3 +14,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.hero {
+  background-image: url("/intro/hero.png");
+  background-position: center;
+  background-size: cover;
+}
