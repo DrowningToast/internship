@@ -40,7 +40,7 @@ const Hero = () => {
               animate={{ scale: 0.8, translateX: "-50%", translateY: "-50%" }}
               className={`inline ${
                 !subtitleStatus ? "absolute top-1/2 left-1/2 transform" : ""
-              } font-extrabold text-9xl text-white`}
+              } font-extrabold text-6xl lg:text-9xl text-white`}
             >
               INTERNSHIP
             </motion.h1>
@@ -49,7 +49,7 @@ const Hero = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 layout
-                className="text-xl text-white"
+                className="text-baseline lg:text-xl text-center text-white"
               >
                 Srinakharinwirot University Prasarnmit Demonstration School
                 (Secondary)
@@ -76,7 +76,7 @@ const Hero = () => {
               opacity: [0, 0, 1, 1, 0],
               transition: transitionConfig,
             }}
-            className="inline absolute transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-extrabold text-9xl"
+            className="inline absolute transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-extrabold text-6xl lg:text-9xl"
           >
             INTERNSHIP
           </motion.h1>
@@ -88,13 +88,13 @@ const Hero = () => {
                 delay: 3.5,
               },
             }}
-            className="inline  font-extrabold text-9xl"
+            className="inline  font-extrabold text-6xl lg:text-9xl"
           >
             INTERNSHIP
           </motion.h1>
           <motion.div
             animate={{ opacity: [1, 1, 0, 0], transition: transitionConfig }}
-            className="inline-block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl font-bold"
+            className="inline-block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-6xl font-bold"
           >
             VIDEO HERE
           </motion.div>

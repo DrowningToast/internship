@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import About from "../components/Main/About";
 import Hero from "../components/Main/Hero";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
 
       <main className="min-h-screen w-full overflow-x-hidden">
         <Hero />
+        <About />
       </main>
 
       <footer></footer>
