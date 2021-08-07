@@ -22,7 +22,7 @@ const AboutInternship = () => {
           >
             <Image
               className="object-contain	shadow-md z-10 rounded-full"
-              src="/main/about.jpg"
+              src="/main/aboutintern.png"
               layout="fill"
             ></Image>
             <div
