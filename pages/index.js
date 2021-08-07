@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import About from "../components/Main/About";
+import AboutInternship from "../components/Main/AboutInternship";
 import Hero from "../components/Main/Hero";
 
 export default function Home() {
@@ -15,9 +16,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="min-h-screen w-full overflow-x-hidden">
+      <main className="min-h-screen w-full ">
         <Hero />
         <About />
+        <AboutInternship />
       </main>
 
       <footer></footer>
