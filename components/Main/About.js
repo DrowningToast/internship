@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="max-h-screen min-h-screen w-full grid place-items-center py-4 lg:py-20 px-12 md:px-36 lg:px-28 relative">
-      <div className="w-full h-screen lg:h-3/5 grid gap-x-16 grid-rows-2 grid-cols-1 lg:grid-cols-2 lg:grid-rows-1 lg:items-end">
+    <div className="max-h-screen xl:min-h-screen w-full grid place-items-center py-4 lg:py-20 px-12 md:px-36 lg:px-28 my-24 xl:my-0 relative">
+      <div className="w-full h-full xl:h-3/5 grid gap-x-16 grid-rows-2 grid-cols-1 lg:grid-cols-2 lg:grid-rows-1 lg:items-end">
         <div className=" flex justify-center flex-col items-start gap-y-4 lg:gap-y-10">
           <h1 className="text-4xl lg:text-6xl font-bold">เอกคอมพิวเตอร์</h1>
           <p className="inline-block md:text-lg lg:text-xl xl:text-2xl ">
@@ -18,7 +18,7 @@ const About = () => {
         <div className="grid place-items-center lg:block relative h-full">
           <div
             style={{ aspectRatio: "1/1" }}
-            className="relative lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:bottom-0 lg:transform w-full sm:w-1/2 md:w-2/3 lg:w-4/5 xl:w-3/4"
+            className="relative lg:absolute mb-24 lg:my-0 lg:left-1/2 lg:-translate-x-1/2 lg:bottom-0 lg:transform w-2/3 sm:w-1/2 md:w-2/3 lg:w-3/4 xl:w-2/3"
           >
             <Image
               className="object-contain	shadow-md z-10 rounded-full lg:w-48"
