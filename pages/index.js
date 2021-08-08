@@ -3,6 +3,7 @@ import Image from "next/image";
 import About from "../components/Main/About";
 import AboutInternship from "../components/Main/AboutInternship";
 import Hero from "../components/Main/Hero";
+import Major from "../components/Main/Major";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Hero />
         <About />
         <AboutInternship />
+        <Major></Major>
       </main>
 
       <footer></footer>

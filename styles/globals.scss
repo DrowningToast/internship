@@ -31,3 +31,17 @@ a {
   right: 0;
   bottom: 0;
 }
+.square {
+  aspect-ratio: 1 / 1;
+}
+
+.majorDetails {
+  grid-template-columns: 0.7fr 0.3fr;
+}
+
+@media screen and (max-width: 767px) {
+  .majorDetails {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}

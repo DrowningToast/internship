@@ -18,7 +18,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="min-h-screen w-full h-auto relative grid place-items-center">
+      <div className="min-h-screen max-w-screen w-full h-auto relative grid place-items-center overflow-x-hidden">
         <motion.div
           animate={{
             height: ["0%", "75%"],
