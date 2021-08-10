@@ -7,14 +7,11 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useSpring } from "framer-motion";
 import { useMotionAsState } from "framer-motion-hooks";
-import * as THREE from "three";
-
-const modelScale = new THREE.Vector3(1.15, 0.97, 4.59);
 
 export default function Computer(props) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/main/models/Computer.gltf");
-  const scale = useSpring(props.ID ? 1 : 0, {
+  const scale = useSpring(0, {
     damping: 200,
     stiffness: 1200,
     restDelta: 0.00001,
@@ -23,7 +20,7 @@ export default function Computer(props) {
 
   useFrame(() => {
     // if (!props.ID || props.selected) return;
-    if (props.ID && props.selected) {
+    if (props.ID && props.selected === "it") {
       if (Math.abs(group.current.rotation.y - 0) < 0.01) return;
       let rotateY = group.current.rotation.y;
       let delta = Math.abs(rotateY - 0);
@@ -38,20 +35,15 @@ export default function Computer(props) {
     if (props.selected && props.ID) {
       scale.set(0);
     } else {
-      console.log(group.current.rotation);
       scale.set(1);
     }
   }, [props.selected]);
-
-  useEffect(() => {
-    console.log(scaleState);
-  }, [scaleState]);
 
   return (
     <group
       {...props}
       dispose={null}
-      scale={scaleState ? scaleState : props.ID ? 1 : 0}
+      scale={scaleState !== null ? scaleState : 0}
     >
       <group ref={group} position={[0, 0, 0]} scale={[1.15, 0.97, 4.59]}>
         <mesh geometry={nodes.Cube017.geometry} material={materials.White} />
