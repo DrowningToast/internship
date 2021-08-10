@@ -27,7 +27,9 @@ const Major = () => {
       <motion.div
         layout
         className={` my-0 h-screen w-full flex flex-col justify-center ${
-          selected === null ? "gap-y-12 lg:gap-y-20 xl:gap-y-28" : "gap-y-8 "
+          selected === null
+            ? "gap-y-4 md:gap-y-8 lg:gap-y-20 xl:gap-y-28"
+            : "gap-y-8 "
         } align-center z-10`}
       >
         <motion.section
@@ -40,9 +42,9 @@ const Major = () => {
         >
           <motion.h1
             layout
-            className={`uppercase inline-block text-white pointer-events-none ${
+            className={`uppercase inline-block text-white pointer-events-none  font-extrabold ${
               selected !== "mt"
-                ? "text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl font-extrabold"
+                ? "text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl"
                 : "text-base my-4 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl"
             } text-center z-10`}
           >
@@ -58,7 +60,7 @@ const Major = () => {
             {layoutSelectedIT !== "mt" && selected === null && (
               <motion.div
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1, transition: { delay: 0.5 } }}
+                animate={{ opacity: 1, transition: { delay: 0.2 } }}
                 className="inset-0 absolute grid place-items-center"
               >
                 <Scene
@@ -76,17 +78,13 @@ const Major = () => {
           <motion.div
             layout
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{
-              opacity: 0,
-              transition: { duration: 20 },
-            }}
+            animate={{ opacity: 1, transition: { delay: 0.35 } }}
             className={`majorDetails my-2 lg:my-4 ${
               selected ? "h-auto md:h-auto" : "hidden absolute"
             } px-8 md:px-12 grid place-items-center gap-y-4`}
           >
             {selected === "it" && (
-              <p className="h-auto text-sm sm:text-base md:text-lg lg:text-xl text-center md:text-left align-middle">
+              <p className="h-auto text-sm sm:text-base md:text-lg lg:text-xl xl:text-3xl text-center md:text-left align-middle">
                 เป็นวิชาเอกที่ศึกษาเกี่ยวกับการจัดการเรียนรู้ด้านเทคโนโลยีสารสนเทศ
                 เพื่อให้ผู้เรียนมีความรู้และทักษะเกี่ยวกับคณิตศาสตร์
                 ภาษาต่างประเทศ เทคโนโลยี เครือข่าย หุ่นยนต์ การเขียนโปรแกรม
@@ -98,7 +96,7 @@ const Major = () => {
               </p>
             )}
             {selected === "mt" && (
-              <p className="h-auto text-sm sm:text-base md:text-lg lg:text-xl text-center md:text-left align-middle">
+              <p className="h-auto text-sm sm:text-base md:text-lg lg:text-xl xl:text-3xl text-center md:text-left align-middle">
                 เป็นวิชาเอกที่ศึกษาเกี่ยวกับการจัดการเรียนรู้ด้านเทคโนโลยีมัลติมีเดีย
                 เพื่อให้ผู้เรียนมีความรู้และทักษะเกี่ยวกับกราฟิก
                 การออกแบบเว็บไซต์ แอนิเมชัน ภาพยนตร์ และการเขียนโปรแกรม
@@ -112,7 +110,7 @@ const Major = () => {
               </p>
             )}
 
-            <div className="square w-1/2 md:w-3/4 lg:w-2/3">
+            <div className="square w-3/4 md:w-3/4 lg:w-2/3">
               <Scene selected={selected} />
             </div>
           </motion.div>
@@ -128,9 +126,9 @@ const Major = () => {
         >
           <motion.h1
             layout
-            className={`uppercase inline-block text-white pointer-events-none ${
+            className={`uppercase inline-block text-white pointer-events-none font-extrabold ${
               selected !== "it"
-                ? "text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl font-extrabold"
+                ? "text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl"
                 : "text-base my-4 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl"
             } text-center z-10`}
           >
@@ -146,7 +144,7 @@ const Major = () => {
             {layoutSelectedMT !== "it" && selected === null && (
               <motion.div
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1, transition: { delay: 0.5 } }}
+                animate={{ opacity: 1, transition: { delay: 0.2 } }}
                 className="inset-0 absolute grid place-items-center"
               >
                 <Scene

@@ -12,7 +12,7 @@ import * as THREE from "three";
 export default function Slate(props) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/main/models/Slate.gltf");
-  const scale = useSpring(props.ID ? 1 : 0, {
+  const scale = useSpring(0, {
     damping: 200,
     stiffness: 1200,
     restDelta: 0.00001,
@@ -42,7 +42,7 @@ export default function Slate(props) {
     <group
       {...props}
       dispose={null}
-      scale={scaleState ? scaleState : props.ID ? 1 : 0}
+      scale={scaleState ? scaleState : 0}
       position={[0, 0, 0]}
     >
       <mesh
