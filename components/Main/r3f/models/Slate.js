@@ -7,11 +7,12 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useSpring } from "framer-motion";
 import { useMotionAsState } from "framer-motion-hooks";
+import * as THREE from "three";
 
 export default function Slate(props) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/main/models/Slate.gltf");
-  const scale = useSpring(0, {
+  const scale = useSpring(props.ID ? 1 : 0, {
     damping: 200,
     stiffness: 1200,
     restDelta: 0.00001,
@@ -30,7 +31,7 @@ export default function Slate(props) {
     group.current.rotateY((Math.PI / 600) * k);
   });
   useEffect(() => {
-    if (props.selected) {
+    if (props.selected && props.ID) {
       scale.set(0);
     } else {
       scale.set(1);
@@ -41,7 +42,7 @@ export default function Slate(props) {
     <group
       {...props}
       dispose={null}
-      scale={scaleState !== null ? scaleState : 0}
+      scale={scaleState ? scaleState : props.ID ? 1 : 0}
       position={[0, 0, 0]}
     >
       <mesh
