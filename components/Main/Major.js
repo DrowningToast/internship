@@ -87,7 +87,7 @@ const Major = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, transition: { delay: 0.2 } }}
               layout
-              className="h-auto text-sm sm:text-base md:text-lg lg:text-xl xl:text-3xl text-center md:text-left align-middle"
+              className=" h-auto text-sm sm:text-base md:text-lg lg:text-xl xl:text-3xl text-center md:text-left align-middle"
             >
               <span className="sentence">
                 เป็นวิชาเอกที่ศึกษาเกี่ยวกับการจัดการเรียนรู้ด้านเทคโนโลยีสารสนเทศ
