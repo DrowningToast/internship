@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import About from "../components/Main/About";
 import AboutInternship from "../components/Main/AboutInternship";
+import Categories from "../components/Main/Categories";
 import Hero from "../components/Main/Hero";
 import Major from "../components/Main/Major";
 
@@ -22,6 +23,7 @@ export default function Home() {
         <About />
         <AboutInternship />
         <Major></Major>
+        <Categories />
       </main>
 
       <footer></footer>
