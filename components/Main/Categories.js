@@ -1,10 +1,16 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import dynamic from "next/dynamic";
+const CategoryScene = dynamic(() => import("./r3f/CategoryScene"), {
+  ssr: false,
+});
+// import CategoryScene from "./r3f/CategoryScene";
 
-const delayA = 0.3;
-const delayB = 0.9;
-const delayC = 1.2;
+const delayA = 0.25;
+const delayB = 0.5;
+const delayC = 0.7;
+const ease = [0.43, 0.13, 0.23, 0.96];
 
 const Category = ({
   i,
@@ -13,14 +19,21 @@ const Category = ({
   selected,
   setSelected,
   router,
+  link,
+  scene,
 }) => {
   return (
     <motion.div
       layout
       onClick={() => {
-        setSelected(1);
+        setSelected(i);
+        setTimeout(() => {
+          router.push(`/categories/${link}`);
+        }, 1000 * (delayA + delayB + delayC));
       }}
-      className={`w-1/5 h-full subCategory relative`}
+      className={`w-full h-1/5 xl:w-1/5 xl:h-full subCategory ${
+        selected === i ? "" : "relative"
+      }`}
     >
       <motion.div
         layout
@@ -28,22 +41,29 @@ const Category = ({
           layoutX: {
             delay: delayA,
             duration: delayB,
+            ease,
           },
         }}
-        style={{ backgroundColor: "#6648E9" }}
+        style={{ backgroundColor }}
         className={`absolute inset-0 ${
-          selected !== 1 ? "inset-0" : "top-0 botttom-0 w-screen"
+          selected === i ? "top-0 bottom-0 w-screen z-10" : "inset-0"
         }`}
-      ></motion.div>
+      >
+        {/* <div className="square h-full mx-auto">
+          <CategoryScene />
+        </div> */}
+      </motion.div>
       <motion.div
         animate={{
-          opacity: selected !== 1 ? 1 : 0,
+          opacity: selected === i ? 0 : 1,
           transition: { duration: delayA },
         }}
-        className="grid place-items-center row-start-2 subTitle h-full relative"
+        className={`grid place-items-center xl:row-start-2 subTitle h-full relative ${
+          selected === i ? "z-20" : ""
+        }`}
       >
         <motion.h2 className="text-3xl px-8 text-center font-extrabold text-white">
-          Programming & Technology
+          {title}
         </motion.h2>
       </motion.div>
     </motion.div>
@@ -53,6 +73,43 @@ const Category = ({
 const Categories = () => {
   const [selected, setSelected] = useState(null);
   const router = useRouter();
+
+  const info = [
+    {
+      i: 1,
+      backgroundColor: `#6648E9`,
+      title: "Programming & Technology",
+      link: "programming",
+    },
+    {
+      i: 2,
+      backgroundColor: `#CF4450`,
+      title: "Production & Videos",
+      link: "production",
+    },
+    {
+      i: 3,
+      backgroundColor: "#F6D854",
+      title: "2D & 3D Design",
+      link: "design",
+    },
+    {
+      i: 4,
+      backgroundColor: "#2E6559",
+      title: "Business",
+      link: "business",
+    },
+    {
+      i: 5,
+      backgroundColor: "#CF55E3",
+      title: "Game Development & Design",
+      link: "game",
+    },
+  ];
+
+  // useEffect(()=>{
+
+  // }, [])
 
   return (
     <div className="h-screen w-full grid categories place-items-center items-start overflow-hidden">
@@ -71,65 +128,25 @@ const Categories = () => {
           transition: {
             delay: delayA + delayB,
             duration: delayC,
+            ease,
           },
         }}
-        className="bg-blue-400 w-full flex justify-center items-center"
+        className="bg-blue-400 w-full flex justify-center items-center relative overflow-hidden flex-col xl:flex-row"
       >
-        <motion.div
-          layout
-          onClick={() => {
-            setSelected(1);
-            setTimeout(() => {
-              router.push("/categories/programming");
-            }, 1000 * (delayA + delayB + delayC));
-          }}
-          className={`w-1/5 h-full subCategory relative`}
-        >
-          <motion.div
-            layout
-            transition={{
-              layoutX: {
-                delay: delayA,
-                duration: delayB,
-              },
-            }}
-            style={{ backgroundColor: "#6648E9" }}
-            className={`absolute inset-0 ${
-              selected !== 1 ? "inset-0" : "top-0 botttom-0 w-screen"
-            }`}
-          ></motion.div>
-          <motion.div
-            animate={{
-              opacity: selected !== 1 ? 1 : 0,
-              transition: { duration: delayA },
-            }}
-            className="grid place-items-center row-start-2 subTitle h-full relative"
-          >
-            <motion.h2 className="text-3xl px-8 text-center font-extrabold text-white">
-              Programming & Technology
-            </motion.h2>
-          </motion.div>
-        </motion.div>
-        <motion.div
-          layout
-          style={{ backgroundColor: "#CF4450" }}
-          className={`w-1/5 h-full`}
-        ></motion.div>
-        <motion.div
-          layout
-          style={{ backgroundColor: "#F6D854" }}
-          className={`w-1/5 h-full`}
-        ></motion.div>
-        <motion.div
-          layout
-          style={{ backgroundColor: "#2E6559" }}
-          className={`w-1/5 h-full`}
-        ></motion.div>
-        <motion.div
-          layout
-          style={{ backgroundColor: "#CF55E3" }}
-          className={`w-1/5 h-full`}
-        ></motion.div>
+        {info.map((category) => {
+          return (
+            <Category
+              key={category.i}
+              i={category.i}
+              backgroundColor={category.backgroundColor}
+              title={category.title}
+              selected={selected}
+              setSelected={setSelected}
+              router={router}
+              link={category.link}
+            />
+          );
+        })}
       </motion.div>
     </div>
   );

@@ -2,7 +2,7 @@ import { Canvas } from "@react-three/fiber";
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import { Children } from "react";
-const Scene = dynamic(() => import("./r3f/Scene"), { ssr: false });
+const Scene = dynamic(() => import("./r3f/MajorScene"), { ssr: false });
 // import Scene from "./r3f/Scene";
 import { AnimatePresence } from "framer-motion";
 import { motion, AnimateSharedLayout } from "framer-motion";

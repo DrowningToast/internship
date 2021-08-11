@@ -70,13 +70,25 @@ a {
   grid-template-rows: 0.75fr 0.25fr;
 }
 
-.categories .subCategory .subTitle {
-  background: rgba(255, 255, 255, 0.75);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(0, 0, 0, 0.4598214285714286) 100%
-  );
+@media screen and (max-width: 1024px) {
+  .categories .subCategory {
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+  .categories .subCategory .subTitle {
+    background: none;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .categories .subCategory .subTitle {
+    background: rgba(255, 255, 255, 0.75);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.4598214285714286) 100%
+    );
+  }
 }
 
 .categories .subCategory .subTitle h2 {
