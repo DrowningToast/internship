@@ -17,7 +17,6 @@ const Major = () => {
     setIteration(iteration + 1);
     if (!selected) return;
     if (layoutSelectedIT === selected || layoutSelectedMT === selected) return;
-    console.log(selected);
     setLayoutSelectedIT(selected);
     setLayoutSelectedMT(selected);
   }, [selected]);
@@ -26,11 +25,12 @@ const Major = () => {
     <AnimateSharedLayout>
       <motion.div
         layout
-        className={` my-0 h-screen w-full flex flex-col justify-center ${
+        style={{ height: "90vh" }}
+        className={` my-24 w-full flex flex-col justify-around xl:justify-between ${
           selected === null
             ? "gap-y-4 md:gap-y-8 lg:gap-y-20 xl:gap-y-28"
-            : "gap-y-8 "
-        } align-center z-10`}
+            : "xl:gap-y-8 "
+        } align-center `}
       >
         <motion.section
           layout
@@ -38,7 +38,7 @@ const Major = () => {
           style={{ backgroundColor: "#7246D1" }}
           className={`${
             selected === "mt" ? "h-auto" : "h-1/6 md:h-1/5 lg:h-1/4 xl:h-1/3"
-          } grid place-items-center relative interactable`}
+          } grid place-items-center relative interactable z-30`}
         >
           <motion.h1
             layout
@@ -84,30 +84,54 @@ const Major = () => {
             } px-8 md:px-12 grid place-items-center gap-y-4`}
           >
             {selected === "it" && (
-              <p className="h-auto text-sm sm:text-base md:text-lg lg:text-xl xl:text-3xl text-center md:text-left align-middle">
-                เป็นวิชาเอกที่ศึกษาเกี่ยวกับการจัดการเรียนรู้ด้านเทคโนโลยีสารสนเทศ
-                เพื่อให้ผู้เรียนมีความรู้และทักษะเกี่ยวกับคณิตศาสตร์
-                ภาษาต่างประเทศ เทคโนโลยี เครือข่าย หุ่นยนต์ การเขียนโปรแกรม
-                กราฟิก และการออกแบบเว็บไซต์
-                เพื่อเตรียมความพร้อมในการศึกษาต่อในระดับชั้นอุดมศึกษาในสาขาที่เกี่ยวข้อง
-                เมื่อนักเรียนจบการศึกษาจากวิชาเอก IT จะมีความสามารถทั้งหมด 2
-                ด้าน ได้แก่ การออกแบบและพัฒนาเว็บไซต์
-                ด้านการเขียนโปรแกรมและพัฒนาหุ่นยนต์
-              </p>
+              <motion.div
+                layout
+                className="h-auto text-sm sm:text-base md:text-lg lg:text-xl xl:text-3xl text-center md:text-left align-middle"
+              >
+                <span className="sentence">
+                  เป็นวิชาเอกที่ศึกษาเกี่ยวกับการจัดการเรียนรู้ด้านเทคโนโลยีสารสนเทศ
+                </span>
+                <span className="sentence">
+                  เพื่อให้ผู้เรียนมีความรู้และทักษะเกี่ยวกับคณิตศาสตร์
+                  ภาษาต่างประเทศ เทคโนโลยี เครือข่าย หุ่นยนต์ การเขียนโปรแกรม
+                  กราฟิก และการออกแบบเว็บไซต์
+                </span>
+                <span className="sentence">
+                  เพื่อเตรียมความพร้อมในการศึกษาต่อในระดับชั้นอุดมศึกษาในสาขาที่เกี่ยวข้อง
+                  เมื่อนักเรียนจบการศึกษาจากวิชาเอก IT จะมีความสามารถทั้งหมด 2
+                  ด้าน ได้แก่ การออกแบบและพัฒนาเว็บไซต์
+                  ด้านการเขียนโปรแกรมและพัฒนาหุ่นยนต์
+                </span>
+              </motion.div>
             )}
             {selected === "mt" && (
-              <p className="h-auto text-sm sm:text-base md:text-lg lg:text-xl xl:text-3xl text-center md:text-left align-middle">
-                เป็นวิชาเอกที่ศึกษาเกี่ยวกับการจัดการเรียนรู้ด้านเทคโนโลยีมัลติมีเดีย
-                เพื่อให้ผู้เรียนมีความรู้และทักษะเกี่ยวกับกราฟิก
-                การออกแบบเว็บไซต์ แอนิเมชัน ภาพยนตร์ และการเขียนโปรแกรม
-                เพื่อเตรียมความพร้อมในการศึกษาต่อในระดับชั้นอุดมศึกษาในสาขาที่เกี่ยวข้อง
-                เมื่อนักเรียนจบการศึกษาจากวิชาเอก IMT จะมีความสามารถทั้งหมด 4
-                ด้าน ได้แก่ ด้านการออกแบบกราฟิก ด้านการพัฒนาเกม
-                ด้านการสร้างภาพยนตร์ และด้านการออกแบบและพัฒนาเว็บไซต์ วิชาเอก
-                IMT มุ่งเน้นผลิตนักเรียนที่มีความสามารในการพัฒนาสื่อ
-                เป็นนักวางแผน มีความละเอียดรอบคอบ มีความอดทน คิดอย่างเป็นระบบ
-                และมีการพัฒนาตนเองอยู่ตลอดเวลา
-              </p>
+              <motion.div
+                layout
+                className="h-auto text-sm sm:text-base md:text-lg lg:text-xl xl:text-3xl text-center md:text-left align-middle"
+              >
+                <span className="sentence">
+                  เป็นวิชาเอกที่ศึกษาเกี่ยวกับการจัดการเรียนรู้ด้านเทคโนโลยีมัลติมีเดีย
+                  เพื่อให้ผู้เรียนมีความรู้และทักษะเกี่ยวกับ
+                </span>
+                <span className="sentence">
+                  กราฟิก การออกแบบเว็บไซต์ แอนิเมชัน ภาพยนตร์
+                  และการเขียนโปรแกรมเพื่อเตรียมความพร้อมในการศึกษาต่อในระดับชั้นอุดมศึกษาในสาขาที่เกี่ยวข้อง
+                </span>
+                <span className="sentence">
+                  กราฟิก การออกแบบเว็บไซต์ แอนิเมชัน ภาพยนตร์
+                  และการเขียนโปรแกรมเพื่อเตรียมความพร้อมในการศึกษาต่อในระดับชั้นอุดมศึกษาในสาขาที่เกี่ยวข้อง
+                </span>
+                <span className="sentence">
+                  เมื่อนักเรียนจบการศึกษาจากวิชาเอก IMT จะมีความสามารถทั้งหมด 4
+                  ด้าน ได้แก่ ด้านการออกแบบกราฟิก ด้านการพัฒนาเกม
+                  ด้านการสร้างภาพยนตร์ และด้านการออกแบบและพัฒนาเว็บไซต์
+                </span>
+                <span className="sentence">
+                  วิชาเอก IMT มุ่งเน้นผลิตนักเรียนที่มีความสามารในการพัฒนาสื่อ
+                  เป็นนักวางแผน มีความละเอียดรอบคอบ มีความอดทน คิดอย่างเป็นระบบ
+                  และมีการพัฒนาตนเองอยู่ตลอดเวลา
+                </span>
+              </motion.div>
             )}
 
             <div className="square w-3/4 md:w-3/4 lg:w-2/3">

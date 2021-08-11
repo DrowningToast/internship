@@ -11,9 +11,6 @@ const MajorScene = ({ selected, id, className, iteration }) => {
     if (!ref?.current) return;
     ref.current.className = "w-full h-full";
     let container = ref.current.parentNode.parentNode.parentNode;
-    // console.log(ref.current.offsetHeight);
-    // console.log(container.offsetHeight);
-    console.log(ref);
     if (id) resizeObserver.observe(container);
   }, []);
 
@@ -22,12 +19,9 @@ const MajorScene = ({ selected, id, className, iteration }) => {
     let canvas = document.getElementById(id)?.childNodes[0];
     if (!canvas) return;
     if (!ref.current) return;
-    console.log(canvas);
-    console.log(height);
     canvas.height = height;
     canvas.style.height = height;
-    // console.log(container.offsetHeigsht)
-    // window.dispatchEvent(new MouseEvent("scroll"));
+    window.dispatchEvent(new MouseEvent("scroll"));
   });
 
   return (
@@ -38,8 +32,6 @@ const MajorScene = ({ selected, id, className, iteration }) => {
         id={id}
         ref={ref}
         className="square"
-        onCreated={() => console.log("render")}
-        // className={`min-h-full `}
         camera={{ position: [0, 0, 13] }}
       >
         <ambientLight intensity={0.6} />
