@@ -74,71 +74,71 @@ const Major = () => {
           </motion.div>
         </motion.section>
 
-        {selected && (
-          <motion.div
-            layout
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { delay: 0.35 } }}
-            className={`majorDetails my-2 lg:my-4 ${
-              selected ? "h-auto md:h-auto" : "hidden absolute"
-            } px-8 md:px-12 grid place-items-center gap-y-4`}
-          >
-            {selected === "it" && (
-              <motion.div
-                layout
-                className="h-auto text-sm sm:text-base md:text-lg lg:text-xl xl:text-3xl text-center md:text-left align-middle"
-              >
-                <span className="sentence">
-                  เป็นวิชาเอกที่ศึกษาเกี่ยวกับการจัดการเรียนรู้ด้านเทคโนโลยีสารสนเทศ
-                </span>
-                <span className="sentence">
-                  เพื่อให้ผู้เรียนมีความรู้และทักษะเกี่ยวกับคณิตศาสตร์
-                  ภาษาต่างประเทศ เทคโนโลยี เครือข่าย หุ่นยนต์ การเขียนโปรแกรม
-                  กราฟิก และการออกแบบเว็บไซต์
-                </span>
-                <span className="sentence">
-                  เพื่อเตรียมความพร้อมในการศึกษาต่อในระดับชั้นอุดมศึกษาในสาขาที่เกี่ยวข้อง
-                  เมื่อนักเรียนจบการศึกษาจากวิชาเอก IT จะมีความสามารถทั้งหมด 2
-                  ด้าน ได้แก่ การออกแบบและพัฒนาเว็บไซต์
-                  ด้านการเขียนโปรแกรมและพัฒนาหุ่นยนต์
-                </span>
-              </motion.div>
-            )}
-            {selected === "mt" && (
-              <motion.div
-                layout
-                className="h-auto text-sm sm:text-base md:text-lg lg:text-xl xl:text-3xl text-center md:text-left align-middle"
-              >
-                <span className="sentence">
-                  เป็นวิชาเอกที่ศึกษาเกี่ยวกับการจัดการเรียนรู้ด้านเทคโนโลยีมัลติมีเดีย
-                  เพื่อให้ผู้เรียนมีความรู้และทักษะเกี่ยวกับ
-                </span>
-                <span className="sentence">
-                  กราฟิก การออกแบบเว็บไซต์ แอนิเมชัน ภาพยนตร์
-                  และการเขียนโปรแกรมเพื่อเตรียมความพร้อมในการศึกษาต่อในระดับชั้นอุดมศึกษาในสาขาที่เกี่ยวข้อง
-                </span>
-                <span className="sentence">
-                  กราฟิก การออกแบบเว็บไซต์ แอนิเมชัน ภาพยนตร์
-                  และการเขียนโปรแกรมเพื่อเตรียมความพร้อมในการศึกษาต่อในระดับชั้นอุดมศึกษาในสาขาที่เกี่ยวข้อง
-                </span>
-                <span className="sentence">
-                  เมื่อนักเรียนจบการศึกษาจากวิชาเอก IMT จะมีความสามารถทั้งหมด 4
-                  ด้าน ได้แก่ ด้านการออกแบบกราฟิก ด้านการพัฒนาเกม
-                  ด้านการสร้างภาพยนตร์ และด้านการออกแบบและพัฒนาเว็บไซต์
-                </span>
-                <span className="sentence">
-                  วิชาเอก IMT มุ่งเน้นผลิตนักเรียนที่มีความสามารในการพัฒนาสื่อ
-                  เป็นนักวางแผน มีความละเอียดรอบคอบ มีความอดทน คิดอย่างเป็นระบบ
-                  และมีการพัฒนาตนเองอยู่ตลอดเวลา
-                </span>
-              </motion.div>
-            )}
+        <motion.div
+          layout
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { delay: 0.35 } }}
+          className={`majorDetails my-2 lg:my-4 ${
+            selected ? "h-auto md:h-auto" : "hidden absolute"
+          } px-8 md:px-12 grid place-items-center gap-y-4 relative`}
+        >
+          {selected === "it" && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, transition: { delay: 0.2 } }}
+              layout
+              className="h-auto text-sm sm:text-base md:text-lg lg:text-xl xl:text-3xl text-center md:text-left align-middle"
+            >
+              <span className="sentence">
+                เป็นวิชาเอกที่ศึกษาเกี่ยวกับการจัดการเรียนรู้ด้านเทคโนโลยีสารสนเทศ
+              </span>
+              <span className="sentence">
+                เพื่อให้ผู้เรียนมีความรู้และทักษะเกี่ยวกับคณิตศาสตร์
+                ภาษาต่างประเทศ เทคโนโลยี เครือข่าย หุ่นยนต์ การเขียนโปรแกรม
+                กราฟิก และการออกแบบเว็บไซต์
+              </span>
+              <span className="sentence">
+                เพื่อเตรียมความพร้อมในการศึกษาต่อในระดับชั้นอุดมศึกษาในสาขาที่เกี่ยวข้อง
+                เมื่อนักเรียนจบการศึกษาจากวิชาเอก IT จะมีความสามารถทั้งหมด 2
+                ด้าน ได้แก่ การออกแบบและพัฒนาเว็บไซต์
+                ด้านการเขียนโปรแกรมและพัฒนาหุ่นยนต์
+              </span>
+            </motion.div>
+          )}
+          {selected === "mt" && (
+            <motion.div
+              layout
+              className="h-auto text-sm sm:text-base md:text-lg lg:text-xl xl:text-3xl text-center md:text-left align-middle"
+            >
+              <span className="sentence">
+                เป็นวิชาเอกที่ศึกษาเกี่ยวกับการจัดการเรียนรู้ด้านเทคโนโลยีมัลติมีเดีย
+                เพื่อให้ผู้เรียนมีความรู้และทักษะเกี่ยวกับ
+              </span>
+              <span className="sentence">
+                กราฟิก การออกแบบเว็บไซต์ แอนิเมชัน ภาพยนตร์
+                และการเขียนโปรแกรมเพื่อเตรียมความพร้อมในการศึกษาต่อในระดับชั้นอุดมศึกษาในสาขาที่เกี่ยวข้อง
+              </span>
+              <span className="sentence">
+                กราฟิก การออกแบบเว็บไซต์ แอนิเมชัน ภาพยนตร์
+                และการเขียนโปรแกรมเพื่อเตรียมความพร้อมในการศึกษาต่อในระดับชั้นอุดมศึกษาในสาขาที่เกี่ยวข้อง
+              </span>
+              <span className="sentence">
+                เมื่อนักเรียนจบการศึกษาจากวิชาเอก IMT จะมีความสามารถทั้งหมด 4
+                ด้าน ได้แก่ ด้านการออกแบบกราฟิก ด้านการพัฒนาเกม
+                ด้านการสร้างภาพยนตร์ และด้านการออกแบบและพัฒนาเว็บไซต์
+              </span>
+              <span className="sentence">
+                วิชาเอก IMT มุ่งเน้นผลิตนักเรียนที่มีความสามารในการพัฒนาสื่อ
+                เป็นนักวางแผน มีความละเอียดรอบคอบ มีความอดทน คิดอย่างเป็นระบบ
+                และมีการพัฒนาตนเองอยู่ตลอดเวลา
+              </span>
+            </motion.div>
+          )}
 
-            <div className="square w-3/4 md:w-3/4 lg:w-2/3">
-              <Scene selected={selected} />
-            </div>
+          <motion.div layout className="square w-3/4 md:w-3/4 lg:w-2/3">
+            <Scene selected={selected} />
           </motion.div>
-        )}
+        </motion.div>
 
         <motion.section
           layout

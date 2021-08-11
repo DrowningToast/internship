@@ -40,11 +40,7 @@ export default function Computer(props) {
   }, [props.selected]);
 
   return (
-    <group
-      {...props}
-      dispose={null}
-      scale={scaleState !== null ? scaleState : 0}
-    >
+    <group {...props} dispose={null} scale={scaleState ? scaleState : 0}>
       <group ref={group} position={[0, 0, 0]} scale={[1.15, 0.97, 4.59]}>
         <mesh geometry={nodes.Cube017.geometry} material={materials.White} />
         <mesh geometry={nodes.Cube017_1.geometry} material={materials.Blue} />
