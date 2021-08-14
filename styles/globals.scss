@@ -103,3 +103,18 @@ a {
   letter-spacing: 1.2rem;
   text-align: center;
 }
+
+.titlename {
+  font-family: Kanit;
+  // font-size: 80px;
+  font-weight: 900;
+  line-height: 120px;
+  text-align: center;
+  letter-spacing: 0.6rem;
+}
+
+.memberContainer {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
