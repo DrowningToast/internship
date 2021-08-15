@@ -55,7 +55,7 @@ const Category = ({
             <motion.div
               animate={{ scale: 1 }}
               exit={{ scale: 0 }}
-              className="w-full h-full overflow-hidden"
+              className="w-full h-full overflow-hidden hidden xl:block"
             >
               <motion.div
                 animate={{
@@ -148,7 +148,7 @@ const Categories = () => {
             ease,
           },
         }}
-        className="bg-blue-400 w-full grid grid-cols-5 justify-center items-center relative overflow-hidden xl:flex-row"
+        className="bg-blue-400 w-full flex flex-col xl:grid xl:grid-cols-5 justify-center items-center relative overflow-hidden xl:flex-row"
       >
         {info.map((category) => {
           return (

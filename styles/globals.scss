@@ -47,7 +47,7 @@ a {
   }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 1280px) and (min-width: 768px) {
   .majorDetails {
     grid-template-columns: 0.6fr 0.4fr;
   }
@@ -70,7 +70,7 @@ a {
   grid-template-rows: 0.75fr 0.25fr;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
   .categories .subCategory {
     display: grid;
     grid-template-rows: 1fr;
@@ -80,7 +80,7 @@ a {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1280px) {
   .categories .subCategory .subTitle {
     background: rgba(255, 255, 255, 0.75);
     background: linear-gradient(

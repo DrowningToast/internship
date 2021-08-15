@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Portrait from "../../components/Profile/Portrait";
+import meta from "./meta.json";
 
 /**
  *
@@ -58,10 +59,10 @@ export default Category;
 
 export async function getStaticProps({ params }) {
   let members = [];
-
-  // initial fetch
-  const res = await fetch(`http://localhost:3000/meta.json`);
-  const data = await res.json();
+  console.log(process.cwd());
+  // initial fetch;
+  const data = meta;
+  // const data = JSON.parse(meta);
   // Fetch ALL members id
   for (const [callsign, details] of Object.entries(data.members)) {
     members.push({
