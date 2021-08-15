@@ -5,22 +5,7 @@ import Portrait from "../../components/Profile/Portrait";
  *
  * Profile type = Standard 5 photo (standard), Flexible 5+ (flex), video (video), instragram stories (stories)
  */
-/**
- *
- * @param {Object} meta
- * @param {String} meta.callsign
- * @param {String} meta.displayedName
- * @param {String} meta.position
- *
- * meta = /data/categories/[category]/meta.json
- * portrait = /data/categories/[category]/[id]/portrait.png
- * thumbnail = /data/categories/[category]/[id]/thumbnail.png
- * logo = /data/categories/[category]/[id]/logo.png
- * summary = /data/categories/[category]/[id]/summary.pdf
- * photo = /data/categories/[category]/[id]/[i].png
- *
- * @returns
- */
+
 const Category = ({ title, members, color, category }) => {
   console.log(members);
 
@@ -55,7 +40,6 @@ const Category = ({ title, members, color, category }) => {
           </div>
           <div className="memberContainer px-4 lg:px-16 py-4 lg:py-8">
             {members.map((member) => {
-              console.log(member);
               return (
                 <Portrait
                   url={`/data/${member.id}/portrait.jpg`}
@@ -75,12 +59,10 @@ export default Category;
 
 export async function getStaticProps({ params }) {
   let members = [];
-  let title = "";
 
   // initial fetch
   const res = await fetch(`http://localhost:3000/meta.json`);
   const data = await res.json();
-  console.log(data);
   // Fetch ALL members id
   for (const [callsign, details] of Object.entries(data.members)) {
     members.push({
@@ -90,11 +72,8 @@ export async function getStaticProps({ params }) {
       id: details.id,
     });
   }
-  console.log(members);
   // Filter out incorresponding members
   members = members.filter((member) => member.category === params.category);
-
-  console.log(members);
 
   return {
     props: {

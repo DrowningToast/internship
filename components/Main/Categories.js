@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
@@ -7,7 +7,8 @@ const CategoryScene = dynamic(() => import("./r3f/CategoryScene"), {
 });
 // import CategoryScene from "./r3f/CategoryScene";
 
-const delayA = 0.25;
+const delay = 0.8;
+const delayA = 0.45;
 const delayB = 0.5;
 const delayC = 0.7;
 const ease = [0.43, 0.13, 0.23, 0.96];
@@ -29,9 +30,9 @@ const Category = ({
         setSelected(i);
         setTimeout(() => {
           router.push(`/categories/${link}`);
-        }, 1000 * (delayA + delayB + delayC));
+        }, 1000 * (delayA + delayB + delayC + delay));
       }}
-      className={`w-full h-1/5 xl:w-1/5 xl:h-full subCategory ${
+      className={`w-full h-1/5 xl:h-full subCategory ${
         selected === i ? "" : "relative"
       }`}
     >
@@ -39,24 +40,40 @@ const Category = ({
         layout
         transition={{
           layoutX: {
-            delay: delayA,
+            delay: delayA + delay,
             duration: delayB,
             ease,
           },
         }}
         style={{ backgroundColor }}
-        className={`absolute inset-0 ${
+        className={`absolute inset-0 grid place-items-center ${
           selected === i ? "top-0 bottom-0 w-screen z-10" : "inset-0"
         }`}
       >
-        {/* <div className="square h-full mx-auto">
-          <CategoryScene />
-        </div> */}
+        <AnimatePresence>
+          {!(selected === i) && (
+            <motion.div
+              animate={{ scale: 1 }}
+              exit={{ scale: 0 }}
+              className="w-full h-full overflow-hidden"
+            >
+              <motion.div
+                animate={{
+                  opacity: selected === i ? 0 : 1,
+                  transition: { duration: delay },
+                }}
+                className="square w-5/6 mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center"
+              >
+                <CategoryScene selected={link} />
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </motion.div>
       <motion.div
         animate={{
           opacity: selected === i ? 0 : 1,
-          transition: { duration: delayA },
+          transition: { duration: delayA, delay },
         }}
         className={`grid place-items-center xl:row-start-2 subTitle h-full relative ${
           selected === i ? "z-20" : ""
@@ -103,7 +120,7 @@ const Categories = () => {
       i: 5,
       backgroundColor: "#CF55E3",
       title: "Game Development & Design",
-      link: "game",
+      link: "gamedevelopment",
     },
   ];
 
@@ -126,12 +143,12 @@ const Categories = () => {
         animate={{
           height: selected ? "0%" : "100%",
           transition: {
-            delay: delayA + delayB,
+            delay: delayA + delayB + delay,
             duration: delayC,
             ease,
           },
         }}
-        className="bg-blue-400 w-full flex justify-center items-center relative overflow-hidden flex-col xl:flex-row"
+        className="bg-blue-400 w-full grid grid-cols-5 justify-center items-center relative overflow-hidden xl:flex-row"
       >
         {info.map((category) => {
           return (
