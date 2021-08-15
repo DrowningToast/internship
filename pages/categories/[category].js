@@ -7,8 +7,6 @@ import Portrait from "../../components/Profile/Portrait";
  */
 
 const Category = ({ title, members, color, category }) => {
-  console.log(members);
-
   return (
     <>
       <div className="w-full min-h-screen relative">
@@ -42,6 +40,7 @@ const Category = ({ title, members, color, category }) => {
             {members.map((member) => {
               return (
                 <Portrait
+                  key={member.id}
                   url={`/data/${member.id}/portrait.jpg`}
                   callsign={member.callsign}
                   type={member.type}
