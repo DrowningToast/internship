@@ -26,7 +26,6 @@
     "Supratouch-Suwatno": {
       "name": "ศุภธัช สุวัฒโน",
       "major": "IT - Information Technology",
-      "type": "Frontend Development",
       "position": "Health Informic",
       "category": "programming",
       "id": 20,
@@ -49,7 +48,6 @@
     "Napak-Suthapintu": {
       "name": "ณภัค สุทธะพินทุ",
       "major": "IT - Information Technology",
-      "type": "Robotic Engineer",
       "position": "Robotic Engineer",
       "category": "programming",
       "id": 24,
@@ -75,7 +73,6 @@
     "Nannapat-Mngkolwattanakul": {
       "name": "นันท์นภัส มงคลวัฒนากุล",
       "major": "IMT - Innovative Multimedia Technology",
-      "type": "Graphic Designer",
       "position": "Graphic designer",
       "category": "design",
       "id": 32,

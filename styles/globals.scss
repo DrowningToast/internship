@@ -116,5 +116,27 @@ a {
 .memberContainer {
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.portrait {
+  grid-template-rows: 0.7fr 0.3fr;
+}
+
+.portraitCompany {
+  grid-template-rows: 0.7fr 0.3fr;
+}
+
+@media screen and (max-width: 768px) {
+  .memberContainer {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .portraitCompany {
+    grid-template-rows: 0.6fr 0.4fr;
+  }
 }

@@ -10,7 +10,7 @@ import meta from "./meta.json";
 const Category = ({ title, members, color, category }) => {
   return (
     <>
-      <div className="w-full min-h-screen relative">
+      <div className="w-full min-h-screen relative overflow-x-hidden">
         <div className="h-screen w-full flex flex-col ">
           <div
             style={{
@@ -44,7 +44,10 @@ const Category = ({ title, members, color, category }) => {
                   key={member.id}
                   url={`/data/${member.id}/portrait.jpg`}
                   callsign={member.callsign}
-                  type={member.type}
+                  type={member.position}
+                  id={member.id}
+                  company={member.company}
+                  color={color}
                 />
               );
             })}
@@ -59,7 +62,6 @@ export default Category;
 
 export async function getStaticProps({ params }) {
   let members = [];
-  console.log(process.cwd());
   // initial fetch;
   const data = meta;
   // const data = JSON.parse(meta);
@@ -68,8 +70,9 @@ export async function getStaticProps({ params }) {
     members.push({
       callsign: callsign.split("-")[0],
       category: details.category,
-      type: details.type,
+      position: details.position,
       id: details.id,
+      company: details.company,
     });
   }
   // Filter out incorresponding members
