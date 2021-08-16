@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Portrait from "../../components/Profile/Portrait";
-import meta from "./meta.json";
+import meta from "../meta.json";
 
 /**
  *
@@ -11,10 +11,10 @@ const Category = ({ title, members, color, category }) => {
   return (
     <>
       <div className="w-full min-h-screen relative overflow-x-hidden">
-        <div className="h-screen w-full flex flex-col ">
+        <div className="h-screen w-full flex flex-col relative">
           <div
             style={{
-              backgroundColor: color,
+              backgroundColor: color.primary,
               flexBasis: "0",
               minHeight: "20vh",
               maxHeight: "20vh",
@@ -39,6 +39,7 @@ const Category = ({ title, members, color, category }) => {
           </div>
           <div className="memberContainer px-4 lg:px-16 py-4 lg:py-8">
             {members.map((member) => {
+              console.log(member);
               return (
                 <Portrait
                   key={member.id}
@@ -48,6 +49,7 @@ const Category = ({ title, members, color, category }) => {
                   id={member.id}
                   company={member.company}
                   color={color}
+                  route={`/${member.callsign}`}
                 />
               );
             })}
