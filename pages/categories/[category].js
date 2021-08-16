@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Portrait from "../../components/Profile/Portrait";
-import meta from "./meta.json";
+import meta from "../../meta.json";
 
 /**
  *
