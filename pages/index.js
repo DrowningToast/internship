@@ -1,3 +1,5 @@
+import { useRef } from "react";
+
 import Head from "next/head";
 import Image from "next/image";
 import About from "../components/Main/About";
@@ -7,6 +9,9 @@ import Hero from "../components/Main/Hero";
 import Major from "../components/Main/Major";
 
 export default function Home() {
+  const about = useRef(null);
+  const scrollToAbout = () => about.current.scrollIntoView();
+
   return (
     <div>
       <Head>
@@ -19,8 +24,8 @@ export default function Home() {
       </Head>
 
       <main className="min-h-screen scroll-behaviour-container">
-        <Hero />
-        <About />
+        <Hero scrollToAbout={scrollToAbout} />
+        <About reference={about} />
         <AboutInternship />
         <Major />
         <Categories />

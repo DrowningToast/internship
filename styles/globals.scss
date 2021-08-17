@@ -29,6 +29,7 @@ a {
   scroll-snap-type: y mandatory;
   height: 100vh;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .section {
@@ -149,5 +150,21 @@ a {
 @media screen and (max-width: 1024px) {
   .portraitCompany {
     grid-template-rows: 0.6fr 0.4fr;
+  }
+}
+
+.scrollButton {
+  animation: scrollButtonAnimation 1s ease-in-out infinite;
+}
+
+@keyframes scrollButtonAnimation {
+  0% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(0.25rem);
+  }
+  100% {
+    transform: translateY(0rem);
   }
 }

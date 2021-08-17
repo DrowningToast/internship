@@ -45,7 +45,7 @@ const Major = () => {
             className={`uppercase inline-block text-white pointer-events-none  font-extrabold ${
               selected !== "mt"
                 ? "text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl"
-                : "text-base my-4 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl"
+                : "text-base my-4 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
             } text-center z-10`}
           >
             Information Technology
@@ -80,14 +80,14 @@ const Major = () => {
           animate={{ opacity: 1, transition: { delay: 0.35 } }}
           className={`majorDetails my-2 lg:my-4 ${
             selected ? "h-auto md:h-auto" : "hidden absolute"
-          } px-8 md:px-12 grid place-items-center gap-y-4 relative`}
+          } px-8 md:px-12 grid place-items-center gap-y-4 relative container mx-auto`}
         >
           {selected === "it" && (
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, transition: { delay: 0.2 } }}
               layout
-              className=" h-auto text-sm sm:text-base md:text-lg lg:text-xl xl:text-3xl text-center md:text-left align-middle"
+              className="h-auto text-sm sm:text-base md:text-lg lg:text-xl text-center md:text-left align-middle"
             >
               <span className="sentence">
                 เป็นวิชาเอกที่ศึกษาเกี่ยวกับการจัดการเรียนรู้ด้านเทคโนโลยีสารสนเทศ
@@ -108,7 +108,7 @@ const Major = () => {
           {selected === "mt" && (
             <motion.div
               layout
-              className="h-auto text-sm sm:text-base md:text-lg lg:text-xl xl:text-3xl text-center md:text-left align-middle"
+              className="h-auto text-sm sm:text-base md:text-lg lg:text-xl text-center md:text-left align-middle"
             >
               <span className="sentence">
                 เป็นวิชาเอกที่ศึกษาเกี่ยวกับการจัดการเรียนรู้ด้านเทคโนโลยีมัลติมีเดีย
@@ -153,7 +153,7 @@ const Major = () => {
             className={`uppercase inline-block text-white pointer-events-none font-extrabold ${
               selected !== "it"
                 ? "text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl"
-                : "text-base my-4 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl"
+                : "text-base my-4 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
             } text-center z-10`}
           >
             Multimedia Technology

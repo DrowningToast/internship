@@ -1,42 +1,172 @@
 import Image from "next/image";
 
-const About = () => {
+const About = ({ reference }) => {
   return (
-    <div className="min-h-screen container mx-auto px-6 lg:px-8 py-8 section flex flex-col gap-8 justify-center lg:grid grid-cols-2">
-      <div className="flex flex-col justify-center items-center">
-        <div className="text-center lg:text-left">
-          <h1 className="text-4xl lg:text-6xl font-bold mb-4">
-            เอกคอมพิวเตอร์
-          </h1>
-          <p className="md:text-lg lg:text-xl xl:text-2xl">
-            เป็นวิชาเอกคอมพิวเตอร์ของโรงเรียนสาธิตมหาวิทยาลัยศรีนครินทรวิโรฒประสานมิตร
-            (ฝ่ายมัธยม) โดยเล็งเห็นถึงความสำคัญของการใช้เทคโนโลยีคอมพิวเตอร์
-            โดยหลักสูตรมีแบ่งแยกย่อยเป็นสองเอกคือ นวัตกรรมเทคโนโลยีมัลติมีเดีย
-            (IMT) และ เทคโนโลยีสารสนเทศ (IT)
-            ซึ่งวิชาเอกคอมพิวเตอร์นั้นมีการฝึกประสบการณ์วิชาชีพเป็นเกณฑ์การจบการศึกษา
-            ทางผู้จัดทำจึงนำประสบการณ์การฝึกประสบการณ์วิชาชีพนี้มาแบ่งปัน
-          </p>
+    <div className="relative" ref={reference}>
+      <div className="min-h-screen container mx-auto px-6 lg:px-8 py-8 section flex flex-col gap-8 justify-center lg:grid grid-cols-2">
+        <div className="flex flex-col justify-center items-center">
+          <div className="text-center lg:text-left">
+            <h1 className="text-4xl lg:text-6xl font-bold mb-4">
+              เอกคอมพิวเตอร์
+            </h1>
+            <p className="md:text-lg lg:text-xl xl:text-2xl">
+              เป็นวิชาเอกคอมพิวเตอร์ของโรงเรียนสาธิตมหาวิทยาลัยศรีนครินทรวิโรฒประสานมิตร
+              (ฝ่ายมัธยม) โดยเล็งเห็นถึงความสำคัญของการใช้เทคโนโลยีคอมพิวเตอร์
+              โดยหลักสูตรมีแบ่งแยกย่อยเป็นสองเอกคือ นวัตกรรมเทคโนโลยีมัลติมีเดีย
+              (IMT) และ เทคโนโลยีสารสนเทศ (IT)
+              ซึ่งวิชาเอกคอมพิวเตอร์นั้นมีการฝึกประสบการณ์วิชาชีพเป็นเกณฑ์การจบการศึกษา
+              ทางผู้จัดทำจึงนำประสบการณ์การฝึกประสบการณ์วิชาชีพนี้มาแบ่งปัน
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col justify-center items-center">
+          <div
+            style={{ aspectRatio: "1/1" }}
+            className="relative w-2/3 sm:w-1/2 md:w-2/3 lg:w-3/4 xl:w-2/3"
+          >
+            <Image
+              className="object-contain	shadow-md z-20 rounded-full lg:w-48"
+              src="/main/about.jpg"
+              layout="fill"
+              alt=""
+            />
+            <div
+              style={{ backgroundColor: "#CF4450" }}
+              className="w-1/2 h-1/2 absolute top-1/2 left-1/2 transform -translate-x-full z-10"
+            ></div>
+            <div
+              style={{ backgroundColor: "#F6D854" }}
+              className="w-1/2 h-1/2 absolute left-1/2  z-10"
+            ></div>
+            <div className="absolute -top-16 -left-16 z-0">
+              <svg
+                width="355"
+                height="478"
+                viewBox="0 0 355 478"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g filter="url(#filter0_d)">
+                  <path
+                    d="M350 82.2641C94.8339 -54.7812 -125.751 65.0026 99.5496 473"
+                    stroke="#5587E3"
+                    strokeWidth="3"
+                  />
+                </g>
+                <ellipse cx="162.5" cy="14" rx="13.5" ry="14" fill="#CF4450" />
+                <circle cx="10.5" cy="232.5" r="10.5" fill="#ECBA2C" />
+                <defs>
+                  <filter
+                    id="filter0_d"
+                    x="0.500488"
+                    y="22.5001"
+                    width="354.209"
+                    height="455.225"
+                    filterUnits="userSpaceOnUse"
+                    colorInterpolationFilters="sRGB"
+                  >
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center">
-        <div
-          style={{ aspectRatio: "1/1" }}
-          className="relative w-2/3 sm:w-1/2 md:w-2/3 lg:w-3/4 xl:w-2/3"
-        >
-          <Image
-            className="object-contain	shadow-md z-10 rounded-full lg:w-48"
-            src="/main/about.jpg"
-            layout="fill"
-            alt=""
-          />
-          <div
-            style={{ backgroundColor: "#CF4450" }}
-            className="w-1/2 h-1/2 absolute top-1/2 left-1/2 transform -translate-x-full"
-          ></div>
-          <div
-            style={{ backgroundColor: "#F6D854" }}
-            className="w-1/2 h-1/2 absolute left-1/2 transform "
-          ></div>
+      <div>
+        {/* For Desktop */}
+        <div className="absolute top-0 right-0">
+          <svg
+            width="248"
+            height="272"
+            viewBox="0 0 248 272"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect x="134" width="136" height="136" fill="#F6D854" />
+            <path
+              d="M134 0C134 75.1107 74.0062 136 0 136L-5.85733e-06 0L134 0Z"
+              fill="#CF4450"
+            />
+            <path
+              d="M134 5.94475e-06C209.111 2.66155e-06 270 60.8893 270 136L134 136L134 5.94475e-06Z"
+              fill="#477BD3"
+            />
+            <path
+              d="M270 272C194.889 272 134 211.111 134 136L270 136L270 272Z"
+              fill="#2E6559"
+            />
+          </svg>
+        </div>
+        <div className="absolute top-3/4 left-0">
+          <svg
+            width="90"
+            height="126"
+            viewBox="0 0 90 126"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M50 69C50 37.5198 24.0325 12 -8 12L-8 126C24.0325 126 50 100.48 50 69Z"
+              fill="#ECBA2C"
+            />
+            <path
+              d="M20.5 0C-17.8838 0 -49 30.8924 -49 69H90C90 30.8924 58.8838 0 20.5 0Z"
+              fill="#477BD3"
+            />
+          </svg>
+        </div>
+        <div className="absolute top-1/4 left-0">
+          <svg
+            width="47"
+            height="53"
+            viewBox="0 0 47 53"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="20.5"
+              cy="26.5"
+              r="19.5"
+              stroke="#2E6559"
+              strokeWidth="14"
+            />
+          </svg>
+        </div>
+        <div className="absolute top-3/4 left-3/4">
+          <svg
+            width="44"
+            height="44"
+            viewBox="0 0 44 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="22" cy="22" r="17" stroke="#477BD3" strokeWidth="10" />
+          </svg>
         </div>
       </div>
     </div>
