@@ -26,6 +26,7 @@ const Category = ({ title, members, color, category }) => {
   useEffect(() => {
     if (!window || !container.current) return;
     window.addEventListener("resize", updateContainerWidth);
+    updateContainerWidth();
   }, [container.current]);
 
   return (

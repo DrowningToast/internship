@@ -44,7 +44,6 @@ const Portrait = ({
 
   const handleSecondaryClick = () => {
     router.push(`${route}`);
-    // setShown(true)
   };
 
   const handleCanceling = () => {
