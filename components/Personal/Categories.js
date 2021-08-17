@@ -14,7 +14,8 @@ const Categories = ({
       </h1>
       <div className="flex flex-row flex-wrap justify-center gap-4 md:gap-8 lg:gap-16 mt-8">
         <button
-          className="relative bg-purple-600 rounded-3xl cursor-pointer transform hover:translate-x-1 hover:translate-y-1 transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-purple-600 h-24 w-24 lg:h-44 lg:w-44"
+          className="relative rounded-3xl cursor-pointer transform hover:translate-x-1 hover:translate-y-1 transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-purple-600 h-24 w-24 lg:h-44 lg:w-44"
+          style={{ backgroundColor: "#7246D1" }}
           onClick={scrollToArticles}
         >
           <div className="flex flex-col justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-bold text-lg text-center">
@@ -25,7 +26,8 @@ const Categories = ({
           </div>
         </button>
         <button
-          className="relative bg-purple-600 rounded-3xl cursor-pointer transform hover:translate-x-1 hover:translate-y-1 transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-purple-600 h-24 w-24 lg:h-44 lg:w-44"
+          className="relative rounded-3xl cursor-pointer transform hover:translate-x-1 hover:translate-y-1 transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-purple-600 h-24 w-24 lg:h-44 lg:w-44"
+          style={{ backgroundColor: "#7246D1" }}
           onClick={scrollToPictures}
         >
           <div className="flex flex-col justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-bold text-lg text-center">
@@ -36,7 +38,8 @@ const Categories = ({
           </div>
         </button>
         <button
-          className="relative bg-purple-600 rounded-3xl cursor-pointer transform hover:translate-x-1 hover:translate-y-1 transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-purple-600 h-24 w-24 lg:h-44 lg:w-44"
+          className="relative rounded-3xl cursor-pointer transform hover:translate-x-1 hover:translate-y-1 transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-purple-600 h-24 w-24 lg:h-44 lg:w-44"
+          style={{ backgroundColor: "#7246D1" }}
           onClick={scrollToCompany}
         >
           <div className="flex flex-col justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-bold text-lg text-center">
@@ -47,7 +50,8 @@ const Categories = ({
           </div>
         </button>
         <button
-          className="relative bg-purple-600 rounded-3xl cursor-pointer transform hover:translate-x-1 hover:translate-y-1 transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-purple-600 h-24 w-24 lg:h-44 lg:w-44"
+          className="relative rounded-3xl cursor-pointer transform hover:translate-x-1 hover:translate-y-1 transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-purple-600 h-24 w-24 lg:h-44 lg:w-44"
+          style={{ backgroundColor: "#7246D1" }}
           onClick={scrollToConclusion}
         >
           <div className="flex flex-col justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-bold text-lg text-center">
@@ -58,7 +62,8 @@ const Categories = ({
           </div>
         </button>
         <button
-          className="relative bg-purple-600 rounded-3xl cursor-pointer transform hover:translate-x-1 hover:translate-y-1 transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-purple-600 h-24 w-24 lg:h-44 lg:w-44"
+          className="relative rounded-3xl cursor-pointer transform hover:translate-x-1 hover:translate-y-1 transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-purple-600 h-24 w-24 lg:h-44 lg:w-44"
+          style={{ backgroundColor: "#7246D1" }}
           onClick={scrollToContact}
         >
           <div className="flex flex-col justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-bold text-lg text-center">

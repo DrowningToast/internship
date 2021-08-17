@@ -32,7 +32,7 @@ const Portrait = ({
   };
 
   useEffect(() => {
-    console.log(element.current);
+    // console.log(element.current);
     if (!window || !element.current || !containerWidth) return;
     window?.removeEventListener("resize", updateReversed);
     window?.addEventListener("resize", updateReversed);
@@ -90,7 +90,8 @@ const Portrait = ({
           className={`square md:w-full rounded-full ${
             shown ? "z-50" : "z-20"
           } relative`}
-        ></Image>
+          alt=""
+        />
         <motion.div
           layout
           whileHover={{ scale: !shown ? 1.225 : 1 }}
@@ -139,7 +140,8 @@ const Portrait = ({
                   layout="fill"
                   objectFit="contain"
                   objectPosition="center"
-                ></Image>
+                  alt=""
+                />
                 <div className=""></div>
               </div>
               <div
@@ -147,7 +149,9 @@ const Portrait = ({
                   company[selected].name.length < 10
                     ? "text-lg lg:text-2xl"
                     : "text-xs lg:text-base"
-                } text-center text-white align-middle grid place-items-center`}
+                } text-center ${
+                  color.tertiary == "#FFEB94" ? "text-black" : "text-white"
+                } align-middle grid place-items-center`}
               >
                 {company[selected].name}
               </div>
