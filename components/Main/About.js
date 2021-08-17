@@ -19,7 +19,7 @@ const About = ({ reference }) => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-end">
           <div
             style={{ aspectRatio: "1/1" }}
             className="relative w-2/3 sm:w-1/2 md:w-2/3 lg:w-3/4 xl:w-2/3"
@@ -101,8 +101,7 @@ const About = ({ reference }) => {
         {/* For Desktop */}
         <div className="absolute top-0 right-0">
           <svg
-            width="248"
-            height="272"
+            width="200"
             viewBox="0 0 248 272"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

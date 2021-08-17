@@ -5,7 +5,7 @@ const Articles = ({ reference, articles }) => {
         <h1 className="text-2xl font-medium text-gray-500 text-center md:text-left">
           Articles
         </h1>
-        <div className="mt-8">
+        <div className="mt-8 text-base md:text-lg">
           {articles.map((article, i) => (
             <div key={i} style={{ textIndent: "1em" }} className="my-4">
               {article}

@@ -51,6 +51,7 @@
       "id": 20,
       "gallerySize": 8,
       "display": "Stories",
+      "media": "image",
       "company": [
         {
           "name": "Siriraj Informatics and Data Innovation Center",
@@ -73,6 +74,7 @@
       "id": 24,
       "gallerySize": 4,
       "display": "Video",
+      "media": "video",
       "email": "tanpak.sut@gmail.com",
       "company": [
         {
@@ -99,6 +101,7 @@
       "id": 32,
       "gallerySize": 3,
       "display": "Flexible",
+      "media": "image",
       "company": [
         {
           "name": "ADVOCRAZY COMPANY (บริษัท แอดโวเครซี่ จำกัด)",

@@ -2,6 +2,9 @@ import Image from "next/image";
 
 const ImageList = ({ number, gallerySize }) => {
   switch (gallerySize) {
+    case 0:
+      return <div></div>;
+      break;
     case 1:
       return (
         <div className="block">
@@ -206,7 +209,11 @@ const ImageList = ({ number, gallerySize }) => {
   }
 };
 
-const Pictures = ({ reference, number, gallerySize }) => {
+const VideoList = () => {
+  return <div></div>;
+};
+
+const Pictures = ({ reference, number, gallerySize, media }) => {
   return (
     <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8" ref={reference}>
       <h1 className="text-2xl font-medium text-gray-500 text-center md:text-left">
@@ -214,6 +221,7 @@ const Pictures = ({ reference, number, gallerySize }) => {
       </h1>
       <div className="relative mt-8">
         <ImageList number={number} gallerySize={gallerySize} />
+        {media == "video" ? <VideoList /> : null}
       </div>
     </div>
   );

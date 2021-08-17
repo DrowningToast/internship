@@ -4,7 +4,7 @@ const AboutInternship = () => {
   return (
     <div className="relative">
       <div className="min-h-screen container mx-auto px-6 lg:px-8 py-8 section flex flex-col-reverse gap-8 justify-center lg:grid grid-cols-2">
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-start">
           <div
             style={{ aspectRatio: "1/1" }}
             className="relative w-2/3 sm:w-1/2 md:w-2/3 lg:w-3/4 xl:w-2/3"
@@ -51,8 +51,7 @@ const AboutInternship = () => {
         {/* For Desktop */}
         <div className="absolute bottom-0 left-0">
           <svg
-            width="270"
-            height="359"
+            width="200"
             viewBox="0 0 270 359"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

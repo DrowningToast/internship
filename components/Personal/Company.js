@@ -19,8 +19,8 @@ const Company = ({ reference, number, company }) => {
                 />
               </div>
               <div className="col-span-3 flex flex-col justify-center">
-                <h2 className="text-2xl">{item.name}</h2>
-                <div style={{ textIndent: "1em" }} className="mt-2">
+                <h2 className="text-4xl font-bold">{item.name}</h2>
+                <div style={{ textIndent: "1em" }} className="mt-2 text-lg">
                   {item.description}
                 </div>
               </div>

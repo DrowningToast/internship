@@ -74,6 +74,7 @@ const Blog = (props) => {
           reference={pictures}
           number={props.id}
           gallerySize={props.gallerySize}
+          media={props.media}
         />
         <Company
           reference={company}
