@@ -66,7 +66,7 @@ const Category = ({ title, members, color, category }) => {
               return (
                 <Portrait
                   key={member.id}
-                  url={`/data/${member.id}/portrait.jpg`}
+                  url={`/data/${member.id}/portrait.png`}
                   callsign={member.callsign.split("-")[0]}
                   type={member.position}
                   id={member.id}

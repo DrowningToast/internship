@@ -22,14 +22,17 @@ const Portrait = ({
   const router = useRouter();
 
   const updateReversed = () => {
+    if (!element.current) return;
     const width = element.current.getBoundingClientRect().width;
     const numberInRow = Math.round(containerWidth / width);
     const pos = (i + 1) % numberInRow;
 
-    if (!pos) setIsReversed(true);
+    if (!pos) return setIsReversed(true);
+    return setIsReversed(false);
   };
 
   useEffect(() => {
+    console.log(element.current);
     if (!window || !element.current || !containerWidth) return;
     window?.removeEventListener("resize", updateReversed);
     window?.addEventListener("resize", updateReversed);
