@@ -29,6 +29,12 @@ const Category = ({ title, members, color, category }) => {
     updateContainerWidth();
   }, [container.current]);
 
+  useEffect(() => {
+    window.addEventListener("popstate", function (event) {
+      window.location.assign("/?page=categories");
+    });
+  }, []);
+
   return (
     <>
       <div className="w-full min-h-screen relative overflow-x-hidden">

@@ -87,7 +87,7 @@ const Category = ({
   );
 };
 
-const Categories = () => {
+const Categories = ({ reference }) => {
   const [selected, setSelected] = useState(null);
   const router = useRouter();
 
@@ -131,7 +131,10 @@ const Categories = () => {
   }, []);
 
   return (
-    <div className="h-screen w-full grid categories place-items-center items-start overflow-hidden section">
+    <div
+      className="h-screen w-full grid categories place-items-center items-start overflow-hidden section"
+      ref={reference}
+    >
       <div className="h-full w-full flex justify-center items-center">
         <h1
           style={{ color: "#656565" }}

@@ -1,4 +1,5 @@
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
+import { useRouter } from "next/router";
 
 import Head from "next/head";
 import Image from "next/image";
@@ -8,9 +9,18 @@ import Categories from "../components/Main/Categories";
 import Hero from "../components/Main/Hero";
 import Major from "../components/Main/Major";
 
-export default function Home() {
+const Home = () => {
+  const router = useRouter();
   const about = useRef(null);
+  const categories = useRef(null);
   const scrollToAbout = () => about.current.scrollIntoView();
+  const scrollToCategories = () => categories.current.scrollIntoView();
+
+  useEffect(() => {
+    if (router.query.page == "categories") {
+      scrollToCategories();
+    }
+  }, [router]);
 
   return (
     <div>
@@ -28,10 +38,12 @@ export default function Home() {
         <About reference={about} />
         <AboutInternship />
         <Major />
-        <Categories />
+        <Categories reference={categories} />
       </main>
 
       <footer></footer>
     </div>
   );
-}
+};
+
+export default Home;
