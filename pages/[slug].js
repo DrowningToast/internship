@@ -61,6 +61,7 @@ const Blog = (props) => {
           position={props.position}
           companyName={props.company[0].name}
           number={props.id}
+          display={props.display}
         />
         <Categories
           scrollToArticles={scrollToArticles}
@@ -69,7 +70,11 @@ const Blog = (props) => {
           scrollToConclusion={scrollToConclusion}
           scrollToContact={scrollToContact}
         />
-        <Articles reference={articles} articles={props.articles} />
+        <Articles
+          reference={articles}
+          articles={props.articles}
+          display={props.display}
+        />
         <Pictures
           reference={pictures}
           number={props.id}
@@ -80,8 +85,13 @@ const Blog = (props) => {
           reference={company}
           number={props.id}
           company={props.company}
+          display={props.display}
         />
-        <Conclusion reference={conclusion} conclusion={props.conclusion} />
+        <Conclusion
+          reference={conclusion}
+          conclusion={props.conclusion}
+          display={props.display}
+        />
         <InternBook number={props.id} />
         <Contact reference={contact} email={props.email || ""} />
       </main>

@@ -210,7 +210,9 @@ const ImageList = ({ number, gallerySize }) => {
 };
 
 const VideoList = () => {
-  return <div className="mt-4 shadow-lg px-8 py-4 text-center relative"></div>;
+  return (
+    <div className="mt-4 shadow-lg px-8 py-4 text-center relative bg-white"></div>
+  );
 };
 
 const Pictures = ({ reference, number, gallerySize, media }) => {

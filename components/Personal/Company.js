@@ -1,6 +1,55 @@
 import Image from "next/image";
 
-const Company = ({ reference, number, company }) => {
+const VideoComponent = ({ display }) => {
+  if (display == "D") {
+    return (
+      <div
+        className="hidden lg:block absolute -top-1/2 left-0 h-full w-full"
+        style={{ zIndex: "-1" }}
+      >
+        <video
+          src="/assets/DTrooperCircle3.webm"
+          className="w-full"
+          autoPlay
+          muted
+          loop
+        ></video>
+      </div>
+    );
+  } else if (display == "E") {
+    return (
+      <div
+        className="hidden lg:block absolute -top-1/2 left-0 h-full w-full"
+        style={{ zIndex: "-1" }}
+      >
+        <video
+          src="/assets/DTrooperRectangle3.webm"
+          className="w-full"
+          autoPlay
+          muted
+          loop
+        ></video>
+      </div>
+    );
+  } else {
+    return (
+      <div
+        className="hidden lg:block absolute -top-1/2 left-0 h-full w-full"
+        style={{ zIndex: "-1" }}
+      >
+        <video
+          src="/assets/DTrooperTriangle3.webm"
+          className="w-full"
+          autoPlay
+          muted
+          loop
+        ></video>
+      </div>
+    );
+  }
+};
+
+const Company = ({ reference, number, company, display }) => {
   return (
     <div className="relative" ref={reference}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8">
@@ -32,21 +81,10 @@ const Company = ({ reference, number, company }) => {
             </div>
           ))}
         </div>
-        <div className="hidden lg:block absolute top-16 right-1/4">
-          <svg
-            className="w-20"
-            viewBox="0 0 124 125"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M62 116C91.3667 116 115 91.9511 115 62.5C115 33.0489 91.3667 9 62 9C32.6333 9 9 33.0489 9 62.5C9 91.9511 32.6333 116 62 116Z"
-              stroke="#2E6559"
-              strokeWidth="18"
-            />
-          </svg>
-        </div>
-        <div className="absolute top-1/2 right-0">
+        <div
+          className="lg:hidden absolute top-1/2 right-0"
+          style={{ zIndex: "-1" }}
+        >
           <svg
             className="w-8 lg:w-24"
             viewBox="0 0 158 158"
@@ -62,7 +100,10 @@ const Company = ({ reference, number, company }) => {
             />
           </svg>
         </div>
-        <div className="absolute top-full left-0 z-0">
+        <div
+          className="lg:hidden absolute top-full left-0 z-0"
+          style={{ zIndex: "-1" }}
+        >
           <svg
             className="w-16"
             viewBox="0 0 88 113"
@@ -79,6 +120,7 @@ const Company = ({ reference, number, company }) => {
           </svg>
         </div>
       </div>
+      <VideoComponent display={display} />
     </div>
   );
 };
