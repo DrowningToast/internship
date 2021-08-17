@@ -38,6 +38,10 @@ const Portrait = ({
     updateReversed();
   }, [element.current, containerWidth]);
 
+  useEffect(() => {
+    router.prefetch(`${route}`);
+  }, []);
+
   const handlePrimaryClick = () => {
     setShown(true);
   };

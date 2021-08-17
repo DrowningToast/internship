@@ -124,9 +124,11 @@ const Categories = () => {
     },
   ];
 
-  // useEffect(()=>{
-
-  // }, [])
+  useEffect(() => {
+    info.forEach((category) => {
+      router.prefetch(category.link);
+    });
+  }, []);
 
   return (
     <div className="h-screen w-full grid categories place-items-center items-start overflow-hidden">
