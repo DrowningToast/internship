@@ -2,24 +2,44 @@
   "categories": {
     "programming": {
       "display": "Programming & Technology",
-      "color": "#6648E9"
+      "color": {
+        "primary": "#6647EA",
+        "secondary": "#482ACA",
+        "tertiary": "#A28EFF"
+      }
     },
     "production": {
       "display": "Production & Videos",
-      "color": "#CF4450"
+      "color": {
+        "primary": "#D04451",
+        "secondary": "#A42631",
+        "tertiary": "#E8767E"
+      }
     },
     "design": {
       "display": "2D & 3D Design",
-      "color": "#F6D854"
+      "color": {
+        "primary": "#F6D854",
+        "secondary": "#F3B137",
+        "tertiary": "#FFEB94"
+      }
     },
     "business": {
       "display": "Business",
-      "color": "#2E6559"
+      "color": {
+        "primary": "#2F6558",
+        "secondary": "#1D4F44",
+        "tertiary": "#55847A"
+      }
     },
     "gamedevelopment": {
       "path": "gamedevelopment",
       "display": "Game Development & Design",
-      "color": "#CF55E3"
+      "color": {
+        "primary": "#D055E3",
+        "secondary": "#AE38C2",
+        "tertiary": "#E883F9"
+      }
     }
   },
   "members": {

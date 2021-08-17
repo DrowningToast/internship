@@ -8,13 +8,33 @@ import meta from "../../meta.json";
  */
 
 const Category = ({ title, members, color, category }) => {
+  const container = useRef();
+  const [width, setWidth] = useState(0);
+
+  const updateContainerWidth = () => {
+    if (!container.current) return;
+    var styles = window?.getComputedStyle(container.current, null);
+    var padding =
+      parseFloat(styles.paddingLeft) + parseFloat(styles.paddingRight);
+    const width = parseFloat(styles.width) - padding;
+
+    if (!width) return;
+    setWidth(width);
+  };
+
+  useEffect(() => {
+    if (!window || !container.current) return;
+    window.addEventListener("resize", updateContainerWidth);
+    updateContainerWidth();
+  }, [container.current]);
+
   return (
     <>
       <div className="w-full min-h-screen relative overflow-x-hidden">
-        <div className="h-screen w-full flex flex-col ">
+        <div className="h-screen w-full flex flex-col relative">
           <div
             style={{
-              backgroundColor: color,
+              backgroundColor: color.primary,
               flexBasis: "0",
               minHeight: "20vh",
               maxHeight: "20vh",
@@ -37,17 +57,23 @@ const Category = ({ title, members, color, category }) => {
               </h1>
             </motion.div>
           </div>
-          <div className="memberContainer px-4 lg:px-16 py-4 lg:py-8">
-            {members.map((member) => {
+          <div
+            ref={container}
+            className="memberContainer px-4 lg:px-16 py-4 lg:py-8"
+          >
+            {members.map((member, i) => {
               return (
                 <Portrait
                   key={member.id}
                   url={`/data/${member.id}/portrait.jpg`}
-                  callsign={member.callsign}
+                  callsign={member.callsign.split("-")[0]}
                   type={member.position}
                   id={member.id}
                   company={member.company}
                   color={color}
+                  route={`/${member.callsign.toLowerCase()}`}
+                  i={i}
+                  containerWidth={width}
                 />
               );
             })}
@@ -68,7 +94,7 @@ export async function getStaticProps({ params }) {
   // Fetch ALL members id
   for (const [callsign, details] of Object.entries(data.members)) {
     members.push({
-      callsign: callsign.split("-")[0],
+      callsign: callsign,
       category: details.category,
       position: details.position,
       id: details.id,
