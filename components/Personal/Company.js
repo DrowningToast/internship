@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-const Company = ({ number, company }) => {
+const Company = ({ reference, number, company }) => {
   return (
-    <div className="relative">
+    <div className="relative" ref={reference}>
       <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 py-8">
         <h1 className="text-2xl font-medium text-gray-500">Company</h1>
         <div className="mt-8">

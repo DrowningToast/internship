@@ -10,7 +10,21 @@ import Contact from "../components/Personal/Contact";
 
 import meta from "../meta.json";
 
-const blog = (props) => {
+import { useRef } from "react";
+
+const Blog = (props) => {
+  const articles = useRef(null);
+  const pictures = useRef(null);
+  const company = useRef(null);
+  const conclusion = useRef(null);
+  const contact = useRef(null);
+
+  const scrollToArticles = () => articles.current.scrollIntoView();
+  const scrollToPictures = () => pictures.current.scrollIntoView();
+  const scrollToCompany = () => company.current.scrollIntoView();
+  const scrollToConclusion = () => conclusion.current.scrollIntoView();
+  const scrollToContact = () => contact.current.scrollIntoView();
+
   return (
     <div>
       <Head>
@@ -32,13 +46,27 @@ const blog = (props) => {
           companyName={props.company[0].name}
           number={props.id}
         />
-        <Categories />
-        <Articles articles={props.articles} />
-        <Pictures number={props.id} gallerySize={props.gallerySize} />
-        <Company number={props.id} company={props.company} />
-        <Conclusion conclusion={props.conclusion} />
+        <Categories
+          scrollToArticles={scrollToArticles}
+          scrollToPictures={scrollToPictures}
+          scrollToCompany={scrollToCompany}
+          scrollToConclusion={scrollToConclusion}
+          scrollToContact={scrollToContact}
+        />
+        <Articles reference={articles} articles={props.articles} />
+        <Pictures
+          reference={pictures}
+          number={props.id}
+          gallerySize={props.gallerySize}
+        />
+        <Company
+          reference={company}
+          number={props.id}
+          company={props.company}
+        />
+        <Conclusion reference={conclusion} conclusion={props.conclusion} />
         <InternBook number={props.id} />
-        <Contact email={props.email || ""} />
+        <Contact reference={contact} email={props.email || ""} />
       </main>
     </div>
   );
@@ -75,4 +103,4 @@ export async function getStaticPaths() {
   };
 }
 
-export default blog;
+export default Blog;

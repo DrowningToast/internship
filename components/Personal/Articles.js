@@ -1,6 +1,6 @@
-const Articles = ({ articles }) => {
+const Articles = ({ reference, articles }) => {
   return (
-    <div className="relative">
+    <div className="relative" ref={reference}>
       <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 py-8">
         <h1 className="text-2xl font-medium text-gray-500">Articles</h1>
         <div className="mt-8">
