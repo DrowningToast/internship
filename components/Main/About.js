@@ -137,31 +137,14 @@ const About = ({ reference }) => {
             />
           </svg>
         </div>
-        <div className="absolute top-1/4 left-0">
-          <svg
-            className="w-8 lg:w-16"
-            viewBox="0 0 47 53"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="20.5"
-              cy="26.5"
-              r="19.5"
-              stroke="#2E6559"
-              strokeWidth="14"
-            />
-          </svg>
-        </div>
-        <div className="absolute top-3/4 left-3/4">
-          <svg
-            className="w-8 lg:w-16"
-            viewBox="0 0 44 44"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="22" cy="22" r="17" stroke="#477BD3" strokeWidth="10" />
-          </svg>
+        <div className="absolute top-0 left-0 w-full h-full">
+          <video
+            src="/assets/LandingPageInternshipInfo1.webm"
+            className="h-full w-full"
+            autoPlay
+            muted
+            loop
+          ></video>
         </div>
       </div>
     </div>

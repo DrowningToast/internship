@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ReactPlayer from "react-player";
 
 const ImageList = ({ number, gallerySize }) => {
   switch (gallerySize) {
@@ -211,8 +212,8 @@ const ImageList = ({ number, gallerySize }) => {
 
 const VideoList = () => {
   return (
-    <div className="mt-4 bg-gray-200 shadow-lg px-8 py-4 text-center">
-      Video Here
+    <div className="mt-4 shadow-lg px-8 py-4 text-center relative">
+      <ReactPlayer url="/assets/LandingPageMajor.webm" playing={true} />
     </div>
   );
 };

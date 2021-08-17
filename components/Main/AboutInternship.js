@@ -82,61 +82,6 @@ const AboutInternship = () => {
             />
           </svg>
         </div>
-        <div className="absolute top-0 left-1/2 lg:left-3/4 transform -translate-x-1/2 lg:-translate-x-3/4">
-          <svg
-            className="w-96"
-            viewBox="0 0 664 127"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g filter="url(#filter0_d)">
-              <path
-                d="M6 -16C102.5 85.5 368.2 229.6 659 -6"
-                stroke="#5587E3"
-                strokeWidth="3"
-              />
-            </g>
-            <ellipse cx="139.5" cy="85" rx="13.5" ry="14" fill="#CF4450" />
-            <circle cx="545.5" cy="70.5" r="10.5" fill="#ECBA2C" />
-            <defs>
-              <filter
-                id="filter0_d"
-                x="0.912842"
-                y="-21.0336"
-                width="663.031"
-                height="148.026"
-                filterUnits="userSpaceOnUse"
-                colorInterpolationFilters="sRGB"
-              >
-                <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  result="hardAlpha"
-                />
-                <feOffset />
-                <feGaussianBlur stdDeviation="2" />
-                <feComposite in2="hardAlpha" operator="out" />
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
-                />
-                <feBlend
-                  mode="normal"
-                  in2="BackgroundImageFix"
-                  result="effect1_dropShadow"
-                />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_dropShadow"
-                  result="shape"
-                />
-              </filter>
-            </defs>
-          </svg>
-        </div>
         <div className="absolute top-1/4 right-0">
           <svg
             className="w-8 lg:w-24"
@@ -153,6 +98,15 @@ const AboutInternship = () => {
               fill="#477BD3"
             />
           </svg>
+        </div>
+        <div className="absolute top-0 left-0 w-full h-full">
+          <video
+            src="/assets/LandingPageInternshipInfo2.webm"
+            className="h-full w-full"
+            autoPlay
+            muted
+            loop
+          ></video>
         </div>
       </div>
     </div>

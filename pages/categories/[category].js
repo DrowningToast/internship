@@ -8,6 +8,79 @@ import meta from "../../meta.json";
  * Profile type = Standard 5 photo (standard), Flexible 5+ (flex), video (video), instragram stories (stories)
  */
 
+const BackgroundVideo = ({ category }) => {
+  switch (category) {
+    case "programming":
+      return (
+        <div className="absolute top-0 left-0 w-full h-full z-0">
+          <video
+            src="/assets/LandingPageCategoryProgramming.webm"
+            className="h-full w-full"
+            autoPlay
+            muted
+            loop
+          ></video>
+        </div>
+      );
+      break;
+    case "production":
+      return (
+        <div className="absolute top-0 left-0 w-full h-full z-0">
+          <video
+            src="/assets/LandingPageCategoryProduction.webm"
+            className="h-full w-full"
+            autoPlay
+            muted
+            loop
+          ></video>
+        </div>
+      );
+      break;
+    case "design":
+      return (
+        <div className="absolute top-0 left-0 w-full h-full z-0">
+          <video
+            src="/assets/LandingPageCategoryDesign.webm"
+            className="h-full w-full"
+            autoPlay
+            muted
+            loop
+          ></video>
+        </div>
+      );
+      break;
+    case "business":
+      return (
+        <div className="absolute top-0 left-0 w-full h-full z-0">
+          <video
+            src="/assets/LandingPageCategoryBusiness.webm"
+            className="h-full w-full"
+            autoPlay
+            muted
+            loop
+          ></video>
+        </div>
+      );
+      break;
+    case "gamedevelopment":
+      return (
+        <div className="absolute top-0 left-0 w-full h-full z-0">
+          <video
+            src="/assets/LandingPageCategoryGameDevelopment.webm"
+            className="h-full w-full"
+            autoPlay
+            muted
+            loop
+          ></video>
+        </div>
+      );
+      break;
+    default:
+      return <div></div>;
+      break;
+  }
+};
+
 const Category = ({ title, members, color, category }) => {
   const container = useRef();
   const [width, setWidth] = useState(0);
@@ -38,7 +111,7 @@ const Category = ({ title, members, color, category }) => {
   return (
     <>
       <div className="w-full min-h-screen relative overflow-x-hidden">
-        <div className="h-screen w-full flex flex-col relative">
+        <div className="h-screen w-full flex flex-col absolute top-0 left-0 z-10">
           <div
             style={{
               backgroundColor: color.primary,
@@ -89,6 +162,7 @@ const Category = ({ title, members, color, category }) => {
             })}
           </div>
         </div>
+        <BackgroundVideo category={category} />
       </div>
     </>
   );

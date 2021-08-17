@@ -26,11 +26,11 @@ const Major = () => {
       <motion.div
         layout
         style={{ height: "100vh" }}
-        className={`py-16 w-full flex flex-col justify-around xl:justify-between section ${
+        className={`relative py-16 lg:py-48 w-full flex flex-col justify-around xl:justify-between section ${
           selected === null
             ? "gap-y-4 md:gap-y-8 lg:gap-y-20 xl:gap-y-28"
             : "xl:gap-y-8 "
-        } align-center `}
+        } align-center`}
       >
         <motion.section
           layout
@@ -80,7 +80,7 @@ const Major = () => {
           animate={{ opacity: 1, transition: { delay: 0.35 } }}
           className={`majorDetails my-2 lg:my-4 ${
             selected ? "h-auto md:h-auto" : "hidden absolute"
-          } px-8 md:px-12 grid place-items-center gap-y-4 relative container mx-auto`}
+          } px-8 md:px-12 grid place-items-center gap-y-4 relative container mx-auto z-10`}
         >
           {selected === "it" && (
             <motion.div
@@ -181,6 +181,15 @@ const Major = () => {
             )}
           </motion.div>
         </motion.section>
+        <div className="absolute top-0 left-0 w-full h-full z-0">
+          <video
+            src="/assets/LandingPageMajor.webm"
+            className="h-full w-full"
+            autoPlay
+            muted
+            loop
+          ></video>
+        </div>
       </motion.div>
     </AnimateSharedLayout>
   );
