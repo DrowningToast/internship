@@ -19,7 +19,7 @@ const About = ({ reference }) => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-end">
+        <div className="flex flex-col justify-center items-center lg:items-end">
           <div
             style={{ aspectRatio: "1/1" }}
             className="relative w-2/3 sm:w-1/2 md:w-2/3 lg:w-3/4 xl:w-2/3"
@@ -38,10 +38,9 @@ const About = ({ reference }) => {
               style={{ backgroundColor: "#F6D854" }}
               className="w-1/2 h-1/2 absolute left-1/2  z-10"
             ></div>
-            <div className="absolute -top-16 -left-16 z-0">
+            <div className="absolute -top-8 -left-8 lg:-top-16 lg:-left-16 z-0">
               <svg
-                width="355"
-                height="478"
+                className="w-32 lg:w-72"
                 viewBox="0 0 355 478"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +100,7 @@ const About = ({ reference }) => {
         {/* For Desktop */}
         <div className="absolute top-0 right-0">
           <svg
-            width="200"
+            className="w-32 lg:w-48"
             viewBox="0 0 248 272"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -123,8 +122,7 @@ const About = ({ reference }) => {
         </div>
         <div className="absolute top-3/4 left-0">
           <svg
-            width="90"
-            height="126"
+            className="w-16 lg:w-24"
             viewBox="0 0 90 126"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -141,8 +139,7 @@ const About = ({ reference }) => {
         </div>
         <div className="absolute top-1/4 left-0">
           <svg
-            width="47"
-            height="53"
+            className="w-8 lg:w-16"
             viewBox="0 0 47 53"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -158,8 +155,7 @@ const About = ({ reference }) => {
         </div>
         <div className="absolute top-3/4 left-3/4">
           <svg
-            width="44"
-            height="44"
+            className="w-8 lg:w-16"
             viewBox="0 0 44 44"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

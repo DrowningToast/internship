@@ -4,7 +4,7 @@ const AboutInternship = () => {
   return (
     <div className="relative">
       <div className="min-h-screen container mx-auto px-6 lg:px-8 py-8 section flex flex-col-reverse gap-8 justify-center lg:grid grid-cols-2">
-        <div className="flex flex-col justify-center items-start">
+        <div className="flex flex-col justify-center items-center lg:items-start">
           <div
             style={{ aspectRatio: "1/1" }}
             className="relative w-2/3 sm:w-1/2 md:w-2/3 lg:w-3/4 xl:w-2/3"
@@ -51,7 +51,7 @@ const AboutInternship = () => {
         {/* For Desktop */}
         <div className="absolute bottom-0 left-0">
           <svg
-            width="200"
+            className="w-24 lg:w-32"
             viewBox="0 0 270 359"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -82,9 +82,9 @@ const AboutInternship = () => {
             />
           </svg>
         </div>
-        <div className="absolute top-0 left-3/4 transform -translate-x-3/4">
+        <div className="absolute top-0 left-1/2 lg:left-3/4 transform -translate-x-1/2 lg:-translate-x-3/4">
           <svg
-            width="600"
+            className="w-96"
             viewBox="0 0 664 127"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -139,8 +139,7 @@ const AboutInternship = () => {
         </div>
         <div className="absolute top-1/4 right-0">
           <svg
-            width="92"
-            height="126"
+            className="w-8 lg:w-24"
             viewBox="0 0 92 126"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
