@@ -20,10 +20,9 @@ const Hero = ({ name, position, companyName, number }) => {
               height={800}
               objectFit="cover"
             />
-            <div className="hidden absolute top-32 left-32">
+            <div className="absolute top-12 left-24 lg:top-32 lg:left-32">
               <svg
-                width="120"
-                height="120"
+                className="w-8 lg:w-24"
                 viewBox="0 0 158 158"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -37,10 +36,9 @@ const Hero = ({ name, position, companyName, number }) => {
                 />
               </svg>
             </div>
-            <div className="hidden absolute top-16 right-16">
+            <div className="absolute top-8 right-8 lg:top-16 lg:right-16">
               <svg
-                width="70"
-                height="70"
+                className="w-8 lg:w-16"
                 viewBox="0 0 88 88"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

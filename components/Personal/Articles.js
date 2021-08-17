@@ -13,10 +13,9 @@ const Articles = ({ reference, articles }) => {
           ))}
         </div>
       </div>
-      <div className="hidden absolute top-0">
+      <div className="absolute top-0">
         <svg
-          width="72"
-          height="143"
+          className="w-8 lg:w-16"
           viewBox="0 0 72 143"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -24,10 +23,9 @@ const Articles = ({ reference, articles }) => {
           <circle cx="0.5" cy="71.5" r="59" stroke="#5587E3" strokeWidth="25" />
         </svg>
       </div>
-      <div className="hidden absolute top-1/2 right-0 transform -translate-y-1/2">
+      <div className="absolute top-1/2 right-0 transform -translate-y-1/2">
         <svg
-          width="44"
-          height="88"
+          className="w-8 lg:w-16"
           viewBox="0 0 44 88"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

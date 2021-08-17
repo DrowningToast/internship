@@ -25,15 +25,14 @@ const Company = ({ reference, number, company }) => {
                 </div>
               </div>
               <div className="col-span-5 relative">
-                <div className="bg-gray-200 w-full h-72 rounded"></div>
+                <div className="bg-gray-200 w-full h-72 rounded z-30"></div>
               </div>
             </div>
           ))}
         </div>
-        <div className="hidden absolute top-16 right-1/4">
+        <div className="hidden lg:block absolute top-16 right-1/4">
           <svg
-            width="80"
-            height="80"
+            className="w-20"
             viewBox="0 0 124 125"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -45,10 +44,9 @@ const Company = ({ reference, number, company }) => {
             />
           </svg>
         </div>
-        <div className="hidden absolute top-1/2 right-0">
+        <div className="absolute top-1/2 right-0">
           <svg
-            width="120"
-            height="120"
+            className="w-8 lg:w-24"
             viewBox="0 0 158 158"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -62,10 +60,9 @@ const Company = ({ reference, number, company }) => {
             />
           </svg>
         </div>
-        <div className="hidden absolute bottom-0 left-0">
+        <div className="absolute top-full left-0 z-0">
           <svg
-            width="88"
-            height="113"
+            className="w-16"
             viewBox="0 0 88 113"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
