@@ -9,22 +9,24 @@ const Company = ({ reference, number, company }) => {
         </h1>
         <div className="mt-8">
           {company.map((item, i) => (
-            <div key={i} className="grid grid-cols-5 gap-4">
-              <div className="col-span-2 p-8 flex flex-col justify-center items-center">
-                <Image
-                  src={`/data/${number}/logo_${i + 1}.png`}
-                  height="200"
-                  width="200"
-                  alt=""
-                />
+            <div key={i} className="grid grid-cols-1 lg:grid-cols-5 gap-4">
+              <div className="lg:col-span-2 flex flex-col justify-center items-center">
+                <div className="relative h-48" style={{ aspectRatio: "1/1" }}>
+                  <Image
+                    src={`/data/${number}/logo_${i + 1}.png`}
+                    layout="fill"
+                    objectFit="contain"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div className="col-span-3 flex flex-col justify-center">
+              <div className="lg:col-span-3 flex flex-col justify-center text-center lg:text-left">
                 <h2 className="text-4xl font-bold">{item.name}</h2>
                 <div style={{ textIndent: "1em" }} className="mt-2 text-lg">
                   {item.description}
                 </div>
               </div>
-              <div className="col-span-5 relative">
+              <div className="lg:col-span-5 relative">
                 <div className="bg-gray-200 w-full h-72 rounded z-30"></div>
               </div>
             </div>
