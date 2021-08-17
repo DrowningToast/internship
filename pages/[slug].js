@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
 import Hero from "../components/Personal/Hero";
 import Categories from "../components/Personal/Categories";
 import Articles from "../components/Personal/Articles";
@@ -37,8 +39,20 @@ const Blog = (props) => {
       </Head>
 
       <main>
-        <div className="text-gray-400 font-light text-xl px-8 py-4 text-right">
-          {props.major}
+        <div className="text-gray-400 font-light text-xl px-8 py-2 flex flex-row justify-between items-center">
+          <div>
+            <Link href="/" passHref>
+              <Image
+                src="/main/logo/SWU_Prasanmit_Demonstration_Sec_TH_Color.png"
+                alt=""
+                height="50"
+                width="150"
+                objectFit="contain"
+                className="cursor-pointer"
+              />
+            </Link>
+          </div>
+          <div>{props.major}</div>
         </div>
         <Hero
           name={props.name}
