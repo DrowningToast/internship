@@ -3,11 +3,11 @@ import Image from "next/image";
 const Hero = ({ name, position, companyName, number }) => {
   return (
     <div>
-      <div className="grid grid-cols-2 sm:px-6 lg:px-8">
+      <div className="flex flex-col-reverse md:grid grid-cols-2 px-6 lg:px-8 mb-8">
         <div className="flex flex-col items-center justify-center">
           <h1 className="font-semibold text-4xl my-2">{name}</h1>
           <h3 className="font-medium text-2xl my-2">{position}</h3>
-          <div className="px-8 py-4 my-2 text-2xl font-bold text-white bg-purple-500 rounded-full">
+          <div className="px-8 py-2 my-2 text-2xl font-bold text-white bg-purple-500 rounded-full">
             {companyName}
           </div>
         </div>
@@ -20,7 +20,7 @@ const Hero = ({ name, position, companyName, number }) => {
               height={800}
               objectFit="cover"
             />
-            <div className="absolute top-32 left-32">
+            <div className="hidden absolute top-32 left-32">
               <svg
                 width="120"
                 height="120"
@@ -37,7 +37,7 @@ const Hero = ({ name, position, companyName, number }) => {
                 />
               </svg>
             </div>
-            <div className="absolute top-16 right-16">
+            <div className="hidden absolute top-16 right-16">
               <svg
                 width="70"
                 height="70"
@@ -57,7 +57,7 @@ const Hero = ({ name, position, companyName, number }) => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto">
+      <div className="container mx-auto px-6">
         <hr />
       </div>
     </div>

@@ -3,11 +3,13 @@ import Image from "next/image";
 const Company = ({ reference, number, company }) => {
   return (
     <div className="relative" ref={reference}>
-      <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 py-8">
-        <h1 className="text-2xl font-medium text-gray-500">Company</h1>
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8">
+        <h1 className="text-2xl font-medium text-gray-500 text-center md:text-left">
+          Company
+        </h1>
         <div className="mt-8">
           {company.map((item, i) => (
-            <div key={i} className="grid grid-cols-5">
+            <div key={i} className="grid grid-cols-5 gap-4">
               <div className="col-span-2 p-8 flex flex-col justify-center items-center">
                 <Image
                   src={`/data/${number}/logo_${i + 1}.png`}
@@ -18,7 +20,7 @@ const Company = ({ reference, number, company }) => {
               </div>
               <div className="col-span-3 flex flex-col justify-center">
                 <h2 className="text-2xl">{item.name}</h2>
-                <div style={{ textIndent: "1em" }} className="mt-4">
+                <div style={{ textIndent: "1em" }} className="mt-2">
                   {item.description}
                 </div>
               </div>
@@ -28,7 +30,7 @@ const Company = ({ reference, number, company }) => {
             </div>
           ))}
         </div>
-        <div className="absolute top-16 right-1/4">
+        <div className="hidden absolute top-16 right-1/4">
           <svg
             width="80"
             height="80"
@@ -43,7 +45,7 @@ const Company = ({ reference, number, company }) => {
             />
           </svg>
         </div>
-        <div className="absolute top-1/2 right-0">
+        <div className="hidden absolute top-1/2 right-0">
           <svg
             width="120"
             height="120"
@@ -60,7 +62,7 @@ const Company = ({ reference, number, company }) => {
             />
           </svg>
         </div>
-        <div className="absolute bottom-0 left-0">
+        <div className="hidden absolute bottom-0 left-0">
           <svg
             width="88"
             height="113"

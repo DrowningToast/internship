@@ -1,8 +1,10 @@
 const Articles = ({ reference, articles }) => {
   return (
     <div className="relative" ref={reference}>
-      <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 py-8">
-        <h1 className="text-2xl font-medium text-gray-500">Articles</h1>
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8">
+        <h1 className="text-2xl font-medium text-gray-500 text-center md:text-left">
+          Articles
+        </h1>
         <div className="mt-8">
           {articles.map((article, i) => (
             <div key={i} style={{ textIndent: "1em" }} className="my-4">
@@ -11,7 +13,7 @@ const Articles = ({ reference, articles }) => {
           ))}
         </div>
       </div>
-      <div className="absolute top-0">
+      <div className="hidden absolute top-0">
         <svg
           width="72"
           height="143"
@@ -22,7 +24,7 @@ const Articles = ({ reference, articles }) => {
           <circle cx="0.5" cy="71.5" r="59" stroke="#5587E3" strokeWidth="25" />
         </svg>
       </div>
-      <div className="absolute top-1/2 right-0 transform -translate-y-1/2">
+      <div className="hidden absolute top-1/2 right-0 transform -translate-y-1/2">
         <svg
           width="44"
           height="88"

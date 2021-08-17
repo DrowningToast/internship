@@ -52,7 +52,9 @@ const Blog = (props) => {
               />
             </Link>
           </div>
-          <div>{props.major}</div>
+          <div className="text-xs md:text-base">
+            {props.major.split("-")[1]}
+          </div>
         </div>
         <Hero
           name={props.name}

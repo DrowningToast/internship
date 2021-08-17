@@ -1,6 +1,6 @@
 const Contact = ({ reference, email }) => {
   return (
-    <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 py-8" ref={reference}>
+    <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8" ref={reference}>
       <div className="text-center">
         <h1 className="bg-purple-500 inline-block px-8 py-2 text-white font-bold text-2xl rounded-full">
           Contact
