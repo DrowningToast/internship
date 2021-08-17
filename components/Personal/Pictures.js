@@ -91,8 +91,8 @@ const ImageList = ({ number, gallerySize }) => {
       break;
     case 4:
       return (
-        <div className="grid grid-cols-3 gap-4">
-          <div className="relative col-span-2 flex shadow-lg">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <div className="relative lg:col-span-2 flex shadow-lg h-56 lg:h-auto">
             <Image
               src={`/data/${number}/image_1.JPG`}
               alt=""
@@ -101,7 +101,7 @@ const ImageList = ({ number, gallerySize }) => {
             />
           </div>
           <div
-            className="relative col-span-1 flex shadow-lg"
+            className="relative lg:col-span-1 flex shadow-lg"
             style={{ aspectRatio: "4/3" }}
           >
             <Image
@@ -112,7 +112,7 @@ const ImageList = ({ number, gallerySize }) => {
             />
           </div>
           <div
-            className="relative col-span-1 flex shadow-lg"
+            className="relative lg:col-span-1 flex shadow-lg"
             style={{ aspectRatio: "4/3" }}
           >
             <Image
@@ -122,7 +122,7 @@ const ImageList = ({ number, gallerySize }) => {
               objectFit="cover"
             />
           </div>
-          <div className="relative col-span-2 flex shadow-lg">
+          <div className="relative lg:col-span-2 flex shadow-lg h-56 lg:h-auto">
             <Image
               src={`/data/${number}/image_4.JPG`}
               alt=""
