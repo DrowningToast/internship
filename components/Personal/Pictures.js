@@ -3,7 +3,7 @@ import Image from "next/image";
 const Pictures = ({ number, gallerySize }) => {
   return (
     <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 py-8">
-      <h1 className="text-2xl font-medium text-gray-500">Articles</h1>
+      <h1 className="text-2xl font-medium text-gray-500">Pictures</h1>
       <div className="mt-8 flex flex-row justify-between">
         <Image
           src={`/data/${number}/image_1.JPG`}
