@@ -17,14 +17,12 @@ const Portrait = ({
   const [shown, setShown] = useState(false);
   const [selected, setSelected] = useState(0);
   const element = useRef();
-  const [width, setWidth] = useState(0);
   const [isReversed, setIsReversed] = useState(false);
 
   const router = useRouter();
 
   const updateReversed = () => {
     const width = element.current.getBoundingClientRect().width;
-    setWidth(width);
     const numberInRow = Math.round(containerWidth / width);
     const pos = (i + 1) % numberInRow;
 

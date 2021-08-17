@@ -126,7 +126,7 @@ const Categories = () => {
 
   useEffect(() => {
     info.forEach((category) => {
-      router.prefetch(category.link);
+      router.prefetch(`/categories/${category.link}`);
     });
   }, []);
 
