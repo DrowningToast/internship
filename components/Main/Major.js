@@ -25,8 +25,8 @@ const Major = () => {
     <AnimateSharedLayout>
       <motion.div
         layout
-        style={{ height: "90vh" }}
-        className={` my-24 w-full flex flex-col justify-around xl:justify-between ${
+        style={{ height: "100vh" }}
+        className={`py-16 w-full flex flex-col justify-around xl:justify-between section ${
           selected === null
             ? "gap-y-4 md:gap-y-8 lg:gap-y-20 xl:gap-y-28"
             : "xl:gap-y-8 "

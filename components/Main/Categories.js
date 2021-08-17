@@ -32,7 +32,7 @@ const Category = ({
           router.push(`/categories/${link}`);
         }, 1000 * (delayA + delayB + delayC + delay));
       }}
-      className={`w-full h-1/5 xl:h-full subCategory ${
+      className={`w-full h-1/5 xl:h-full subCategory cursor-pointer ${
         selected === i ? "" : "relative"
       }`}
     >
@@ -131,7 +131,7 @@ const Categories = () => {
   }, []);
 
   return (
-    <div className="h-screen w-full grid categories place-items-center items-start overflow-hidden">
+    <div className="h-screen w-full grid categories place-items-center items-start overflow-hidden section">
       <div className="h-full w-full flex justify-center items-center">
         <h1
           style={{ color: "#656565" }}

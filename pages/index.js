@@ -18,11 +18,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="min-h-screen w-full ">
+      <main className="min-h-screen scroll-behaviour-container">
         <Hero />
         <About />
         <AboutInternship />
-        <Major></Major>
+        <Major />
         <Categories />
       </main>
 

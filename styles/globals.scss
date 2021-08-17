@@ -25,6 +25,16 @@ a {
   background-size: cover;
 }
 
+.scroll-behaviour-container {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.section {
+  scroll-snap-align: start;
+}
+
 .background {
   position: absolute;
   top: 0;
