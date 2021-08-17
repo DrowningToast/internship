@@ -11,14 +11,22 @@ export async function getStaticProps() {
 }
 
 export async function getStaticPaths() {
+  const paths = [];
+  // Generate all path possible from json file
+  for (const [key, value] of Object.entries(meta.members)) {
+    paths.push(key.toLowerCase());
+  }
+
+  console.log(paths);
+
   return {
-    paths: [
-      {
+    paths: paths.map((path) => {
+      return {
         params: {
-          name: "supratouch",
+          name: path,
         },
-      },
-    ],
+      };
+    }),
     fallback: false,
   };
 }

@@ -1,23 +1,53 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useRouter } from "next/router";
 
-const Portrait = ({ callsign, type, url, id, i, company, color, route }) => {
+const Portrait = ({
+  callsign,
+  type,
+  url,
+  id,
+  i,
+  company,
+  color,
+  route,
+  containerWidth,
+}) => {
   const [shown, setShown] = useState(false);
   const [selected, setSelected] = useState(0);
+  const element = useRef();
+  const [width, setWidth] = useState(0);
+  const [isReversed, setIsReversed] = useState(false);
+
+  const router = useRouter();
+
+  const updateReversed = () => {
+    const width = element.current.getBoundingClientRect().width;
+    setWidth(width);
+    const numberInRow = Math.round(containerWidth / width);
+    const pos = (i + 1) % numberInRow;
+
+    if (!pos) setIsReversed(true);
+  };
+
+  useEffect(() => {
+    if (!window || !element.current || !containerWidth) return;
+    window?.removeEventListener("resize", updateReversed);
+    window?.addEventListener("resize", updateReversed);
+    updateReversed();
+  }, [element.current, containerWidth]);
 
   const handlePrimaryClick = () => {
-    console.log("click");
     setShown(true);
   };
 
   const handleSecondaryClick = () => {
-    console.log("click2");
+    router.push(`${route}`);
     // setShown(true)
   };
 
   const handleCanceling = () => {
-    console.log("click3");
     setShown(false);
   };
 
@@ -27,7 +57,10 @@ const Portrait = ({ callsign, type, url, id, i, company, color, route }) => {
   };
 
   return (
-    <div className="grid portrait md:h-72 lg:h-96 place-items-center w-full h-full">
+    <div
+      ref={element}
+      className="grid portrait md:h-72 lg:h-96 place-items-center gap-y-4 md:gap-y-0 w-full h-full"
+    >
       <AnimatePresence exitBeforeEnter>
         {shown && (
           <motion.div
@@ -36,21 +69,21 @@ const Portrait = ({ callsign, type, url, id, i, company, color, route }) => {
             exit={{ opacity: 0, transition: { duration: 0.2 } }}
             onClick={handleCanceling}
             className={`inset-0 absolute block bg-gray-800 ${
-              shown ? "z-30" : ""
+              shown ? "z-30 cursor-pointer" : ""
             }`}
           ></motion.div>
         )}
       </AnimatePresence>
       <div
         onClick={handlePrimaryClick}
-        className="w-3/4 square max-x-lg grid place-items-center relative "
+        className="w-2/3 md:w-3/4 square max-x-lg grid place-items-center relative "
       >
         <Image
           src={url}
           layout="fill"
           objectFit="cover"
           objectPosition="center"
-          className={`square w-full rounded-full ${
+          className={`square md:w-full rounded-full ${
             shown ? "z-50" : "z-20"
           } relative`}
         ></Image>
@@ -62,12 +95,13 @@ const Portrait = ({ callsign, type, url, id, i, company, color, route }) => {
             backgroundColor: shown ? "#ffffff" : "",
           }}
           style={{ borderColor: color.tertiary }}
-          className={`absolute inset-0 rounded-full align-middle text-center grid place-items-center ${
+          className={`absolute cursor-pointer inset-0 rounded-full align-middle text-center grid place-items-center ${
             shown ? "border-0" : "border-4"
           } ${shown ? "z-50" : "z-20"}`}
         >
           {shown && (
             <motion.h1
+              onClick={handleSecondaryClick}
               initial={{ scale: 0.35, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               style={{ color: color.primary }}
@@ -81,15 +115,17 @@ const Portrait = ({ callsign, type, url, id, i, company, color, route }) => {
           style={{ backgroundColor: color.tertiary }}
           animate={{ width: shown ? "110%" : "0%" }}
           layout
-          className={`absolute top-0 bottom-0 left-1/2 ${
-            shown ? "z-40" : "z-10"
-          }`}
+          className={`absolute top-0 bottom-0 ${
+            isReversed ? "right-1/2" : "left-1/2"
+          } ${shown ? "z-40" : "z-10"}`}
         >
           {shown && (
             <motion.div
               style={{ backgroundColor: color.tertiary }}
               layout
-              className="rounded-full absolute -right-1/2 top-0 bottom-0 w-full h-full grid portraitCompany place-items-center py-2 pr-4 md:pr-3 lg:py-6 lg:pr-10 lg:gap-y-2 z-10"
+              className={`rounded-full absolute ${
+                isReversed ? "-left-1/2" : "-right-1/2"
+              } top-0 bottom-0 w-full h-full grid portraitCompany place-items-center py-2 pr-4 md:pr-3 lg:py-6 lg:pr-10 lg:gap-y-2 z-10`}
             >
               <div
                 className={`h-full square overflow-hidden rounded-full relative`}
