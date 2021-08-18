@@ -17,6 +17,7 @@ const BackgroundVideo = ({ category }) => {
             src="/assets/LandingPageCategoryProgramming.webm"
             className="h-full w-full"
             autoPlay
+            playsInline
             muted
             loop
           ></video>
@@ -30,6 +31,7 @@ const BackgroundVideo = ({ category }) => {
             src="/assets/LandingPageCategoryProduction.webm"
             className="h-full w-full"
             autoPlay
+            playsInline
             muted
             loop
           ></video>
@@ -43,6 +45,7 @@ const BackgroundVideo = ({ category }) => {
             src="/assets/LandingPageCategoryDesign.webm"
             className="h-full w-full"
             autoPlay
+            playsInline
             muted
             loop
           ></video>
@@ -56,6 +59,7 @@ const BackgroundVideo = ({ category }) => {
             src="/assets/LandingPageCategoryBusiness.webm"
             className="h-full w-full"
             autoPlay
+            playsInline
             muted
             loop
           ></video>
@@ -69,6 +73,7 @@ const BackgroundVideo = ({ category }) => {
             src="/assets/LandingPageCategoryGameDevelopment.webm"
             className="h-full w-full"
             autoPlay
+            playsInline
             muted
             loop
           ></video>

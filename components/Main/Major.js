@@ -186,6 +186,7 @@ const Major = () => {
             src="/assets/LandingPageMajor.webm"
             className="h-full w-full"
             autoPlay
+            playsInline
             muted
             loop
           ></video>

@@ -104,6 +104,7 @@ const AboutInternship = () => {
             src="/assets/LandingPageInternshipInfo2.webm"
             className="h-full w-full"
             autoPlay
+            playsInline
             muted
             loop
           ></video>

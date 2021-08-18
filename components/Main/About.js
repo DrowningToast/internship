@@ -141,6 +141,7 @@ const About = ({ reference }) => {
             src="/assets/LandingPageInternshipInfo1.webm"
             className="h-full w-full"
             autoPlay
+            playsInline
             muted
             loop
           ></video>

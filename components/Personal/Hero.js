@@ -41,6 +41,7 @@ const Hero = ({ name, position, companyName, number, display }) => {
             src="/assets/DTrooperCircle1.webm"
             className="h-full w-full"
             autoPlay
+            playsInline
             muted
             loop
           ></video>
@@ -80,6 +81,7 @@ const Hero = ({ name, position, companyName, number, display }) => {
             src="/assets/DTrooperRectangle1.webm"
             className="h-full w-full"
             autoPlay
+            playsInline
             muted
             loop
           ></video>
@@ -119,6 +121,7 @@ const Hero = ({ name, position, companyName, number, display }) => {
             src="/assets/DTrooperTriangle1.webm"
             className="h-full w-full"
             autoPlay
+            playsInline
             muted
             loop
           ></video>

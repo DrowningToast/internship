@@ -9,6 +9,7 @@ const VideoComponent = ({ display }) => {
           src="/assets/DTrooperCircle2.webm"
           className="w-full"
           autoPlay
+          playsInline
           muted
           loop
         ></video>
@@ -24,6 +25,7 @@ const VideoComponent = ({ display }) => {
           src="/assets/DTrooperRectangle1.webm"
           className="w-full"
           autoPlay
+          playsInline
           muted
           loop
         ></video>
@@ -39,6 +41,7 @@ const VideoComponent = ({ display }) => {
           src="/assets/DTrooperTriangle1.webm"
           className="w-full"
           autoPlay
+          playsInline
           muted
           loop
         ></video>
