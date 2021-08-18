@@ -178,8 +178,8 @@ a {
 @media (min-width: 1024px) {
   .react-pdf__Page__canvas {
     margin: 0 auto;
-    width: 50% !important;
-    height: 50% !important;
+    width: auto !important;
+    height: auto !important;
   }
 }
 
