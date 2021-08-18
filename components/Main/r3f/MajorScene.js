@@ -19,7 +19,6 @@ const MajorScene = ({ selected, id, className, iteration }) => {
 
         id={id}
         ref={ref}
-        className="square"
         camera={{ position: [0, 0, 13] }}
       >
         <ambientLight intensity={0.6} />

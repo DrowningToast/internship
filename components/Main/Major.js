@@ -61,14 +61,9 @@ const Major = () => {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { delay: 0.2 } }}
-                className="inset-0 absolute grid place-items-center"
+                className="absolute h-full"
               >
-                <Scene
-                  className="square"
-                  selected={selected}
-                  id="it"
-                  iteration={iteration}
-                />
+                <Scene selected={selected} id="it" iteration={iteration} />
               </motion.div>
             )}
           </motion.div>
@@ -135,7 +130,7 @@ const Major = () => {
             </motion.div>
           )}
 
-          <motion.div layout className="square w-3/4 md:w-3/4 lg:w-2/3">
+          <motion.div layout className="w-full">
             <Scene selected={selected} />
           </motion.div>
         </motion.div>
@@ -169,14 +164,9 @@ const Major = () => {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { delay: 0.2 } }}
-                className="inset-0 absolute grid place-items-center"
+                className="absolute h-full"
               >
-                <Scene
-                  className="square"
-                  selected={selected}
-                  id="mt"
-                  iteration={iteration}
-                />
+                <Scene selected={selected} id="mt" iteration={iteration} />
               </motion.div>
             )}
           </motion.div>
@@ -186,7 +176,7 @@ const Major = () => {
             src="/assets/LandingPageMajor.webm"
             className="h-full w-full"
             autoPlay
-            playsInline
+            playsinline
             muted
             loop
           ></video>

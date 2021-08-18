@@ -62,9 +62,12 @@ const Category = ({
                   opacity: selected === i ? 0 : 1,
                   transition: { duration: delay },
                 }}
-                className="square w-5/6 mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center"
+                className="w-5/6 mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center"
+                style={{ paddingTop: "100%" }}
               >
-                <CategoryScene selected={link} />
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-full w-full">
+                  <CategoryScene selected={link} />
+                </div>
               </motion.div>
             </motion.div>
           )}
