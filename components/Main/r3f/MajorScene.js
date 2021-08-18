@@ -10,19 +10,7 @@ const MajorScene = ({ selected, id, className, iteration }) => {
   useEffect(() => {
     if (!ref?.current) return;
     ref.current.className = "w-full h-full";
-    let container = ref.current.parentNode.parentNode.parentNode;
-    if (id) resizeObserver.observe(container);
   }, []);
-
-  const resizeObserver = new ResizeObserver((target) => {
-    let height = target[0].devicePixelContentBoxSize[0].blockSize;
-    let canvas = document.getElementById(id)?.childNodes[0];
-    if (!canvas) return;
-    if (!ref.current) return;
-    canvas.height = height;
-    canvas.style.height = height;
-    window.dispatchEvent(new MouseEvent("scroll"));
-  });
 
   return (
     <>
