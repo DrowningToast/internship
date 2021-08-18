@@ -60,7 +60,7 @@ const Company = ({ reference, number, company, display }) => {
           {company.map((item, i) => (
             <div key={i} className="grid grid-cols-1 lg:grid-cols-5 gap-4">
               <div className="lg:col-span-2 flex flex-col justify-center items-center">
-                <div className="relative h-48" style={{ aspectRatio: "1/1" }}>
+                <div className="relative h-48 w-48">
                   <Image
                     src={`/data/${number}/logo_${i + 1}.png`}
                     layout="fill"

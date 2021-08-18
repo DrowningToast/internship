@@ -10,7 +10,7 @@ const ImageList = ({ number, gallerySize }) => {
         <div className="block">
           <div
             className="relative flex shadow-lg"
-            style={{ aspectRatio: "16/9" }}
+            style={{ paddingTop: "56.25%" }}
           >
             <Image
               src={`/data/${number}/image_1.JPG`}
@@ -27,7 +27,7 @@ const ImageList = ({ number, gallerySize }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
           <div
             className="relative flex shadow-lg"
-            style={{ aspectRatio: "4/3" }}
+            style={{ paddingTop: "75%" }}
           >
             <Image
               src={`/data/${number}/image_1.JPG`}
@@ -38,7 +38,7 @@ const ImageList = ({ number, gallerySize }) => {
           </div>
           <div
             className="relative flex shadow-lg"
-            style={{ aspectRatio: "4/3" }}
+            style={{ paddingTop: "75%" }}
           >
             <Image
               src={`/data/${number}/image_2.JPG`}
@@ -55,7 +55,7 @@ const ImageList = ({ number, gallerySize }) => {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 lg:gap-16">
           <div
             className="relative flex shadow-lg"
-            style={{ aspectRatio: "9/16" }}
+            style={{ paddingTop: "177%" }}
           >
             <Image
               src={`/data/${number}/image_1.JPG`}
@@ -66,7 +66,7 @@ const ImageList = ({ number, gallerySize }) => {
           </div>
           <div
             className="relative flex shadow-lg"
-            style={{ aspectRatio: "9/16" }}
+            style={{ paddingTop: "177%" }}
           >
             <Image
               src={`/data/${number}/image_2.JPG`}
@@ -77,7 +77,7 @@ const ImageList = ({ number, gallerySize }) => {
           </div>
           <div
             className="relative col-span-2 md:col-span-1 flex shadow-lg"
-            style={{ aspectRatio: "9/16" }}
+            style={{ paddingTop: "177%" }}
           >
             <Image
               src={`/data/${number}/image_3.JPG`}
@@ -102,7 +102,7 @@ const ImageList = ({ number, gallerySize }) => {
           </div>
           <div
             className="relative lg:col-span-1 flex shadow-lg"
-            style={{ aspectRatio: "4/3" }}
+            style={{ paddingTop: "75%" }}
           >
             <Image
               src={`/data/${number}/image_2.JPG`}
@@ -113,7 +113,7 @@ const ImageList = ({ number, gallerySize }) => {
           </div>
           <div
             className="relative lg:col-span-1 flex shadow-lg"
-            style={{ aspectRatio: "4/3" }}
+            style={{ paddingTop: "75%" }}
           >
             <Image
               src={`/data/${number}/image_3.JPG`}
@@ -135,8 +135,11 @@ const ImageList = ({ number, gallerySize }) => {
       break;
     case 5:
       return (
-        <div className="grid grid-cols-3 grid-rows-2 gap-4">
-          <div className="relative flex shadow-lg">
+        <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-4">
+          <div
+            className="relative flex shadow-lg"
+            style={{ paddingTop: "56.25%" }}
+          >
             <Image
               src={`/data/${number}/image_1.JPG`}
               alt=""
@@ -144,7 +147,10 @@ const ImageList = ({ number, gallerySize }) => {
               objectFit="cover"
             />
           </div>
-          <div className="relative flex shadow-lg">
+          <div
+            className="relative flex shadow-lg"
+            style={{ paddingTop: "56.25%" }}
+          >
             <Image
               src={`/data/${number}/image_2.JPG`}
               alt=""
@@ -153,8 +159,8 @@ const ImageList = ({ number, gallerySize }) => {
             />
           </div>
           <div
-            className="relative flex shadow-lg row-span-2"
-            style={{ aspectRatio: "9/16" }}
+            className="relative flex shadow-lg lg:row-span-2"
+            style={{ paddingTop: "177%" }}
           >
             <Image
               src={`/data/${number}/image_3.JPG`}
@@ -163,7 +169,10 @@ const ImageList = ({ number, gallerySize }) => {
               objectFit="cover"
             />
           </div>
-          <div className="relative flex shadow-lg">
+          <div
+            className="relative flex shadow-lg"
+            style={{ paddingTop: "56.25%" }}
+          >
             <Image
               src={`/data/${number}/image_4.JPG`}
               alt=""
@@ -171,7 +180,10 @@ const ImageList = ({ number, gallerySize }) => {
               objectFit="cover"
             />
           </div>
-          <div className="relative flex shadow-lg">
+          <div
+            className="relative flex shadow-lg"
+            style={{ paddingTop: "56.25%" }}
+          >
             <Image
               src={`/data/${number}/image_5.JPG`}
               alt=""
@@ -189,7 +201,7 @@ const ImageList = ({ number, gallerySize }) => {
         images.push(
           <div
             className="relative flex shadow-lg"
-            style={{ aspectRatio: "4/3" }}
+            style={{ paddingTop: "75%" }}
           >
             <Image
               src={`/data/${number}/image_${index}.JPG`}
@@ -210,9 +222,7 @@ const ImageList = ({ number, gallerySize }) => {
 };
 
 const VideoList = () => {
-  return (
-    <div className="mt-4 shadow-lg px-8 py-4 text-center relative bg-white"></div>
-  );
+  return <div></div>;
 };
 
 const Pictures = ({ reference, number, gallerySize, media }) => {

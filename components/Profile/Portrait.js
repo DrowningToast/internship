@@ -80,18 +80,20 @@ const Portrait = ({
       </AnimatePresence>
       <div
         onClick={handlePrimaryClick}
-        className="w-2/3 md:w-3/4 square max-x-lg grid place-items-center relative "
+        className="w-2/3 md:w-3/4 max-x-lg grid place-items-center relative "
       >
-        <Image
-          src={url}
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-          className={`square md:w-full rounded-full ${
-            shown ? "z-50" : "z-20"
-          } relative`}
-          alt=""
-        />
+        <div style={{ paddingTop: "100%" }}>
+          <Image
+            src={url}
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center"
+            className={`md:w-full rounded-full ${
+              shown ? "z-50" : "z-20"
+            } relative`}
+            alt=""
+          />
+        </div>
         <motion.div
           layout
           whileHover={{ scale: !shown ? 1.225 : 1 }}
@@ -100,7 +102,7 @@ const Portrait = ({
             backgroundColor: shown ? "#ffffff" : "",
           }}
           style={{ borderColor: color.tertiary }}
-          className={`absolute cursor-pointer inset-0 rounded-full align-middle text-center grid place-items-center ${
+          className={`absolute cursor-pointer inset-0 rounded-full text-center flex flex-col justify-center items-center ${
             shown ? "border-0" : "border-4"
           } ${shown ? "z-50" : "z-20"}`}
         >
@@ -110,7 +112,7 @@ const Portrait = ({
               initial={{ scale: 0.35, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               style={{ color: color.primary }}
-              className="text-4xl font-bold"
+              className="text-2xl font-bold"
             >
               View more
             </motion.h1>
@@ -118,7 +120,7 @@ const Portrait = ({
         </motion.div>
         <motion.div
           style={{ backgroundColor: color.tertiary }}
-          animate={{ width: shown ? "110%" : "0%" }}
+          animate={{ width: shown ? "120%" : "0%" }}
           layout
           className={`absolute top-0 bottom-0 ${
             isReversed ? "right-1/2" : "left-1/2"
@@ -130,28 +132,27 @@ const Portrait = ({
               layout
               className={`rounded-full absolute ${
                 isReversed ? "-left-1/2" : "-right-1/2"
-              } top-0 bottom-0 w-full h-full grid portraitCompany place-items-center py-2 pr-4 md:pr-3 lg:py-6 lg:pr-10 lg:gap-y-2 z-10`}
+              } top-0 w-full h-full flex flex-col justify-center items-center py-2 pr-4 z-10`}
             >
-              <div
-                className={`h-full square overflow-hidden rounded-full relative`}
-              >
-                <Image
-                  src={`/data/${id}/logo_${selected + 1}.png`}
-                  layout="fill"
-                  objectFit="contain"
-                  objectPosition="center"
-                  alt=""
-                />
-                <div className=""></div>
+              <div className={`overflow-hidden rounded-full w-2/5 relative`}>
+                <div style={{ paddingTop: "100%" }}>
+                  <Image
+                    src={`/data/${id}/logo_${selected + 1}.png`}
+                    layout="fill"
+                    objectFit="contain"
+                    objectPosition="center"
+                    alt=""
+                  />
+                </div>
               </div>
               <div
-                className={`w-full h-full ${
+                className={`w-full ${
                   company[selected].name.length < 10
                     ? "text-lg lg:text-2xl"
                     : "text-xs lg:text-base"
                 } text-center ${
                   color.tertiary == "#FFEB94" ? "text-black" : "text-white"
-                } align-middle grid place-items-center`}
+                } `}
               >
                 {company[selected].name}
               </div>

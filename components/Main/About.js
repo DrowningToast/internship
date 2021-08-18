@@ -20,23 +20,22 @@ const About = ({ reference }) => {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center lg:items-end">
-          <div
-            style={{ aspectRatio: "1/1" }}
-            className="relative w-2/3 sm:w-1/2 md:w-2/3 lg:w-3/4 xl:w-2/3"
-          >
-            <Image
-              className="object-contain	shadow-md z-20 rounded-full lg:w-48"
-              src="/main/about.jpg"
-              layout="fill"
-              alt=""
-            />
+          <div className="relative w-2/3 sm:w-1/2 md:w-2/3 lg:w-3/4 xl:w-2/3">
+            <div style={{ paddingTop: "100%" }}>
+              <Image
+                className="object-contain	shadow-md z-20 rounded-full lg:w-48"
+                src="/main/about.jpg"
+                layout="fill"
+                alt=""
+              />
+            </div>
             <div
               style={{ backgroundColor: "#CF4450" }}
-              className="w-1/2 h-1/2 absolute top-1/2 left-1/2 transform -translate-x-full z-10"
+              className="w-1/2 h-1/2 absolute bottom-0 left-0 z-10"
             ></div>
             <div
               style={{ backgroundColor: "#F6D854" }}
-              className="w-1/2 h-1/2 absolute left-1/2  z-10"
+              className="w-1/2 h-1/2 absolute top-0 right-0 z-10"
             ></div>
             <div className="absolute -top-8 -left-8 lg:-top-16 lg:-left-16 z-0">
               <svg

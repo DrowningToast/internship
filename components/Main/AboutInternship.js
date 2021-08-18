@@ -3,25 +3,25 @@ import Image from "next/image";
 const AboutInternship = () => {
   return (
     <div className="relative">
-      <div className="min-h-screen container mx-auto px-6 lg:px-8 py-8 section flex flex-col-reverse gap-8 justify-center lg:grid grid-cols-2">
-        <div className="flex flex-col justify-center items-center lg:items-start">
-          <div
-            style={{ aspectRatio: "1/1" }}
-            className="relative w-2/3 sm:w-1/2 md:w-2/3 lg:w-3/4 xl:w-2/3"
-          >
-            <Image
-              className="object-contain	shadow-md z-10 rounded-full"
-              src="/main/aboutintern.png"
-              layout="fill"
-              alt=""
-            />
+      <div className="min-h-screen container mx-auto px-6 lg:px-8 py-8 section flex flex-col-reverse justify-center lg:grid grid-cols-2">
+        <div className="flex flex-col justify-center items-center lg:items-start my-2">
+          <div className="relative w-2/3 sm:w-1/2 md:w-2/3 lg:w-3/4 xl:w-2/3">
+            <div style={{ paddingTop: "100%" }}>
+              <Image
+                className="shadow-md z-20 rounded-full"
+                src="/main/aboutintern.png"
+                layout="fill"
+                objectFit="cover"
+                alt=""
+              />
+            </div>
             <div
               style={{ backgroundColor: "#CF4450" }}
-              className="w-1/2 h-1/2 absolute top-1/2 left-1/2 transform -translate-x-full"
+              className="w-1/2 h-1/2 absolute bottom-0 left-0 z-10"
             ></div>
             <div
               style={{ backgroundColor: "#F6D854" }}
-              className="w-1/2 h-1/2 absolute left-1/2 transform "
+              className="w-1/2 h-1/2 absolute top-0 right-0 z-10"
             ></div>
             <div className="absolute left-0 -bottom-3 transform translate-y-full text-center lg:text-left">
               <h2 className="font-semibold text-lg md:text-2xl lg:text-4xl">
@@ -33,7 +33,7 @@ const AboutInternship = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center text-right">
+        <div className="flex flex-col justify-center items-center text-right my-2">
           <div className="text-center lg:text-right">
             <h1 className="text-4xl lg:text-6xl font-bold mb-4">การฝึกงาน</h1>
             <p className="md:text-lg lg:text-xl xl:text-2xl">

@@ -138,7 +138,7 @@ const Categories = ({ reference }) => {
       <div className="h-full w-full flex justify-center items-center">
         <h1
           style={{ color: "#656565" }}
-          className="text-center text-3xl lg:text-7xl uppercase title mx-auto"
+          className="text-center text-3xl lg:text-7xl uppercase title mx-auto px-8"
         >
           Categories
         </h1>
