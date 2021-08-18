@@ -21,7 +21,7 @@ const InternBook = ({ number }) => {
 
   return (
     <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8 flex flex-col justify-center items-center">
-      <div>
+      <div className="p-4 shadow-lg">
         <Document
           file={`/data/${number}/${number}.pdf`}
           onLoadSuccess={onDocumentLoadSuccess}
