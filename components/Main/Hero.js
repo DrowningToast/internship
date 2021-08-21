@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const delayA = 2.35;
-const delayB = 1.25;
+const delayB = 2;
 const delayC = 2;
 const delayD = 2;
 
@@ -140,6 +140,7 @@ const Hero = ({ scrollToAbout }) => {
             <motion.h1
               style={{ color: "#CF4450" }}
               className="font-bold text-9xl z-100 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              initial={{ opacity: 0 }}
               animate={{
                 opacity: [0, 1, 1, 0],
                 transition: {
@@ -181,7 +182,7 @@ const Hero = ({ scrollToAbout }) => {
               clipPath: "inset(0% 100% 0% 0)",
               transition: {
                 delay: delayA + delayB * 2,
-                duration: delayB / 5,
+                duration: delayB / 3,
               },
             }}
             className="w-full h-full absolute inset-0 bg-white z-80"
@@ -189,6 +190,7 @@ const Hero = ({ scrollToAbout }) => {
             <motion.h1
               style={{ color: "#F6D854" }}
               className="font-bold text-9xl z-100 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              initial={{ opacity: 0 }}
               animate={{
                 opacity: [0, 1, 1, 0],
                 transition: {
@@ -217,7 +219,7 @@ const Hero = ({ scrollToAbout }) => {
               y: "-50%",
               transition: {
                 delay: delayA + delayB * 2,
-                duration: delayB / 5,
+                duration: delayB / 3,
               },
             }}
             className="rounded-full absolute top-1/2 z-100"
@@ -226,16 +228,19 @@ const Hero = ({ scrollToAbout }) => {
           <motion.h1
             style={{ color: "#477BD3" }}
             className="font-bold text-9xl z-90 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            initial={{
+              opacity: 0,
+            }}
             animate={{
               opacity: [0, 1, 1, 0],
               transition: {
-                delay: delayA + delayB * 2 + 0.1,
+                delay: delayA + delayB * 2 + 0.2,
                 duration: delayB + 0.1,
                 times: [0, 0.1, 0.99, 1],
               },
             }}
           >
-            {"62'"}
+            {"'62"}
           </motion.h1>
         </div>
         <motion.div
