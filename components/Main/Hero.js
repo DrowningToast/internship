@@ -235,7 +235,7 @@ const Hero = ({ scrollToAbout }) => {
               },
             }}
           >
-            62'
+            {"62'"}
           </motion.h1>
         </div>
         <motion.div
