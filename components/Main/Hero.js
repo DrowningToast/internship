@@ -48,7 +48,7 @@ const Hero = ({ scrollToAbout }) => {
               animate={{ scale: 0.8, translateX: "-50%", translateY: "-50%" }}
               className={`inline ${
                 !subtitleStatus ? "absolute top-1/2 left-1/2 transform" : ""
-              } font-extrabold text-6xl lg:text-9xl text-white`}
+              } font-extrabold text-5xl md:text-7xl lg:text-9xl text-white`}
             >
               INTERNSHIP
             </motion.h1>
@@ -57,7 +57,7 @@ const Hero = ({ scrollToAbout }) => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 layout
-                className="text-baseline lg:text-xl text-center text-white"
+                className="text-base md:text-lg lg:text-xl text-center text-white"
               >
                 Srinakharinwirot University Prasarnmit Demonstration School
                 (Secondary)
