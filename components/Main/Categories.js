@@ -82,7 +82,7 @@ const Category = ({
           selected === i ? "z-20" : ""
         }`}
       >
-        <motion.h2 className="text-3xl px-8 text-center font-extrabold text-white">
+        <motion.h2 className=" text-2xl md:text-4xl lg:text-5xl xl:text-3xl px-8 text-center font-extrabold text-white">
           {title}
         </motion.h2>
       </motion.div>
