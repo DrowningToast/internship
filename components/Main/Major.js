@@ -173,13 +173,15 @@ const Major = () => {
         </motion.section>
         <div className="absolute top-0 left-0 w-full h-full z-0">
           <video
-            src="/assets/LandingPageMajor.webm"
             className="h-full w-full"
             autoPlay
-            playsinline
+            playsInline
             muted
             loop
-          ></video>
+            preload="auto"
+          >
+            <source src="/assets/LandingPageMajor.webm" type="video/webm" />
+          </video>
         </div>
       </motion.div>
     </AnimateSharedLayout>

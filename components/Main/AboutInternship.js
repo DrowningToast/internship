@@ -101,13 +101,18 @@ const AboutInternship = () => {
         </div>
         <div className="absolute top-0 left-0 w-full h-full">
           <video
-            src="/assets/LandingPageInternshipInfo2.webm"
             className="h-full w-full"
             autoPlay
             playsInline
             muted
             loop
-          ></video>
+            preload="auto"
+          >
+            <source
+              src="/assets/LandingPageInternshipInfo2.webm"
+              type="video/webm"
+            />
+          </video>
         </div>
       </div>
     </div>

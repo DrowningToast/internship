@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Portrait from "../../components/Profile/Portrait";
 import meta from "../../meta.json";
-
+import Head from "next/head";
 /**
  *
  * Profile type = Standard 5 photo (standard), Flexible 5+ (flex), video (video), instragram stories (stories)
@@ -115,6 +115,15 @@ const Category = ({ title, members, color, category }) => {
 
   return (
     <>
+      <Head>
+        <title>Internship 62</title>
+        <meta
+          name="description"
+          content="Website decdicated to telling the stories about PSM62 students intership experiences"
+        />
+        <link rel="icon" href="/psmcom-logo.png" />
+      </Head>
+
       <div className="w-full min-h-screen relative overflow-x-hidden">
         <div className="h-screen w-full flex flex-col absolute top-0 left-0 z-10">
           <div

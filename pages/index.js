@@ -30,7 +30,7 @@ const Home = () => {
           name="description"
           content="Website decdicated to telling the stories about PSM62 students intership experiences"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/psmcom-logo.png" />
       </Head>
 
       <main className="min-h-screen scroll-behaviour-container">
