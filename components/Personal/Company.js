@@ -2,6 +2,8 @@ import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
+import Link from "next/link";
+
 const VideoComponent = ({ display, video3 }) => {
   if (display == "D") {
     return (
@@ -68,15 +70,15 @@ const Company = ({
 
   useEffect(() => {
     if (inView) {
-      // video1.current.pause();
-      // video2.current.pause();
+      video1.current.pause();
+      video2.current.pause();
       video3.current.play();
-      // video4.current.pause();
+      video4.current.pause();
     } else {
-      // video1.current.pause();
-      // video2.current.pause();
+      video1.current.pause();
+      video2.current.pause();
       video3.current.pause();
-      // video4.current.pause();
+      video4.current.pause();
     }
   }, [inView, video1, video2, video3, video4]);
 
@@ -110,7 +112,9 @@ const Company = ({
                   </div>
                 </div>
                 <div className="lg:col-span-5 relative">
-                  <div className="bg-gray-200 w-full h-72 rounded z-30"></div>
+                  <a href={item.map} target="_blank" rel="noopener noreferrer">
+                    <div className="bg-gray-200 w-full h-72 rounded z-30"></div>
+                  </a>
                 </div>
               </div>
             ))}

@@ -66,14 +66,14 @@ const Conclusion = ({
 
   useEffect(() => {
     if (inView) {
-      // video1.current.pause();
-      // video2.current.pause();
-      // video3.current.pause();
+      video1.current.pause();
+      video2.current.pause();
+      video3.current.pause();
       video4.current.play();
     } else {
-      // video1.current.pause();
-      // video2.current.pause();
-      // video3.current.pause();
+      video1.current.pause();
+      video2.current.pause();
+      video3.current.pause();
       video4.current.pause();
     }
   }, [inView, video1, video2, video3, video4]);
