@@ -13,7 +13,7 @@ const ImageList = ({ number, gallerySize }) => {
             style={{ paddingTop: "56.25%" }}
           >
             <Image
-              src={`/data/${number}/image_1.JPG`}
+              src={`/data/${number}/image_1.webp`}
               alt=""
               layout="fill"
               objectFit="cover"
@@ -30,7 +30,7 @@ const ImageList = ({ number, gallerySize }) => {
             style={{ paddingTop: "75%" }}
           >
             <Image
-              src={`/data/${number}/image_1.JPG`}
+              src={`/data/${number}/image_1.webp`}
               alt=""
               layout="fill"
               objectFit="cover"
@@ -41,7 +41,7 @@ const ImageList = ({ number, gallerySize }) => {
             style={{ paddingTop: "75%" }}
           >
             <Image
-              src={`/data/${number}/image_2.JPG`}
+              src={`/data/${number}/image_2.webp`}
               alt=""
               layout="fill"
               objectFit="cover"
@@ -58,7 +58,7 @@ const ImageList = ({ number, gallerySize }) => {
             style={{ paddingTop: "177%" }}
           >
             <Image
-              src={`/data/${number}/image_1.JPG`}
+              src={`/data/${number}/image_1.webp`}
               alt=""
               layout="fill"
               objectFit="cover"
@@ -69,7 +69,7 @@ const ImageList = ({ number, gallerySize }) => {
             style={{ paddingTop: "177%" }}
           >
             <Image
-              src={`/data/${number}/image_2.JPG`}
+              src={`/data/${number}/image_2.webp`}
               alt=""
               layout="fill"
               objectFit="cover"
@@ -80,7 +80,7 @@ const ImageList = ({ number, gallerySize }) => {
             style={{ paddingTop: "177%" }}
           >
             <Image
-              src={`/data/${number}/image_3.JPG`}
+              src={`/data/${number}/image_3.webp`}
               alt=""
               layout="fill"
               objectFit="cover"
@@ -94,7 +94,7 @@ const ImageList = ({ number, gallerySize }) => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           <div className="relative lg:col-span-2 flex shadow-lg h-56 lg:h-auto">
             <Image
-              src={`/data/${number}/image_1.JPG`}
+              src={`/data/${number}/image_1.webp`}
               alt=""
               layout="fill"
               objectFit="cover"
@@ -105,7 +105,7 @@ const ImageList = ({ number, gallerySize }) => {
             style={{ paddingTop: "75%" }}
           >
             <Image
-              src={`/data/${number}/image_2.JPG`}
+              src={`/data/${number}/image_2.webp`}
               alt=""
               layout="fill"
               objectFit="cover"
@@ -116,7 +116,7 @@ const ImageList = ({ number, gallerySize }) => {
             style={{ paddingTop: "75%" }}
           >
             <Image
-              src={`/data/${number}/image_3.JPG`}
+              src={`/data/${number}/image_3.webp`}
               alt=""
               layout="fill"
               objectFit="cover"
@@ -124,7 +124,7 @@ const ImageList = ({ number, gallerySize }) => {
           </div>
           <div className="relative lg:col-span-2 flex shadow-lg h-56 lg:h-auto">
             <Image
-              src={`/data/${number}/image_4.JPG`}
+              src={`/data/${number}/image_4.webp`}
               alt=""
               layout="fill"
               objectFit="cover"
@@ -141,7 +141,7 @@ const ImageList = ({ number, gallerySize }) => {
             style={{ paddingTop: "56.25%" }}
           >
             <Image
-              src={`/data/${number}/image_1.JPG`}
+              src={`/data/${number}/image_1.webp`}
               alt=""
               layout="fill"
               objectFit="cover"
@@ -152,7 +152,7 @@ const ImageList = ({ number, gallerySize }) => {
             style={{ paddingTop: "56.25%" }}
           >
             <Image
-              src={`/data/${number}/image_2.JPG`}
+              src={`/data/${number}/image_2.webp`}
               alt=""
               layout="fill"
               objectFit="cover"
@@ -163,7 +163,7 @@ const ImageList = ({ number, gallerySize }) => {
             style={{ paddingTop: "177%" }}
           >
             <Image
-              src={`/data/${number}/image_3.JPG`}
+              src={`/data/${number}/image_3.webp`}
               alt=""
               layout="fill"
               objectFit="cover"
@@ -174,7 +174,7 @@ const ImageList = ({ number, gallerySize }) => {
             style={{ paddingTop: "56.25%" }}
           >
             <Image
-              src={`/data/${number}/image_4.JPG`}
+              src={`/data/${number}/image_4.webp`}
               alt=""
               layout="fill"
               objectFit="cover"
@@ -185,7 +185,7 @@ const ImageList = ({ number, gallerySize }) => {
             style={{ paddingTop: "56.25%" }}
           >
             <Image
-              src={`/data/${number}/image_5.JPG`}
+              src={`/data/${number}/image_5.webp`}
               alt=""
               layout="fill"
               objectFit="cover"
@@ -204,7 +204,7 @@ const ImageList = ({ number, gallerySize }) => {
             style={{ paddingTop: "75%" }}
           >
             <Image
-              src={`/data/${number}/image_${index}.JPG`}
+              src={`/data/${number}/image_${index}.webp`}
               alt=""
               layout="fill"
               objectFit="cover"

@@ -89,11 +89,14 @@ const Company = ({
           </h1>
           <div className="mt-8">
             {company.map((item, i) => (
-              <div key={i} className="grid grid-cols-1 lg:grid-cols-5 gap-4">
+              <div
+                key={i}
+                className="grid grid-cols-1 lg:grid-cols-5 gap-4 my-8"
+              >
                 <div className="lg:col-span-2 flex flex-col justify-center items-center">
                   <div className="relative h-48 w-48">
                     <Image
-                      src={`/data/${number}/logo_${i + 1}.png`}
+                      src={`/data/${number}/logo_${i + 1}.webp`}
                       layout="fill"
                       objectFit="contain"
                       alt=""

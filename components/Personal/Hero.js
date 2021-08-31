@@ -54,11 +54,11 @@ const Hero = ({
           <div className="flex flex-col items-center justify-center">
             <div className="relative">
               <Image
-                src={`/data/${number}/thumbnail.png`}
+                src={`/data/${number}/thumbnail.webp`}
                 alt=""
                 width={1000}
                 height={800}
-                objectFit="cover"
+                objectFit="contain"
                 className="z-30"
               />
             </div>
@@ -84,11 +84,11 @@ const Hero = ({
           <div className="flex flex-col items-center justify-center">
             <div className="relative">
               <Image
-                src={`/data/${number}/thumbnail.png`}
+                src={`/data/${number}/thumbnail.webp`}
                 alt=""
                 width={1000}
                 height={800}
-                objectFit="cover"
+                objectFit="contain"
                 className="z-30"
               />
             </div>
@@ -134,11 +134,11 @@ const Hero = ({
           <div className="flex flex-col items-center justify-center">
             <div className="relative">
               <Image
-                src={`/data/${number}/thumbnail.png`}
+                src={`/data/${number}/thumbnail.webp`}
                 alt=""
                 width={1000}
                 height={800}
-                objectFit="cover"
+                objectFit="contain"
                 className="z-30"
               />
             </div>

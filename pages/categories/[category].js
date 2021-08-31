@@ -159,7 +159,7 @@ const Category = ({ title, members, color, category }) => {
               return (
                 <Portrait
                   key={member.id}
-                  url={`/data/${member.id}/portrait.png`}
+                  url={`/data/${member.id}/portrait.webp`}
                   callsign={
                     member.callsign.split("-")[0].charAt(0).toUpperCase() +
                     member.callsign.split("-")[0].slice(1)
