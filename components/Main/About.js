@@ -1,9 +1,29 @@
 import Image from "next/image";
+import { useEffect, useRef } from "react";
+import { useInView } from "react-intersection-observer";
 
-const About = ({ reference }) => {
+const About = ({ reference, aboutVideo, internVideo, majorVideo }) => {
+  const { inView, entry, ref } = useInView();
+  const video = useRef(null);
+
+  useEffect(() => {
+    if (inView) {
+      aboutVideo.current.play();
+      internVideo.current.pause();
+      majorVideo.current.pause();
+    } else {
+      aboutVideo.current.pause();
+      internVideo.current.pause();
+      majorVideo.current.pause();
+    }
+  }, [inView]);
+
   return (
     <div className="relative" ref={reference}>
-      <div className="min-h-screen container mx-auto px-6 lg:px-8 py-8 section flex flex-col gap-8 justify-center lg:grid grid-cols-2">
+      <div
+        className="min-h-screen container mx-auto px-6 lg:px-8 py-8 section flex flex-col gap-8 justify-center lg:grid grid-cols-2"
+        ref={ref}
+      >
         <div className="flex flex-col justify-center items-center">
           <div className="text-center lg:text-left">
             <h1 className="text-4xl lg:text-6xl font-bold mb-4">
@@ -139,11 +159,11 @@ const About = ({ reference }) => {
         <div className="absolute top-0 left-0 w-full h-full">
           <video
             className="h-full w-full"
-            autoPlay
             playsInline
             muted
             loop
             preload="auto"
+            ref={aboutVideo}
           >
             <source
               src="/assets/LandingPageInternshipInfo1.webm"

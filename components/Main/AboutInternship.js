@@ -1,8 +1,25 @@
 import Image from "next/image";
+import { useEffect, useRef } from "react";
+import { useInView } from "react-intersection-observer";
 
-const AboutInternship = () => {
+const AboutInternship = ({ aboutVideo, internVideo, majorVideo }) => {
+  const { inView, entry, ref } = useInView();
+  const video = useRef(null);
+
+  useEffect(() => {
+    if (inView) {
+      aboutVideo.current.pause();
+      internVideo.current.play();
+      majorVideo.current.pause();
+    } else {
+      aboutVideo.current.pause();
+      internVideo.current.pause();
+      majorVideo.current.pause();
+    }
+  }, [inView]);
+
   return (
-    <div className="relative">
+    <div className="relative" ref={ref}>
       <div className="min-h-screen container mx-auto px-6 lg:px-8 py-8 section flex flex-col-reverse justify-center lg:grid grid-cols-2">
         <div className="flex flex-col justify-center items-center lg:items-start my-2">
           <div className="relative w-2/3 sm:w-1/2 md:w-2/3 lg:w-3/4 xl:w-2/3">
@@ -102,7 +119,7 @@ const AboutInternship = () => {
         <div className="absolute top-0 left-0 w-full h-full">
           <video
             className="h-full w-full"
-            autoPlay
+            ref={internVideo}
             playsInline
             muted
             loop

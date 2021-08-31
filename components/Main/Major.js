@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import dynamic from "next/dynamic";
 import { Children } from "react";
 const Scene = dynamic(() => import("./r3f/MajorScene"), { ssr: false });
@@ -7,7 +7,9 @@ const Scene = dynamic(() => import("./r3f/MajorScene"), { ssr: false });
 import { AnimatePresence } from "framer-motion";
 import { motion, AnimateSharedLayout } from "framer-motion";
 
-const Major = () => {
+import { useInView } from "react-intersection-observer";
+
+const Major = ({ aboutVideo, internVideo, majorVideo }) => {
   const [selected, setSelected] = useState(null);
   const [layoutSelectedIT, setLayoutSelectedIT] = useState(null);
   const [layoutSelectedMT, setLayoutSelectedMT] = useState(null);
@@ -21,6 +23,20 @@ const Major = () => {
     setLayoutSelectedMT(selected);
   }, [selected]);
 
+  const { inView, entry, ref } = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      aboutVideo.current.pause();
+      internVideo.current.pause();
+      majorVideo.current.play();
+    } else {
+      aboutVideo.current.pause();
+      internVideo.current.pause();
+      majorVideo.current.pause();
+    }
+  }, [inView]);
+
   return (
     <AnimateSharedLayout>
       <motion.div
@@ -31,6 +47,7 @@ const Major = () => {
             ? "gap-y-4 md:gap-y-8 lg:gap-y-20 xl:gap-y-28"
             : "xl:gap-y-8 "
         } align-center`}
+        ref={ref}
       >
         <motion.section
           layout
@@ -174,7 +191,7 @@ const Major = () => {
         <div className="absolute top-0 left-0 w-full h-full z-0">
           <video
             className="h-full w-full"
-            autoPlay
+            ref={majorVideo}
             playsInline
             muted
             loop

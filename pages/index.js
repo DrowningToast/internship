@@ -9,12 +9,18 @@ import Categories from "../components/Main/Categories";
 import Hero from "../components/Main/Hero";
 import Major from "../components/Main/Major";
 
+import { useInView } from "react-intersection-observer";
+
 const Home = () => {
   const router = useRouter();
   const about = useRef(null);
   const categories = useRef(null);
   const scrollToAbout = () => about.current.scrollIntoView();
   const scrollToCategories = () => categories.current.scrollIntoView();
+
+  const aboutVideo = useRef(null);
+  const internVideo = useRef(null);
+  const majorVideo = useRef(null);
 
   useEffect(() => {
     if (router.query.page == "categories") {
@@ -35,9 +41,26 @@ const Home = () => {
 
       <main className="min-h-screen scroll-behaviour-container">
         <Hero scrollToAbout={scrollToAbout} />
-        <About reference={about} />
-        <AboutInternship />
-        <Major />
+        <br />
+        <About
+          reference={about}
+          aboutVideo={aboutVideo}
+          internVideo={internVideo}
+          majorVideo={majorVideo}
+        />
+        <br />
+        <AboutInternship
+          aboutVideo={aboutVideo}
+          internVideo={internVideo}
+          majorVideo={majorVideo}
+        />
+        <br />
+        <Major
+          aboutVideo={aboutVideo}
+          internVideo={internVideo}
+          majorVideo={majorVideo}
+        />
+        <br />
         <Categories reference={categories} />
       </main>
 
