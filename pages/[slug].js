@@ -27,6 +27,11 @@ const Blog = (props) => {
   const scrollToConclusion = () => conclusion.current.scrollIntoView();
   const scrollToContact = () => contact.current.scrollIntoView();
 
+  const video1 = useRef(null);
+  const video2 = useRef(null);
+  const video3 = useRef(null);
+  const video4 = useRef(null);
+
   return (
     <div>
       <Head>
@@ -62,6 +67,10 @@ const Blog = (props) => {
           companyName={props.company[0].name}
           number={props.id}
           display={props.display}
+          video1={video1}
+          video2={video2}
+          video3={video3}
+          video4={video4}
         />
         <Categories
           scrollToArticles={scrollToArticles}
@@ -74,6 +83,10 @@ const Blog = (props) => {
           reference={articles}
           articles={props.articles}
           display={props.display}
+          video1={video1}
+          video2={video2}
+          video3={video3}
+          video4={video4}
         />
         <Pictures
           reference={pictures}
@@ -86,11 +99,19 @@ const Blog = (props) => {
           number={props.id}
           company={props.company}
           display={props.display}
+          video1={video1}
+          video2={video2}
+          video3={video3}
+          video4={video4}
         />
         <Conclusion
           reference={conclusion}
           conclusion={props.conclusion}
           display={props.display}
+          video1={video1}
+          video2={video2}
+          video3={video3}
+          video4={video4}
         />
         <InternBook number={props.id} />
         <Contact reference={contact} email={props.email || ""} />

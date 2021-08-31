@@ -16,7 +16,7 @@ const AboutInternship = ({ aboutVideo, internVideo, majorVideo }) => {
       internVideo.current.pause();
       majorVideo.current.pause();
     }
-  }, [inView]);
+  }, [aboutVideo, inView, internVideo, majorVideo]);
 
   return (
     <div className="relative" ref={ref}>

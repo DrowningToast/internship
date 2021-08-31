@@ -4,7 +4,6 @@ import { useInView } from "react-intersection-observer";
 
 const About = ({ reference, aboutVideo, internVideo, majorVideo }) => {
   const { inView, entry, ref } = useInView();
-  const video = useRef(null);
 
   useEffect(() => {
     if (inView) {
@@ -16,7 +15,7 @@ const About = ({ reference, aboutVideo, internVideo, majorVideo }) => {
       internVideo.current.pause();
       majorVideo.current.pause();
     }
-  }, [inView]);
+  }, [aboutVideo, inView, internVideo, majorVideo]);
 
   return (
     <div className="relative" ref={reference}>

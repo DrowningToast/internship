@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 const Divider = () => {
   return (
@@ -8,10 +10,36 @@ const Divider = () => {
   );
 };
 
-const Hero = ({ name, position, companyName, number, display }) => {
+const Hero = ({
+  name,
+  position,
+  companyName,
+  number,
+  display,
+  video1,
+  video2,
+  video3,
+  video4,
+}) => {
+  const { inView, entry, ref } = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      video1.current.play();
+      // video2.current.pause();
+      // video3.current.pause();
+      // video4.current.pause();
+    } else {
+      video1.current.pause();
+      // video2.current.pause();
+      // video3.current.pause();
+      // video4.current.pause();
+    }
+  }, [inView, video1, video2, video3, video4]);
+
   if (display == "D") {
     return (
-      <div className="relative">
+      <div className="relative" ref={ref}>
         <div className="flex flex-col-reverse md:grid grid-cols-2 px-6 lg:px-8 mb-8">
           <div className="flex flex-col items-center justify-center">
             <h1 className="font-semibold text-4xl my-2">{name}</h1>
@@ -40,7 +68,7 @@ const Hero = ({ name, position, companyName, number, display }) => {
           <video
             src="/assets/DTrooperCircle1.webm"
             className="h-full w-full"
-            autoPlay
+            ref={video1}
             playsInline
             muted
             loop
@@ -51,7 +79,7 @@ const Hero = ({ name, position, companyName, number, display }) => {
     );
   } else if (display == "E") {
     return (
-      <div className="relative">
+      <div className="relative" ref={ref}>
         <div className="flex flex-col-reverse md:grid grid-cols-2 px-6 lg:px-8 mb-8">
           <div className="flex flex-col items-center justify-center">
             <div className="relative">
@@ -80,7 +108,7 @@ const Hero = ({ name, position, companyName, number, display }) => {
           <video
             src="/assets/DTrooperRectangle1.webm"
             className="h-full w-full"
-            autoPlay
+            ref={video1}
             playsInline
             muted
             loop
@@ -91,7 +119,7 @@ const Hero = ({ name, position, companyName, number, display }) => {
     );
   } else {
     return (
-      <div className="relative">
+      <div className="relative" ref={ref}>
         <div className="flex flex-col-reverse md:grid grid-cols-2 px-6 lg:px-8 mb-8">
           <div className="flex flex-col items-center justify-center">
             <h1 className="font-semibold text-4xl my-2">{name}</h1>
@@ -120,7 +148,7 @@ const Hero = ({ name, position, companyName, number, display }) => {
           <video
             src="/assets/DTrooperTriangle1.webm"
             className="h-full w-full"
-            autoPlay
+            ref={video1}
             playsInline
             muted
             loop
