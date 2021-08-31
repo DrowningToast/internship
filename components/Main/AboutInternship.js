@@ -116,7 +116,10 @@ const AboutInternship = ({ aboutVideo, internVideo, majorVideo }) => {
             />
           </svg>
         </div>
-        <div className="absolute top-0 left-0 w-full h-full">
+        <div
+          className="absolute top-0 left-0 w-full h-full"
+          style={{ zIndex: "-1" }}
+        >
           <video
             className="h-full w-full"
             ref={internVideo}

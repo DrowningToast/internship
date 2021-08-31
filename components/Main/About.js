@@ -155,7 +155,10 @@ const About = ({ reference, aboutVideo, internVideo, majorVideo }) => {
             />
           </svg>
         </div>
-        <div className="absolute top-0 left-0 h-full w-full">
+        <div
+          className="absolute top-0 left-0 h-full w-full"
+          style={{ zIndex: "-1" }}
+        >
           <video
             className="h-full w-full"
             playsInline

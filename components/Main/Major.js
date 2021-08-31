@@ -170,7 +170,10 @@ const Major = ({ aboutVideo, internVideo, majorVideo }) => {
             )}
           </motion.div>
         </motion.section>
-        <div className="absolute top-0 left-0 w-full h-full z-0">
+        <div
+          className="absolute top-0 left-0 w-full h-full z-0"
+          style={{ zIndex: "-1" }}
+        >
           <video
             className="h-full w-full"
             ref={majorVideo}
