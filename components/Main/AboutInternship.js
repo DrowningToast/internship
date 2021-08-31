@@ -8,13 +8,13 @@ const AboutInternship = ({ aboutVideo, internVideo, majorVideo }) => {
 
   useEffect(() => {
     if (inView) {
-      aboutVideo.current.pause();
+      // aboutVideo.current.pause();
       internVideo.current.play();
-      majorVideo.current.pause();
+      // majorVideo.current.pause();
     } else {
-      aboutVideo.current.pause();
+      // aboutVideo.current.pause();
       internVideo.current.pause();
-      majorVideo.current.pause();
+      // majorVideo.current.pause();
     }
   }, [aboutVideo, inView, internVideo, majorVideo]);
 

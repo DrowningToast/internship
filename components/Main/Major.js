@@ -27,12 +27,12 @@ const Major = ({ aboutVideo, internVideo, majorVideo }) => {
 
   useEffect(() => {
     if (inView) {
-      aboutVideo.current.pause();
-      internVideo.current.pause();
+      // aboutVideo.current.pause();
+      // internVideo.current.pause();
       majorVideo.current.play();
     } else {
-      aboutVideo.current.pause();
-      internVideo.current.pause();
+      // aboutVideo.current.pause();
+      // internVideo.current.pause();
       majorVideo.current.pause();
     }
   }, [aboutVideo, inView, internVideo, majorVideo]);

@@ -101,7 +101,10 @@ const Hero = ({ scrollToAbout }) => {
             INTERNSHIP
           </motion.h1>
         </div>
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <div
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          style={{ zIndex: "1000" }}
+        >
           <button
             onClick={scrollToAbout}
             className="h-10 w-10 border-2 border-black rounded-full flex flex-col justify-center items-center cursor-pointer transition duration-300 transform scrollButton"
