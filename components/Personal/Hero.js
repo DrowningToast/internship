@@ -45,7 +45,7 @@ const Hero = ({
             <h1 className="font-semibold text-4xl my-2">{name}</h1>
             <h3 className="font-medium text-2xl my-2">{position}</h3>
             <div
-              className="px-8 py-2 my-2 text-2xl font-bold text-white rounded-full max-w-1/2 text-center"
+              className="px-8 py-2 my-2 text-2xl font-bold text-white rounded-full max-w-3xl bg-green-400 text-center"
               style={{ backgroundColor: "#CF55E3" }}
             >
               {companyName}
@@ -97,7 +97,7 @@ const Hero = ({
             <h1 className="font-semibold text-4xl my-2">{name}</h1>
             <h3 className="font-medium text-2xl my-2">{position}</h3>
             <div
-              className="px-8 py-2 my-2 text-2xl font-bold text-white rounded-full max-w-1/2 text-center"
+              className="px-8 py-2 my-2 text-2xl font-bold text-white rounded-full max-w-3xl text-center"
               style={{ backgroundColor: "#CF55E3" }}
             >
               {companyName}
@@ -125,7 +125,7 @@ const Hero = ({
             <h1 className="font-semibold text-4xl my-2">{name}</h1>
             <h3 className="font-medium text-2xl my-2">{position}</h3>
             <div
-              className="px-8 py-2 my-2 text-2xl font-bold text-white rounded-full max-w-1/2 text-center"
+              className="px-8 py-2 my-2 text-2xl font-bold text-white rounded-full max-w-3xl text-center"
               style={{ backgroundColor: "#CF55E3" }}
             >
               {companyName}
