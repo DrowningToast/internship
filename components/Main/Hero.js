@@ -192,7 +192,7 @@ const Hero = ({ scrollToAbout }) => {
           >
             <motion.h1
               style={{ color: "#F6D854" }}
-              className="font-bold text-9xl z-100 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              className="font-bold text-5xl md:text-9xl z-100 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
               initial={{ opacity: 0 }}
               animate={{
                 opacity: [0, 1, 1, 0],
