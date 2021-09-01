@@ -54,6 +54,7 @@ const Blog = (props) => {
                 width="150"
                 objectFit="contain"
                 className="cursor-pointer"
+                loading="eager"
               />
             </Link>
           </div>

@@ -60,6 +60,7 @@ const Hero = ({
                 height={800}
                 objectFit="contain"
                 className="z-30"
+                loading="eager"
               />
             </div>
           </div>
@@ -90,6 +91,7 @@ const Hero = ({
                 height={800}
                 objectFit="contain"
                 className="z-30"
+                loading="eager"
               />
             </div>
           </div>
@@ -140,6 +142,7 @@ const Hero = ({
                 height={800}
                 objectFit="contain"
                 className="z-30"
+                loading="eager"
               />
             </div>
           </div>

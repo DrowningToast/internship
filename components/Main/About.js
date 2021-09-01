@@ -46,6 +46,7 @@ const About = ({ reference, aboutVideo, internVideo, majorVideo }) => {
                 src="/main/about.jpg"
                 layout="fill"
                 alt=""
+                loading="eager"
               />
             </div>
             <div

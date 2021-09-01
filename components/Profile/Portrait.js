@@ -72,7 +72,7 @@ const Portrait = ({
             animate={{ opacity: 0.75 }}
             exit={{ opacity: 0, transition: { duration: 0.2 } }}
             onClick={handleCanceling}
-            className={`inset-0 absolute block bg-gray-800 ${
+            className={`absolute top-0 left-0 h-full w-full block bg-gray-800 ${
               shown ? "z-30 cursor-pointer" : ""
             }`}
           ></motion.div>
@@ -85,10 +85,11 @@ const Portrait = ({
         <div style={{ paddingTop: "100%" }}>
           <Image
             src={url}
+            loading="eager"
             layout="fill"
             objectFit="cover"
             objectPosition="center"
-            className={`md:w-full rounded-full ${
+            className={`md:w-full bg-gray-100 rounded-full ${
               shown ? "z-50" : "z-20"
             } relative`}
             alt=""
@@ -120,7 +121,7 @@ const Portrait = ({
         </motion.div>
         <motion.div
           style={{ backgroundColor: color.tertiary }}
-          animate={{ width: shown ? "120%" : "0%" }}
+          animate={{ width: shown ? "140%" : "0%" }}
           layout
           className={`absolute top-0 bottom-0 ${
             isReversed ? "right-1/2" : "left-1/2"
@@ -130,8 +131,10 @@ const Portrait = ({
             <motion.div
               style={{ backgroundColor: color.tertiary }}
               layout
-              className={`rounded-full absolute ${
-                isReversed ? "-left-1/2" : "-right-1/2"
+              className={`absolute ${
+                isReversed
+                  ? "-left-1/2 rounded-l-full"
+                  : "-right-1/2 rounded-r-full"
               } top-0 w-full h-full flex flex-col justify-center items-center py-2 pr-4 z-10`}
             >
               <div className={`overflow-hidden rounded-full w-2/5 relative`}>
@@ -142,6 +145,7 @@ const Portrait = ({
                     objectFit="contain"
                     objectPosition="center"
                     alt=""
+                    loading="eager"
                   />
                 </div>
               </div>
@@ -158,14 +162,14 @@ const Portrait = ({
               </div>
             </motion.div>
           )}
-          {company.length > 1 && (
+          {/* {company.length > 1 && (
             <motion.div
               animate={{ backgroundColor: color.primary, x: "-5%" }}
               whileHover={{ x: "5%", backgroundColor: color.secondary }}
               onClick={handleCycle}
               className="w-full h-full absolute -right-2/3 top-0 bottom-0 rounded-full z-0"
             ></motion.div>
-          )}
+          )} */}
         </motion.div>
       </div>
       <div

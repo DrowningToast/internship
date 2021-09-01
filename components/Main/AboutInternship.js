@@ -30,6 +30,7 @@ const AboutInternship = ({ aboutVideo, internVideo, majorVideo }) => {
                 layout="fill"
                 objectFit="cover"
                 alt=""
+                loading="eager"
               />
             </div>
             <div

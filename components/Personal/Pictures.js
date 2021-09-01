@@ -17,6 +17,7 @@ const ImageList = ({ number, gallerySize }) => {
               alt=""
               layout="fill"
               objectFit="cover"
+              loading="eager"
             />
           </div>
         </div>
@@ -34,6 +35,7 @@ const ImageList = ({ number, gallerySize }) => {
               alt=""
               layout="fill"
               objectFit="cover"
+              loading="eager"
             />
           </div>
           <div
@@ -45,6 +47,7 @@ const ImageList = ({ number, gallerySize }) => {
               alt=""
               layout="fill"
               objectFit="cover"
+              loading="eager"
             />
           </div>
         </div>
@@ -62,6 +65,7 @@ const ImageList = ({ number, gallerySize }) => {
               alt=""
               layout="fill"
               objectFit="cover"
+              loading="eager"
             />
           </div>
           <div
@@ -73,6 +77,7 @@ const ImageList = ({ number, gallerySize }) => {
               alt=""
               layout="fill"
               objectFit="cover"
+              loading="eager"
             />
           </div>
           <div
@@ -84,6 +89,7 @@ const ImageList = ({ number, gallerySize }) => {
               alt=""
               layout="fill"
               objectFit="cover"
+              loading="eager"
             />
           </div>
         </div>
@@ -98,6 +104,7 @@ const ImageList = ({ number, gallerySize }) => {
               alt=""
               layout="fill"
               objectFit="cover"
+              loading="eager"
             />
           </div>
           <div
@@ -109,6 +116,7 @@ const ImageList = ({ number, gallerySize }) => {
               alt=""
               layout="fill"
               objectFit="cover"
+              loading="eager"
             />
           </div>
           <div
@@ -120,6 +128,7 @@ const ImageList = ({ number, gallerySize }) => {
               alt=""
               layout="fill"
               objectFit="cover"
+              loading="eager"
             />
           </div>
           <div className="relative lg:col-span-2 flex shadow-lg h-56 lg:h-auto">
@@ -128,6 +137,7 @@ const ImageList = ({ number, gallerySize }) => {
               alt=""
               layout="fill"
               objectFit="cover"
+              loading="eager"
             />
           </div>
         </div>
@@ -145,6 +155,7 @@ const ImageList = ({ number, gallerySize }) => {
               alt=""
               layout="fill"
               objectFit="cover"
+              loading="eager"
             />
           </div>
           <div
@@ -156,6 +167,7 @@ const ImageList = ({ number, gallerySize }) => {
               alt=""
               layout="fill"
               objectFit="cover"
+              loading="eager"
             />
           </div>
           <div
@@ -167,6 +179,7 @@ const ImageList = ({ number, gallerySize }) => {
               alt=""
               layout="fill"
               objectFit="cover"
+              loading="eager"
             />
           </div>
           <div
@@ -178,6 +191,7 @@ const ImageList = ({ number, gallerySize }) => {
               alt=""
               layout="fill"
               objectFit="cover"
+              loading="eager"
             />
           </div>
           <div
@@ -189,6 +203,7 @@ const ImageList = ({ number, gallerySize }) => {
               alt=""
               layout="fill"
               objectFit="cover"
+              loading="eager"
             />
           </div>
         </div>
@@ -208,6 +223,7 @@ const ImageList = ({ number, gallerySize }) => {
               alt=""
               layout="fill"
               objectFit="cover"
+              loading="eager"
             />
           </div>
         );

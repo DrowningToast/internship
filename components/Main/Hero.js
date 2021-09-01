@@ -259,6 +259,7 @@ const Hero = ({ scrollToAbout }) => {
               objectPosition="center"
               className="relative"
               priority
+              alt=""
             />
           </div>
           <div className="w-0 h-1/3 border-l-2 border-black"></div>
@@ -270,6 +271,7 @@ const Hero = ({ scrollToAbout }) => {
               objectPosition="center"
               className="relative"
               priority
+              alt=""
             />
           </div>
         </motion.div>
