@@ -125,7 +125,7 @@ const Category = ({ title, members, color, category }) => {
       </Head>
 
       <div className="w-full min-h-screen relative overflow-x-hidden">
-        <div className="h-screen w-full flex flex-col absolute top-0 left-0 z-10">
+        <div className="min-h-screen w-full flex flex-col absolute top-0 left-0 z-10">
           <div
             style={{
               backgroundColor: color.primary,
@@ -153,7 +153,7 @@ const Category = ({ title, members, color, category }) => {
           </div>
           <div
             ref={container}
-            className="memberContainer px-4 lg:px-16 py-4 lg:py-8"
+            className="grid grid-cols-2 gap-y-8 md:flex flex-wrap items-center justify-center my-8 px-4"
           >
             {members.map((member, i) => {
               return (

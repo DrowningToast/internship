@@ -63,7 +63,7 @@ const Portrait = ({
   return (
     <div
       ref={element}
-      className="grid portrait md:h-72 lg:h-96 place-items-center gap-y-4 md:gap-y-0 w-full h-full"
+      className="flex flex-col justify-center items-center md:p-8"
     >
       <AnimatePresence exitBeforeEnter>
         {shown && (
@@ -80,7 +80,7 @@ const Portrait = ({
       </AnimatePresence>
       <div
         onClick={handlePrimaryClick}
-        className="w-2/3 md:w-3/4 max-x-lg grid place-items-center relative "
+        className="w-2/3 md:h-48 md:w-48 relative"
       >
         <div style={{ paddingTop: "100%" }}>
           <Image
@@ -173,7 +173,7 @@ const Portrait = ({
         </motion.div>
       </div>
       <div
-        className={`flex flex-col items-center justify-center md:gap-y-2 ${
+        className={`mt-4 md:mt-8 flex flex-col items-center justify-center md:gap-y-2 ${
           shown ? "z-40 text-white" : ""
         }`}
       >
