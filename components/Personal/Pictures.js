@@ -237,22 +237,21 @@ const ImageList = ({ number, gallerySize }) => {
   }
 };
 
-const VideoList = () => {
-  return <div></div>;
-};
-
-const Pictures = ({ reference, number, gallerySize, media }) => {
-  return (
-    <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8" ref={reference}>
-      <h1 className="text-2xl font-medium text-gray-500 text-center md:text-left">
-        Pictures
-      </h1>
-      <div className="relative mt-8">
-        <ImageList number={number} gallerySize={gallerySize} />
-        {media == "video" ? <VideoList /> : null}
+const Pictures = ({ reference, number, gallerySize }) => {
+  if (gallerySize == 0) {
+    return <div></div>;
+  } else {
+    return (
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8" ref={reference}>
+        <h1 className="text-2xl font-medium text-gray-500 text-center md:text-left">
+          Pictures
+        </h1>
+        <div className="relative mt-8">
+          <ImageList number={number} gallerySize={gallerySize} />
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 };
 
 export default Pictures;

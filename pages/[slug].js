@@ -5,6 +5,7 @@ import Hero from "../components/Personal/Hero";
 import Categories from "../components/Personal/Categories";
 import Articles from "../components/Personal/Articles";
 import Pictures from "../components/Personal/Pictures";
+import Video from "../components/Personal/Video";
 import Company from "../components/Personal/Company";
 import Conclusion from "../components/Personal/Conclusion";
 import InternBook from "../components/Personal/InternBook";
@@ -93,8 +94,8 @@ const Blog = (props) => {
           reference={pictures}
           number={props.id}
           gallerySize={props.gallerySize}
-          media={props.media}
         />
+        <Video number={props.id} videoSize={props.videoSize || 0} />
         <Company
           reference={company}
           number={props.id}

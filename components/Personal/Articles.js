@@ -87,7 +87,7 @@ const Articles = ({
           </h1>
           <div className="mt-8 text-base md:text-lg">
             {articles.map((article, i) => (
-              <div key={i} style={{ textIndent: "1em" }} className="my-4">
+              <div key={i} style={{ textIndent: "1em" }} className="my-2">
                 {article}
               </div>
             ))}
