@@ -102,7 +102,7 @@ const Company = ({
                       layout="fill"
                       objectFit="contain"
                       alt=""
-                      loading="eager"
+                      priority
                     />
                   </div>
                 </div>
