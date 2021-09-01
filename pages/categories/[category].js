@@ -173,6 +173,7 @@ const Category = ({ title, members, color, category }) => {
                   color={color}
                   route={`/${member.callsign.toLowerCase()}`}
                   i={i}
+                  containerWidth={containerWidth}
                   elementWidth={elementWidth}
                   setElementWidth={setElementWidth}
                   numberInLine={numberInLine}

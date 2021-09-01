@@ -67,7 +67,10 @@ const Hero = ({
             </div>
           </div>
         </div>
-        <div className="absolute top-0 left-0 h-full w-full z-10">
+        <div
+          className="absolute top-0 left-0 h-full w-full z-10"
+          style={{ zIndex: "-1" }}
+        >
           <video
             src="/assets/DTrooperCircle1.webm"
             className="h-full w-full"
@@ -110,7 +113,10 @@ const Hero = ({
             </div>
           </div>
         </div>
-        <div className="absolute top-0 left-0 h-full w-full z-10">
+        <div
+          className="absolute top-0 left-0 h-full w-full z-10"
+          style={{ zIndex: "-1" }}
+        >
           <video
             src="/assets/DTrooperRectangle1.webm"
             className="h-full w-full"
@@ -153,7 +159,10 @@ const Hero = ({
             </div>
           </div>
         </div>
-        <div className="absolute top-0 left-0 h-full w-full z-10">
+        <div
+          className="absolute top-0 left-0 h-full w-full z-10"
+          style={{ zIndex: "-1" }}
+        >
           <video
             src="/assets/DTrooperTriangle1.webm"
             className="h-full w-full"

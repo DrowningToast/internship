@@ -12,6 +12,7 @@ const Portrait = ({
   company,
   color,
   route,
+  containerWidth,
   elementWidth,
   setElementWidth,
   numberInLine,
@@ -27,7 +28,7 @@ const Portrait = ({
     if (elementWidth && !Number.isNaN(numberInLine)) {
       const pos = (i + 1) % numberInLine;
 
-      if (i == elementWidth.length - 1) {
+      if (containerWidth >= 1024 && i == elementWidth.length - 1) {
         setIsReversed(true);
         return;
       }
@@ -35,7 +36,7 @@ const Portrait = ({
       if (!pos) setIsReversed(true);
       else setIsReversed(false);
     }
-  }, [elementWidth, i, numberInLine]);
+  }, [containerWidth, elementWidth, i, numberInLine]);
 
   useEffect(() => {
     const elementWidth = element.current.offsetWidth;
