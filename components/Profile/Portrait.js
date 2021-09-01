@@ -72,7 +72,7 @@ const Portrait = ({
             animate={{ opacity: 0.75 }}
             exit={{ opacity: 0, transition: { duration: 0.2 } }}
             onClick={handleCanceling}
-            className={`absolute top-0 left-0 h-full w-full block bg-gray-800 ${
+            className={`fixed top-0 left-0 h-full w-full block bg-gray-800 ${
               shown ? "z-30 cursor-pointer" : ""
             }`}
           ></motion.div>
