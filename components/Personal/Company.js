@@ -107,7 +107,9 @@ const Company = ({
                   </div>
                 </div>
                 <div className="lg:col-span-3 flex flex-col justify-center text-center lg:text-left">
-                  <h2 className="text-4xl font-bold">{item.name}</h2>
+                  <h2 className="text-2xl lg:text-4xl font-bold">
+                    {item.name}
+                  </h2>
                   <div style={{ textIndent: "1em" }} className="mt-2 text-lg">
                     {item.description}
                   </div>

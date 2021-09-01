@@ -12,7 +12,9 @@ const Portrait = ({
   company,
   color,
   route,
-  containerWidth,
+  elementWidth,
+  setElementWidth,
+  numberInLine,
 }) => {
   const [shown, setShown] = useState(false);
   const [selected, setSelected] = useState(0);
@@ -21,27 +23,28 @@ const Portrait = ({
 
   const router = useRouter();
 
-  const updateReversed = () => {
-    if (!element.current) return;
-    const width = element.current.getBoundingClientRect().width;
-    const numberInRow = Math.round(containerWidth / width);
-    const pos = (i + 1) % numberInRow;
+  useEffect(() => {
+    if (elementWidth && !Number.isNaN(numberInLine)) {
+      const pos = (i + 1) % numberInLine;
 
-    if (!pos) return setIsReversed(true);
-    return setIsReversed(false);
-  };
+      if (i == elementWidth.length - 1) {
+        setIsReversed(true);
+        return;
+      }
+
+      if (!pos) setIsReversed(true);
+      else setIsReversed(false);
+    }
+  }, [elementWidth, i, numberInLine]);
 
   useEffect(() => {
-    // console.log(element.current);
-    if (!window || !element.current || !containerWidth) return;
-    window?.removeEventListener("resize", updateReversed);
-    window?.addEventListener("resize", updateReversed);
-    updateReversed();
-  }, [element.current, containerWidth]);
+    const elementWidth = element.current.offsetWidth;
+    setElementWidth((arr) => [...arr, elementWidth]);
+  }, [element, setElementWidth]);
 
   useEffect(() => {
     router.prefetch(`${route}`);
-  }, []);
+  }, [route, router]);
 
   const handlePrimaryClick = () => {
     setShown(true);
@@ -80,7 +83,7 @@ const Portrait = ({
       </AnimatePresence>
       <div
         onClick={handlePrimaryClick}
-        className="w-2/3 md:h-48 md:w-48 relative"
+        className="w-2/3 md:w-5/6 lg:h-48 lg:w-48 relative"
       >
         <div style={{ paddingTop: "100%" }}>
           <Image
@@ -100,7 +103,7 @@ const Portrait = ({
           whileHover={{ scale: !shown ? 1.225 : 1 }}
           animate={{
             scale: !shown ? 1.15 : 0.9,
-            backgroundColor: shown ? "#ffffff" : "",
+            backgroundColor: shown ? "#ffffff" : "transparent",
           }}
           style={{ borderColor: color.tertiary }}
           className={`absolute cursor-pointer inset-0 rounded-full text-center flex flex-col justify-center items-center ${
@@ -133,9 +136,9 @@ const Portrait = ({
               layout
               className={`absolute ${
                 isReversed
-                  ? "-left-1/2 rounded-l-full"
-                  : "-right-1/2 rounded-r-full"
-              } top-0 w-full h-full flex flex-col justify-center items-center py-2 pr-4 z-10`}
+                  ? "-left-1/2 pl-8 rounded-l-full"
+                  : "-right-1/2 pr-8 rounded-r-full"
+              } top-0 w-full h-full flex flex-col justify-center items-center py-2 z-10`}
             >
               <div className={`overflow-hidden w-2/5 relative`}>
                 <div style={{ paddingTop: "100%" }}>

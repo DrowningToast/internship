@@ -87,25 +87,28 @@ const BackgroundVideo = ({ category }) => {
 };
 
 const Category = ({ title, members, color, category }) => {
-  const container = useRef();
-  const [width, setWidth] = useState(0);
+  const container = useRef(null);
+  const [containerWidth, setContainerWidth] = useState(0);
+  const [elementWidth, setElementWidth] = useState([]);
 
+  const [numberInLine, setNumberInLine] = useState(0);
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const updateContainerWidth = () => {
-    if (!container.current) return;
-    var styles = window?.getComputedStyle(container.current, null);
-    var padding =
-      parseFloat(styles.paddingLeft) + parseFloat(styles.paddingRight);
-    const width = parseFloat(styles.width) - padding;
+    if (container) {
+      setContainerWidth(container?.current?.offsetWidth);
 
-    if (!width) return;
-    setWidth(width);
+      const meanElementWidth =
+        elementWidth.reduce((a, b) => a + b, 0) / elementWidth.length;
+
+      setNumberInLine(Math.floor(containerWidth / meanElementWidth));
+    }
   };
 
   useEffect(() => {
-    if (!window || !container.current) return;
     window.addEventListener("resize", updateContainerWidth);
     updateContainerWidth();
-  }, [container.current]);
+  }, [updateContainerWidth]);
 
   useEffect(() => {
     window.addEventListener("popstate", function (event) {
@@ -153,7 +156,7 @@ const Category = ({ title, members, color, category }) => {
           </div>
           <div
             ref={container}
-            className="grid grid-cols-2 gap-y-8 md:flex flex-wrap items-center justify-center my-8 px-4"
+            className="grid grid-cols-2 md:grid-cols-3 items-start gap-y-8 lg:flex flex-wrap lg:items-center lg:justify-center my-8 px-4"
           >
             {members.map((member, i) => {
               return (
@@ -170,7 +173,9 @@ const Category = ({ title, members, color, category }) => {
                   color={color}
                   route={`/${member.callsign.toLowerCase()}`}
                   i={i}
-                  containerWidth={width}
+                  elementWidth={elementWidth}
+                  setElementWidth={setElementWidth}
+                  numberInLine={numberInLine}
                 />
               );
             })}

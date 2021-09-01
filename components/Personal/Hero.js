@@ -42,10 +42,12 @@ const Hero = ({
       <div className="relative" ref={ref}>
         <div className="flex flex-col-reverse md:grid grid-cols-2 px-6 lg:px-8 mb-8">
           <div className="flex flex-col items-center justify-center">
-            <h1 className="font-semibold text-4xl my-2">{name}</h1>
-            <h3 className="font-medium text-2xl my-2">{position}</h3>
+            <h1 className="font-semibold text-3xl my-2 text-center">{name}</h1>
+            <h3 className="font-medium text-2xl my-2 text-center">
+              {position}
+            </h3>
             <div
-              className="px-8 py-2 my-2 text-2xl font-bold text-white rounded-full max-w-2xl bg-green-400 text-center"
+              className="px-8 py-2 my-2 text-base lg:text-2xl font-bold text-white rounded-full max-w-2xl bg-green-400 text-center"
               style={{ backgroundColor: "#CF55E3" }}
             >
               {companyName}
@@ -96,10 +98,12 @@ const Hero = ({
             </div>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <h1 className="font-semibold text-4xl my-2">{name}</h1>
-            <h3 className="font-medium text-2xl my-2">{position}</h3>
+            <h1 className="font-semibold text-3xl my-2 text-center">{name}</h1>
+            <h3 className="font-medium text-2xl my-2 text-center">
+              {position}
+            </h3>
             <div
-              className="px-8 py-2 my-2 text-2xl font-bold text-white rounded-full max-w-2xl text-center"
+              className="px-8 py-2 my-2 text-base lg:text-2xl font-bold text-white rounded-full max-w-2xl text-center"
               style={{ backgroundColor: "#CF55E3" }}
             >
               {companyName}
@@ -124,10 +128,12 @@ const Hero = ({
       <div className="relative" ref={ref}>
         <div className="flex flex-col-reverse md:grid grid-cols-2 px-6 lg:px-8 mb-8">
           <div className="flex flex-col items-center justify-center">
-            <h1 className="font-semibold text-4xl my-2">{name}</h1>
-            <h3 className="font-medium text-2xl my-2">{position}</h3>
+            <h1 className="font-semibold text-3xl my-2 text-center">{name}</h1>
+            <h3 className="font-medium text-2xl my-2 text-center">
+              {position}
+            </h3>
             <div
-              className="px-8 py-2 my-2 text-2xl font-bold text-white rounded-full max-w-2xl text-center"
+              className="px-8 py-2 my-2 text-base lg:text-2xl font-bold text-white rounded-full max-w-2xl text-center"
               style={{ backgroundColor: "#CF55E3" }}
             >
               {companyName}
