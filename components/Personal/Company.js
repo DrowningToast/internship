@@ -113,9 +113,12 @@ const Company = ({
                   </div>
                 </div>
                 <div className="lg:col-span-5 relative">
-                  <a href={item.map} target="_blank" rel="noopener noreferrer">
-                    <div className="bg-gray-200 w-full h-72 rounded z-30"></div>
-                  </a>
+                  <iframe
+                    src={item.map}
+                    style={{ border: "0" }}
+                    loading="lazy"
+                    className="w-full h-72 rounded"
+                  ></iframe>
                 </div>
               </div>
             ))}
