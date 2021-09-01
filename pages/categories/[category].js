@@ -14,13 +14,19 @@ const BackgroundVideo = ({ category }) => {
       return (
         <div className="absolute top-0 left-0 w-full h-full z-0">
           <video
-            src="/assets/LandingPageCategoryProgramming.webm"
             className="h-full w-full"
             autoPlay
             playsInline
             muted
             loop
-          ></video>
+            preload="auto"
+          >
+            <source
+              src="/assets/LandingPageCategoryProgramming.webm"
+              type="video/webm"
+            />
+            <source src="/assets/LandingPageCategoryProgramming.mov" />
+          </video>
         </div>
       );
       break;
@@ -28,13 +34,19 @@ const BackgroundVideo = ({ category }) => {
       return (
         <div className="absolute top-0 left-0 w-full h-full z-0">
           <video
-            src="/assets/LandingPageCategoryProduction.webm"
             className="h-full w-full"
             autoPlay
             playsInline
             muted
             loop
-          ></video>
+            preload="auto"
+          >
+            <source
+              src="/assets/LandingPageCategoryProduction.webm"
+              type="video/webm"
+            />
+            <source src="/assets/LandingPageCategoryProduction.mov" />
+          </video>
         </div>
       );
       break;
@@ -42,13 +54,19 @@ const BackgroundVideo = ({ category }) => {
       return (
         <div className="absolute top-0 left-0 w-full h-full z-0">
           <video
-            src="/assets/LandingPageCategoryDesign.webm"
             className="h-full w-full"
             autoPlay
             playsInline
             muted
             loop
-          ></video>
+            preload="auto"
+          >
+            <source
+              src="/assets/LandingPageCategoryDesign.webm"
+              type="video/webm"
+            />
+            <source src="/assets/LandingPageCategoryDesign.mov" />
+          </video>
         </div>
       );
       break;
@@ -56,13 +74,19 @@ const BackgroundVideo = ({ category }) => {
       return (
         <div className="absolute top-0 left-0 w-full h-full z-0">
           <video
-            src="/assets/LandingPageCategoryBusiness.webm"
             className="h-full w-full"
             autoPlay
             playsInline
             muted
             loop
-          ></video>
+            preload="auto"
+          >
+            <source
+              src="/assets/LandingPageCategoryBusiness.webm"
+              type="video/webm"
+            />
+            <source src="/assets/LandingPageCategoryBusiness.mov" />
+          </video>
         </div>
       );
       break;
@@ -70,13 +94,19 @@ const BackgroundVideo = ({ category }) => {
       return (
         <div className="absolute top-0 left-0 w-full h-full z-0">
           <video
-            src="/assets/LandingPageCategoryGameDevelopment.webm"
             className="h-full w-full"
             autoPlay
             playsInline
             muted
             loop
-          ></video>
+            preload="auto"
+          >
+            <source
+              src="/assets/LandingPageCategoryGameDevelopment.webm"
+              type="video/webm"
+            />
+            <source src="/assets/LandingPageCategoryGameDevelopment.mov" />
+          </video>
         </div>
       );
       break;

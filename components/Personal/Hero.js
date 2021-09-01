@@ -72,13 +72,16 @@ const Hero = ({
           style={{ zIndex: "-1" }}
         >
           <video
-            src="/assets/DTrooperCircle1.webm"
             className="h-full w-full"
             ref={video1}
             playsInline
             muted
             loop
-          ></video>
+            preload="auto"
+          >
+            <source src="/assets/DTrooperCircle1.webm" type="video/webm" />
+            <source src="/assets/DTrooperCircle1.mov" />
+          </video>
         </div>
         <Divider />
       </div>
@@ -118,13 +121,16 @@ const Hero = ({
           style={{ zIndex: "-1" }}
         >
           <video
-            src="/assets/DTrooperRectangle1.webm"
             className="h-full w-full"
             ref={video1}
             playsInline
             muted
             loop
-          ></video>
+            preload="auto"
+          >
+            <source src="/assets/DTrooperRectangle1.webm" type="video/webm" />
+            <source src="/assets/DTrooperRectangle1.mov" />
+          </video>
         </div>
         <Divider />
       </div>
@@ -164,13 +170,16 @@ const Hero = ({
           style={{ zIndex: "-1" }}
         >
           <video
-            src="/assets/DTrooperTriangle1.webm"
             className="h-full w-full"
             ref={video1}
             playsInline
             muted
             loop
-          ></video>
+            preload="auto"
+          >
+            <source src="/assets/DTrooperTriangle1.webm" type="video/webm" />
+            <source src="/assets/DTrooperTriangle1.mov" />
+          </video>
         </div>
         <Divider />
       </div>

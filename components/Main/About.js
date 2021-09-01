@@ -172,6 +172,7 @@ const About = ({ reference, aboutVideo, internVideo, majorVideo }) => {
               src="assets/LandingPageInternshipInfo1-WigglingCircle.webm"
               type="video/webm"
             />
+            <source src="assets/LandingPageInternshipInfo1-WigglingCircle.mov" />
           </video>
         </div>
       </div>

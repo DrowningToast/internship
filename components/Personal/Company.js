@@ -12,13 +12,16 @@ const VideoComponent = ({ display, video3 }) => {
         style={{ zIndex: "-1" }}
       >
         <video
-          src="/assets/DTrooperCircle3.webm"
           className="w-full"
           ref={video3}
           playsInline
           muted
           loop
-        ></video>
+          preload="auto"
+        >
+          <source src="/assets/DTrooperCircle3.webm" type="video/webm" />
+          <source src="/assets/DTrooperCircle3.mov" />
+        </video>
       </div>
     );
   } else if (display == "E") {
@@ -28,13 +31,16 @@ const VideoComponent = ({ display, video3 }) => {
         style={{ zIndex: "-1" }}
       >
         <video
-          src="/assets/DTrooperRectangle3.webm"
           className="w-full"
           ref={video3}
           playsInline
           muted
           loop
-        ></video>
+          preload="auto"
+        >
+          <source src="/assets/DTrooperRectangle3.webm" type="video/webm" />
+          <source src="/assets/DTrooperRectangle3.mov" />
+        </video>
       </div>
     );
   } else {
@@ -44,13 +50,16 @@ const VideoComponent = ({ display, video3 }) => {
         style={{ zIndex: "-1" }}
       >
         <video
-          src="/assets/DTrooperTriangle3.webm"
           className="w-full"
           ref={video3}
           playsInline
           muted
           loop
-        ></video>
+          preload="auto"
+        >
+          <source src="/assets/DTrooperTriangle3.webm" type="video/webm" />
+          <source src="/assets/DTrooperTriangle3.mov" />
+        </video>
       </div>
     );
   }

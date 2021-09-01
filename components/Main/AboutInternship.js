@@ -133,6 +133,7 @@ const AboutInternship = ({ aboutVideo, internVideo, majorVideo }) => {
               src="/assets/LandingPageInternshipInfo2.webm"
               type="video/webm"
             />
+            <source src="/assets/LandingPageInternshipInfo2.mov" />
           </video>
         </div>
       </div>

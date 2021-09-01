@@ -183,6 +183,7 @@ const Major = ({ aboutVideo, internVideo, majorVideo }) => {
             preload="auto"
           >
             <source src="/assets/LandingPageMajor.webm" type="video/webm" />
+            <source src="/assets/LandingPageMajor.mov" />
           </video>
         </div>
       </motion.div>
