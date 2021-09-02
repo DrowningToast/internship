@@ -31,7 +31,7 @@ export default function CategoryProduction(props) {
   return (
     <group ref={group} {...props} dispose={null}>
       <group
-        position={[0, 0, 0]}
+        position={[-0.1, 0, 0]}
         onPointerEnter={handleEnter}
         onPointerLeave={handleLeave}
         rotation={[0, rotationState ? rotationState : 0, 0]}
