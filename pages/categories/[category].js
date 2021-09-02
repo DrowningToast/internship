@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Portrait from "../../components/Profile/Portrait";
 import meta from "../../meta.json";
-import Header from "../components/Header";
+import Header from "../../components/Header";
 /**
  *
  * Profile type = Standard 5 photo (standard), Flexible 5+ (flex), video (video), instragram stories (stories)

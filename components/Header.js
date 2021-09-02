@@ -1,4 +1,5 @@
 import Head from "next/head";
+const config = require("../next.config");
 
 const Header = ({ name }) => {
   return (
@@ -26,8 +27,11 @@ const Header = ({ name }) => {
         property="og:description"
         content="เว็บไซต์นี้เป็นส่วนหนึ่งของรายวิชาการฝึกงานเทคโนโลยีสารสนเทศ และการสื่อสาร (ว30213) ปีการศึกษา 2562 โรงเรียนสาธิต มศว ประสานมิตร (ฝ่ายมัธยม)"
       />
-      <meta property="og:image" content="/main/about.jpg" />
-      <link rel="icon" href="/psmcom-logo.png" />
+      <meta
+        property="og:image"
+        content={config.basePath + "/main/IMG_0045.jpeg"}
+      />
+      <link rel="icon" href={config.basePath + "/psmcom-logo.png"} />
     </Head>
   );
 };
