@@ -11,7 +11,7 @@ const ImageList = ({ number, gallerySize, handleLightBox }) => {
         <div className="block">
           <div
             className="relative flex shadow-lg cursor-pointer"
-            onClick={() => handleLightBox(`/data/${number}/image_5.webp`)}
+            onClick={() => handleLightBox(`/data/${number}/image_1.webp`)}
             style={{ paddingTop: "56.25%" }}
           >
             <Image
@@ -30,7 +30,7 @@ const ImageList = ({ number, gallerySize, handleLightBox }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
           <div
             className="relative flex shadow-lg cursor-pointer"
-            onClick={() => handleLightBox(`/data/${number}/image_5.webp`)}
+            onClick={() => handleLightBox(`/data/${number}/image_1.webp`)}
             style={{ paddingTop: "75%" }}
           >
             <Image
@@ -43,7 +43,7 @@ const ImageList = ({ number, gallerySize, handleLightBox }) => {
           </div>
           <div
             className="relative flex shadow-lg cursor-pointer"
-            onClick={() => handleLightBox(`/data/${number}/image_5.webp`)}
+            onClick={() => handleLightBox(`/data/${number}/image_2.webp`)}
             style={{ paddingTop: "75%" }}
           >
             <Image
@@ -62,7 +62,7 @@ const ImageList = ({ number, gallerySize, handleLightBox }) => {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 lg:gap-16">
           <div
             className="relative flex shadow-lg cursor-pointer"
-            onClick={() => handleLightBox(`/data/${number}/image_5.webp`)}
+            onClick={() => handleLightBox(`/data/${number}/image_1.webp`)}
             style={{ paddingTop: "177%" }}
           >
             <Image
@@ -75,7 +75,7 @@ const ImageList = ({ number, gallerySize, handleLightBox }) => {
           </div>
           <div
             className="relative flex shadow-lg cursor-pointer"
-            onClick={() => handleLightBox(`/data/${number}/image_5.webp`)}
+            onClick={() => handleLightBox(`/data/${number}/image_2.webp`)}
             style={{ paddingTop: "177%" }}
           >
             <Image
@@ -88,7 +88,7 @@ const ImageList = ({ number, gallerySize, handleLightBox }) => {
           </div>
           <div
             className="relative col-span-2 md:col-span-1 flex shadow-lg cursor-pointer"
-            onClick={() => handleLightBox(`/data/${number}/image_5.webp`)}
+            onClick={() => handleLightBox(`/data/${number}/image_3.webp`)}
             style={{ paddingTop: "177%" }}
           >
             <Image
@@ -107,7 +107,7 @@ const ImageList = ({ number, gallerySize, handleLightBox }) => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           <div
             className="relative lg:col-span-2 flex shadow-lg h-56 lg:h-auto cursor-pointer"
-            onClick={() => handleLightBox(`/data/${number}/image_5.webp`)}
+            onClick={() => handleLightBox(`/data/${number}/image_1.webp`)}
           >
             <Image
               src={`/data/${number}/image_1.webp`}
@@ -119,7 +119,7 @@ const ImageList = ({ number, gallerySize, handleLightBox }) => {
           </div>
           <div
             className="relative lg:col-span-1 flex shadow-lg cursor-pointer"
-            onClick={() => handleLightBox(`/data/${number}/image_5.webp`)}
+            onClick={() => handleLightBox(`/data/${number}/image_2.webp`)}
             style={{ paddingTop: "75%" }}
           >
             <Image
@@ -132,7 +132,7 @@ const ImageList = ({ number, gallerySize, handleLightBox }) => {
           </div>
           <div
             className="relative lg:col-span-1 flex shadow-lg cursor-pointer"
-            onClick={() => handleLightBox(`/data/${number}/image_5.webp`)}
+            onClick={() => handleLightBox(`/data/${number}/image_3.webp`)}
             style={{ paddingTop: "75%" }}
           >
             <Image
@@ -145,7 +145,7 @@ const ImageList = ({ number, gallerySize, handleLightBox }) => {
           </div>
           <div
             className="relative lg:col-span-2 flex shadow-lg h-56 lg:h-auto cursor-pointer"
-            onClick={() => handleLightBox(`/data/${number}/image_5.webp`)}
+            onClick={() => handleLightBox(`/data/${number}/image_4.webp`)}
           >
             <Image
               src={`/data/${number}/image_4.webp`}
