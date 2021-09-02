@@ -9,8 +9,18 @@ const InternBook = ({ number }) => {
 
   const changePage = (type) => {
     if (type == "INCREASE") {
+      if (page + 1 > numPages) {
+        setPage(numPages);
+        return;
+      }
+
       setPage(page + 1);
     } else {
+      if (page - 1 < 1) {
+        setPage(1);
+        return;
+      }
+
       setPage(page - 1);
     }
   };
@@ -37,13 +47,21 @@ const InternBook = ({ number }) => {
       <div className="my-2">
         <button
           onClick={() => changePage("DECREASE")}
-          className="bg-white rounded shadow px-4 py-1 mx-2 hover:bg-gray-100 transition duration-300"
+          className={`bg-white rounded shadow px-4 py-1 mx-2 transition duration-300 ${
+            page - 1 < 1
+              ? "opacity-50 cursor-default"
+              : "hover:bg-gray-100 cursor-pointer"
+          }`}
         >
           &lt;
         </button>
         <button
           onClick={() => changePage("INCREASE")}
-          className="bg-white rounded shadow px-4 py-1 mx-2 hover:bg-gray-100 transition duration-300"
+          className={`bg-white rounded shadow px-4 py-1 mx-2 transition duration-300 ${
+            page + 1 > numPages
+              ? "opacity-50 cursor-default"
+              : "hover:bg-gray-100 cursor-pointer"
+          }`}
         >
           &gt;
         </button>
