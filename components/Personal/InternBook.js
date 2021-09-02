@@ -11,6 +11,7 @@ const InternBook = ({ number }) => {
   const { width, height, ref } = useResizeDetector();
 
   const [elHeight, setElHeight] = useState([]);
+  const [elWidth, setElWidth] = useState([]);
 
   useEffect(() => {
     if (height) {
@@ -18,8 +19,15 @@ const InternBook = ({ number }) => {
     }
   }, [height]);
 
+  useEffect(() => {
+    if (width) {
+      setElWidth((oldWidth) => [...oldWidth, width]);
+    }
+  }, [width]);
+
   const changePage = (type) => {
     ref.current.style.height = `${Math.max(...elHeight)}px`;
+    ref.current.style.width = `${Math.max(...elWidth)}px`;
     if (type == "INCREASE") {
       if (page + 1 > numPages) setPage(numPages);
       else setPage(page + 1);
@@ -36,7 +44,7 @@ const InternBook = ({ number }) => {
   return (
     <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8 flex flex-col justify-center items-center">
       <div className="p-4 shadow-lg">
-        <div ref={ref}>
+        <div ref={ref} className="flex flex-col justify-center items-center">
           <Document
             file={`/data/${number}/${number}.pdf`}
             onLoadSuccess={onDocumentLoadSuccess}
