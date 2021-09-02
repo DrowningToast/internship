@@ -4,7 +4,7 @@ const config = require("../next.config");
 const Header = ({ name }) => {
   return (
     <Head>
-      <title>PSMCOM62 Internship {name ? `| ${name}` : null}</title>
+      <title>PSMCOM62 Internship {name ? `| ${name}` : ""}</title>
       <meta name="theme-color" content="#ffffff" />
       <meta
         name="description"
@@ -17,11 +17,11 @@ const Header = ({ name }) => {
       <meta name="author" content={name || "PSMCOM62 Internship"} />
       <meta
         property="og:title"
-        content={`PSMCOM62 Internship ${name ? `| ${name}` : null}`}
+        content={`PSMCOM62 Internship ${name ? `| ${name}` : ""}`}
       />
       <meta
         property="og:site_name"
-        content={`PSMCOM62 Internship ${name ? `| ${name}` : null}`}
+        content={`PSMCOM62 Internship ${name ? `| ${name}` : ""}`}
       />
       <meta
         property="og:description"
