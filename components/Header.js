@@ -1,7 +1,14 @@
 import Head from "next/head";
 const config = require("../next.config");
 
-const Header = ({ name }) => {
+const Header = ({ name, number, gallerySize }) => {
+  const randomNumber = (start, end, digit) => {
+    return (
+      Math.random() * (Number(end) - Number(start)) +
+      Number(start)
+    ).toFixed(digit);
+  };
+
   return (
     <Head>
       <title>PSMCOM62 Internship {name ? `| ${name}` : ""}</title>
@@ -29,7 +36,12 @@ const Header = ({ name }) => {
       />
       <meta
         property="og:image"
-        content={config.basePath + "/main/IMG_0045.jpeg"}
+        content={
+          !gallerySize
+            ? config.basePath + "/main/IMG_0045.jpeg"
+            : config.basePath +
+              `/data/${number}/image_${randomNumber(1, gallerySize, 0)}.webp`
+        }
       />
       <link rel="icon" href={config.basePath + "/psmcom-logo.png"} />
     </Head>

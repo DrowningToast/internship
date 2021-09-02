@@ -43,6 +43,8 @@ const Blog = (props) => {
           props.slug.split("-")[1].charAt(0).toUpperCase() +
           props.slug.split("-")[1].slice(1)
         }
+        number={props.id}
+        gallerySize={props.gallerySize}
       />
 
       <main>
