@@ -33,7 +33,16 @@ const Categories = ({
         >
           <div className="flex flex-col justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-bold text-lg text-center">
             <div className="relative w-8 h-8 lg:w-12 lg:h-12">
-              <Image src={"/icon/Pictures.svg"} layout="fill" alt="" priority />
+              {gallerySize ? (
+                <Image
+                  src={"/icon/Pictures.svg"}
+                  layout="fill"
+                  alt=""
+                  priority
+                />
+              ) : (
+                <Image src={"/icon/Videos.svg"} layout="fill" alt="" priority />
+              )}
             </div>
             <div className="mt-2 text-sm lg:text-base">
               {gallerySize ? "Pictures" : "Videos"}
