@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import { useRouter } from "next/router";
 
-import Head from "next/head";
+import Header from "../components/Header";
 import Image from "next/image";
 import About from "../components/Main/About";
 import AboutInternship from "../components/Main/AboutInternship";
@@ -30,14 +30,7 @@ const Home = () => {
 
   return (
     <div>
-      <Head>
-        <title>Internship 62</title>
-        <meta
-          name="description"
-          content="Website decdicated to telling the stories about PSM62 students intership experiences"
-        />
-        <link rel="icon" href="/psmcom-logo.png" />
-      </Head>
+      <Header />
 
       <main className="min-h-screen scroll-behaviour-container">
         <Hero scrollToAbout={scrollToAbout} />

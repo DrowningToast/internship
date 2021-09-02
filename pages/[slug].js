@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Header from "../components/Header";
 import Image from "next/image";
 import Link from "next/link";
 import Hero from "../components/Personal/Hero";
@@ -35,14 +35,15 @@ const Blog = (props) => {
 
   return (
     <div>
-      <Head>
-        <title>Internship 62</title>
-        <meta
-          name="description"
-          content="Website decdicated to telling the stories about PSM62 students intership experiences"
-        />
-        <link rel="icon" href="/psmcom-logo.png" />
-      </Head>
+      <Header
+        name={
+          props.slug.split("-")[0].charAt(0).toUpperCase() +
+          props.slug.split("-")[0].slice(1) +
+          " " +
+          props.slug.split("-")[1].charAt(0).toUpperCase() +
+          props.slug.split("-")[1].slice(1)
+        }
+      />
 
       <main>
         <div className="text-gray-400 font-light text-xl px-8 py-2 flex flex-row justify-between items-center">
