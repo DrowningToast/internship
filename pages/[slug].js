@@ -78,6 +78,7 @@ const Blog = (props) => {
           video4={video4}
         />
         <Categories
+          gallerySize={props.gallerySize}
           scrollToArticles={scrollToArticles}
           scrollToPictures={scrollToPictures}
           scrollToCompany={scrollToCompany}

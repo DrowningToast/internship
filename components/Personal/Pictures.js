@@ -239,7 +239,7 @@ const ImageList = ({ number, gallerySize }) => {
 
 const Pictures = ({ reference, number, gallerySize }) => {
   if (gallerySize == 0) {
-    return <div></div>;
+    return <div ref={reference}></div>;
   } else {
     return (
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8" ref={reference}>
