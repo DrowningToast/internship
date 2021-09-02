@@ -22,11 +22,11 @@ const Home = () => {
   const internVideo = useRef(null);
   const majorVideo = useRef(null);
 
-  useEffect(() => {
-    if (router.query.page == "categories") {
-      scrollToCategories();
-    }
-  }, [router]);
+  // useEffect(() => {
+  //   if (router.query.page == "categories") {
+  //     scrollToCategories();
+  //   }
+  // }, [router]);
 
   return (
     <div>

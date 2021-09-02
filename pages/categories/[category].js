@@ -141,9 +141,9 @@ const Category = ({ title, members, color, category }) => {
   }, [updateContainerWidth]);
 
   useEffect(() => {
-    window.addEventListener("popstate", function (event) {
-      window.location.assign("/?page=categories");
-    });
+    // window.addEventListener("popstate", function (event) {
+    //   window.location.assign("/?page=categories");
+    // });
   }, []);
 
   return (
