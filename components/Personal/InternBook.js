@@ -1,27 +1,31 @@
 import { Document, Page, pdfjs } from "react-pdf";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+
+import { useResizeDetector } from "react-resize-detector";
 
 const InternBook = ({ number }) => {
   pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
   const [numPages, setNumPages] = useState(null);
   const [page, setPage] = useState(1);
+  const { width, height, ref } = useResizeDetector();
+
+  const [elHeight, setElHeight] = useState([]);
+
+  useEffect(() => {
+    if (height) {
+      setElHeight((oldHeight) => [...oldHeight, height]);
+    }
+  }, [height]);
 
   const changePage = (type) => {
+    ref.current.style.height = `${Math.max(...elHeight)}px`;
     if (type == "INCREASE") {
-      if (page + 1 > numPages) {
-        setPage(numPages);
-        return;
-      }
-
-      setPage(page + 1);
+      if (page + 1 > numPages) setPage(numPages);
+      else setPage(page + 1);
     } else {
-      if (page - 1 < 1) {
-        setPage(1);
-        return;
-      }
-
-      setPage(page - 1);
+      if (page - 1 < 1) setPage(1);
+      else setPage(page - 1);
     }
   };
 
@@ -32,12 +36,14 @@ const InternBook = ({ number }) => {
   return (
     <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8 flex flex-col justify-center items-center">
       <div className="p-4 shadow-lg">
-        <Document
-          file={`/data/${number}/${number}.pdf`}
-          onLoadSuccess={onDocumentLoadSuccess}
-        >
-          <Page pageNumber={page} />
-        </Document>
+        <div ref={ref}>
+          <Document
+            file={`/data/${number}/${number}.pdf`}
+            onLoadSuccess={onDocumentLoadSuccess}
+          >
+            <Page pageNumber={page} />
+          </Document>
+        </div>
       </div>
       <div className="mt-4">
         <p>
