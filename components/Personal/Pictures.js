@@ -217,6 +217,7 @@ const ImageList = ({ number, gallerySize }) => {
           <div
             className="relative flex shadow-lg"
             style={{ paddingTop: "75%" }}
+            key={index}
           >
             <Image
               src={`/data/${number}/image_${index}.webp`}
