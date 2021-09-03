@@ -61,7 +61,7 @@ const Major = ({ aboutVideo, internVideo, majorVideo }) => {
             layout
             className={`uppercase inline-block text-white pointer-events-none  font-extrabold ${
               selected !== "mt"
-                ? "text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl"
+                ? "text-4xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
                 : "text-base my-4 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
             } text-center z-10`}
           >
@@ -146,7 +146,7 @@ const Major = ({ aboutVideo, internVideo, majorVideo }) => {
             layout
             className={`uppercase inline-block text-white pointer-events-none font-extrabold ${
               selected !== "it"
-                ? "text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl"
+                ? "text-4xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
                 : "text-base my-4 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
             } text-center z-10`}
           >
