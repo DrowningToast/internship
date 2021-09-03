@@ -48,7 +48,7 @@
       "name": "นายวิทุรัช สินธุเศรษฐ",
       "major": "IMT - Innovative Multimedia Technology",
       "position": "Graphic Designer",
-      "category": "production",
+      "category": "design",
       "gallerySize": 5,
       "display": "E",
 
@@ -71,7 +71,7 @@
       "id": 2,
       "name": "นายฐิติศักดิ์ รองรัตน์",
       "major": "IMT - Innovative Multimedia Technology",
-      "position": "Game Programmer",
+      "position": "Game Developer",
       "category": "gamedevelopment",
       "gallerySize": 2,
       "display": "E",
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "นายปฐมธน อาสิญจ์สกุล",
       "major": "IMT - Innovative Multimedia Technology",
-      "position": "เบื้องหลังกองถ่าย",
+      "position": "Production Crew",
       "category": "production",
       "gallerySize": 3,
       "display": "D",
@@ -103,8 +103,8 @@
       "email": "prathomthon.pond@gmail.com",
       "company": [
         {
-          "name": "Spring board +",
-          "description": "เป็นบริษัทในเครือของ far east fame line ddb ทำเกี่ยวกับการโฆษณาลงโทรทัศน์เป็นส่วนใหญ่",
+          "name": "บริษัท สปริงบอร์ด พลัส จํากัด",
+          "description": "บริษัทที่อยู่ในเครือของ far east fame line ddb ทำเกี่ยวกับการโฆษณาลงโทรทัศน์เป็นส่วนใหญ่",
           "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996963.0316339233!2d98.7360185!3d12.1587113!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29eb54167805b%3A0xd502ecf6b1bd1149!2z4LiL4Lit4LiiIOC4qOC4o-C4teC4reC4ouC4uOC4mOC4ouC4siA1IOC5geC4guC4p-C4hyDguJfguLjguYjguIfguJ7guI3guLLguYTguJcg4LmA4LiC4LiV4Lij4Liy4LiK4LmA4LiX4Lin4Li1IOC4geC4o-C4uOC4h-C5gOC4l-C4nuC4oeC4q-C4suC4meC4hOC4oyAxMDQwMA!5e0!3m2!1sth!2sth!4v1630493076824!5m2!1sth!2sth"
         }
       ],
@@ -129,7 +129,7 @@
       "company": [
         {
           "name": "บริษัท แอดโวเครซี่ จำกัด",
-          "description": "บริษัท แอดโวเครซี่ จำกัด บริษัท Agency รับงานเกี่ยวกับการโฆษณา การทำ ADS ลงโซเชียลมีเดีย ตัดต่อวิดิโอ ทำกราฟิก",
+          "description": "บริษัท แอดโวเครซี่ จำกัด บริษัท Agency รับงานเกี่ยวกับการโฆษณา การทำ Ads ลงโซเชียลมีเดีย ตัดต่อวิดิโอ ทำกราฟิก",
           "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.5565093641585!2d100.57359201483102!3d13.80558769031261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29fc81d2275b5%3A0xa96a4823e07cdc35!2sAdvocrazy!5e0!3m2!1sth!2sth!4v1630493118717!5m2!1sth!2sth"
         }
       ],
@@ -145,7 +145,7 @@
       "id": 5,
       "name": "นางสาววรินทร วิเศษธร",
       "major": "IMT - Innovative Multimedia Technology",
-      "position": "กราฟิกดีไซน์ , ช่างภาพ",
+      "position": "Graphic Designer, Photographer",
       "category": "design",
       "gallerySize": 5,
       "display": "F",
@@ -201,7 +201,7 @@
       "email": "palmkub1150@gmail.com",
       "company": [
         {
-          "name": "บริษัท เซอร์เคิล รัน จำกัด",
+          "name": "Circle run co;LTD",
           "description": "เป็นบริษัทที่ทำเกี่ยวกับการทำป้ายโฆษณาเพื่อสื่อโฆษณาและการประชาสัมพันธ์",
           "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.022471486978!2d100.4826571148308!3d13.777518390330853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2997f59a7ee33%3A0xb784141ebc89e572!2z4Lia4Lij4Li04Lip4Lix4LiXIOC5gOC4i-C4reC4o-C5jOC5gOC4hOC4tOC4pSDguKPguLHguJkg4LiI4Liz4LiB4Lix4LiU!5e0!3m2!1sth!2sth!4v1630493181347!5m2!1sth!2sth"
         }
@@ -226,7 +226,7 @@
       "company": [
         {
           "name": "บริษัท แอดโวเครซี่ จำกัด",
-          "description": "บริษัท แอดโวเครซี่ จำกัด บริษัท Agency รับงานเกี่ยวกับการโฆษณา การทำADSลงโซเชียลมีเดีย ตัดต่อวิดิโอ ทำกราฟิก",
+          "description": "บริษัท แอดโวเครซี่ จำกัด บริษัท Agency รับงานเกี่ยวกับการโฆษณา การทำ Ads ลงโซเชียลมีเดีย ตัดต่อวิดิโอ ทำกราฟิก",
           "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.5565093641585!2d100.57359201483102!3d13.80558769031261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29fc81d2275b5%3A0xa96a4823e07cdc35!2sAdvocrazy!5e0!3m2!1sth!2sth!4v1630493118717!5m2!1sth!2sth"
         }
       ],
@@ -242,7 +242,7 @@
       "id": 9,
       "name": "นางสาวธนัชนันท์  ชูสัตยานนท์",
       "major": "IMT - Innovative Multimedia Technology",
-      "position": "Production crew",
+      "position": "Production Crew",
       "category": "production",
       "gallerySize": 5,
       "display": "F",
@@ -250,8 +250,8 @@
       "email": "nongnetnarak@gmail.com",
       "company": [
         {
-          "name": "Amazing Group จำกัด  (บริษัทในเครือ Warner Bros. Thailand) ",
-          "description": "หน้าที่หลักบริษัทที่ไปทำเป็นบริษัทในเครือของ WarnerBros เน้นพวกผลิตสื่อที่เกี่ยวข้องกับภาพยนตร์ ผ่านช่องทางโซเชียลต่างๆ",
+          "name": "Amazing Group จำกัด",
+          "description": "รับผลิตสื่อโฆษณา ผลิตรายการ",
           "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.8162308033557!2d100.52891841483023!3d13.729573190361819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f2b67c2847f%3A0xa2ab951f0d72676e!2z4LiV4Li24LiBQ0NU!5e0!3m2!1sth!2sth!4v1630493197118!5m2!1sth!2sth"
         }
       ],
@@ -266,7 +266,7 @@
       "id": 10,
       "name": "นายมรรค ก่อเกียรติมานะ",
       "major": "IMT - Innovative Multimedia Technology",
-      "position": "Editor",
+      "position": "Video Editor",
       "category": "production",
       "gallerySize": 8,
       "display": "F",
@@ -274,8 +274,8 @@
       "email": "mak.ninyoq@gmail.com",
       "company": [
         {
-          "name": "บริษัท coolkidsth จํากัด",
-          "description": "บริษัท agency, เปิดเพจ facebook, แชนแนล youtube",
+          "name": "บริษัท Coolkids (Thailand) Co.,Ltd. ",
+          "description": "บริษัท Agency บริการวางแผนผลิตสื่อโฆษณา รับจ้างจัดอีเว้นท์",
           "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.1196586712977!2d100.52789761483004!3d13.711201890373768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f9e9b8916cb%3A0x64b1d4394eb30076!2sCool%20Kids%20Thailand%20Co.%2CLtd.!5e0!3m2!1sth!2sth!4v1630493216637!5m2!1sth!2sth"
         }
       ],
@@ -290,7 +290,7 @@
       "id": 11,
       "name": "นายธนบดี เฉลยมรรค",
       "major": "IMT - Innovative Multimedia Technology",
-      "position": "กราฟิก",
+      "position": "Graphic Designer",
       "category": "design",
       "gallerySize": 1,
       "display": "F",
@@ -298,8 +298,8 @@
       "email": "sentjosephh@gmail.com",
       "company": [
         {
-          "name": "advocrazy",
-          "description": "ตัวแทนโฆษณา สื่อดิจิตอล รับงานโฆษณา สิ่งพิมพ์ สิ่อวิทยุ โทรทัศน์ สื่อวิทยุ โทรทัศน์",
+          "name": "บริษัท แอดโวเครซี่ จำกัด",
+          "description": "บริษัท แอดโวเครซี่ จำกัด บริษัท Agency รับงานเกี่ยวกับการโฆษณา การทำ Ads ลงโซเชียลมีเดีย ตัดต่อวิดิโอ ทำกราฟิก",
           "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.5565093641585!2d100.57359201483102!3d13.80558769031261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29fc81d2275b5%3A0xa96a4823e07cdc35!2sAdvocrazy!5e0!3m2!1sth!2sth!4v1630493118717!5m2!1sth!2sth"
         }
       ],
@@ -320,8 +320,8 @@
       "email": "fujixz123@gmail.com",
       "company": [
         {
-          "name": "Innova Interactive Studio",
-          "description": "บริษัทของผมทำงานเกี่ยวกับสื่อ Interactive เช่น AR VR เกม etc. ",
+          "name": "บริษัท Innova Interactive Studio จำกัด",
+          "description": "เป็นบริษัทที่ผลิตเกมและสื่อ interactive มีทั้งรูปแบบ VR และ AR etc.",
           "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.58575530155!2d100.58742701483177!3d13.863886390274997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29d2ea4ecf74f%3A0x134f69ea21faee86!2sInnova%20Interactive%20Studio!5e0!3m2!1sth!2sth!4v1630493056555!5m2!1sth!2sth"
         }
       ],
@@ -338,7 +338,7 @@
       "id": 13,
       "name": "นายณธีพัฒน์ เลิศวงศ์ปรีชา",
       "major": "IMT - Innovative Multimedia Technology",
-      "position": "creative",
+      "position": "Creative",
       "category": "production",
       "gallerySize": 1,
       "display": "F",
@@ -346,7 +346,7 @@
       "email": "nateepas9@gmail.com",
       "company": [
         {
-          "name": "DIGIT TRIBE COMPANY (บริษัท ดิจิท ไทรบ์ จำกัด)",
+          "name": "DIGIT TRIBE COMPANY LIMITED (บริษัท ดิจิท ไทรบ์ จำกัด)",
           "description": "เอเจนซี่โฆษณาออนไลน์",
           "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3874.4536690245773!2d100.5633041!3d13.8117752!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d618db5f14db9%3A0xeeb10cc53308142a!2z4Lit4Liy4LiE4Liy4Lij4Lie4Lij4LmJ4Lit4Lih4Lie4Lix4LiZ4LiY4Li44LmMIDItMw!5e0!3m2!1sth!2sth!4v1630493239298!5m2!1sth!2sth"
         }
@@ -370,8 +370,8 @@
       "email": "nuntapop.th@gmail.com",
       "company": [
         {
-          "name": "แอดโวเครซี่ จำกัด",
-          "description": "บริษัท แอดโวเครซี่ จำกัด บริษัท Agency รับงานเกี่ยวกับการโฆษณา การทำโฆษณาลงโซเชียลมีเดีย ตัดต่อวิดิโอ ทำกราฟิก ",
+          "name": "บริษัท แอดโวเครซี่ จำกัด",
+          "description": "บริษัท แอดโวเครซี่ จำกัด บริษัท Agency รับงานเกี่ยวกับการโฆษณา การทำ Ads ลงโซเชียลมีเดีย ตัดต่อวิดิโอ ทำกราฟิก",
           "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.5565093641585!2d100.57359201483102!3d13.80558769031261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29fc81d2275b5%3A0xa96a4823e07cdc35!2sAdvocrazy!5e0!3m2!1sth!2sth!4v1630493118717!5m2!1sth!2sth"
         }
       ],
@@ -394,7 +394,7 @@
       "email": "brightkornvathin@gmail.com",
       "company": [
         {
-          "name": "นิวเมอร์ลิน จำกัด",
+          "name": "บริษัท นิวเมอร์ลิน จำกัด",
           "description": "รับจ้างงานสิ่งพิมพ์ โบรชัวร์ หนังสือ แค็ตตาล็อค",
           "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15498.924174724549!2d100.5447312!3d13.7950804!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29c088a64cf81%3A0x196b1151dfd19ba6!2z4Lia4Lij4Li04Lip4Lix4LiXIOC4meC4tOC4p-C5gOC4oeC4reC4o-C5jOC4peC4tOC4mSDguIjguLPguIHguLHguJQ!5e0!3m2!1sen!2sth!4v1630493256087!5m2!1sen!2sth"
         }
@@ -413,7 +413,7 @@
       "id": 16,
       "name": "นายภคิน ยี่ภู่",
       "major": "IT - Information Technology",
-      "position": "Helpdesk",
+      "position": "Help Desk",
       "category": "programming",
       "gallerySize": 5,
       "display": "E",
@@ -422,7 +422,7 @@
       "company": [
         {
           "name": "สถาบันวิจัยวิทยาศาสตร์การแพทย์ทหาร (USAMD-AFRIMS)",
-          "description": "บริษัททำงานวิจัยด้านการแพทย์และการทดลองเกี่ยวกับไวรัสต่างๆ ซึ่งเป็นการรร่วมมือะหว่าง ประเทศไทยและสหรัฐอเมริกา",
+          "description": "วิจัยด้านการแพทย์และการทดลองเกี่ยวกับไวรัสต่างๆ ซึ่งเป็นการร่วมมือะหว่าง ประเทศไทยและสหรัฐอเมริกา",
           "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996963.0361395178!2d98.7358604!3d12.1587107!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29eb28e3cdea9%3A0xd0136e6fe6f2b6a9!2z4Liq4LiW4Liy4Lia4Lix4LiZ4Lin4Li04LiI4Lix4Lii4Lin4Li04LiX4Lii4Liy4Lio4Liy4Liq4LiV4Lij4LmM4LiB4Liy4Lij4LmB4Lie4LiX4Lii4LmM4LiX4Lir4Liy4LijIOC4geC4o-C4oeC5geC4nuC4l-C4ouC5jOC4l-C4q-C4suC4o-C4muC4gSAoVXMgQWZyaW0p!5e0!3m2!1sth!2sth!4v1630493276623!5m2!1sth!2sth"
         }
       ],
@@ -447,8 +447,8 @@
       "email": "phoonnithi@gmail.com",
       "company": [
         {
-          "name": "แอดโวเครซี่ จำกัด",
-          "description": "บริษัท แอดโวเครซี่ จำกัด บริษัท Agency รับงานเกี่ยวกับการโฆษณา การทำADSลงโซเชียลมีเดีย ตัดต่อวิดิโอ ทำกราฟิก ",
+          "name": "บริษัท แอดโวเครซี่ จำกัด",
+          "description": "บริษัท แอดโวเครซี่ จำกัด บริษัท Agency รับงานเกี่ยวกับการโฆษณา การทำ Ads ลงโซเชียลมีเดีย ตัดต่อวิดิโอ ทำกราฟิก",
           "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.5565093641585!2d100.57359201483102!3d13.80558769031261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29fc81d2275b5%3A0xa96a4823e07cdc35!2sAdvocrazy!5e0!3m2!1sth!2sth!4v1630493118717!5m2!1sth!2sth"
         }
       ],
@@ -463,7 +463,7 @@
       "id": 18,
       "name": "นายภูมิผลิน เดชวิกัย",
       "major": "IMT - Innovative Multimedia Technology",
-      "position": "Sound engineer",
+      "position": "Sound Engineer",
       "category": "production",
       "gallerySize": 5,
       "display": "E",
@@ -472,7 +472,7 @@
       "company": [
         {
           "name": "Ze'-alots boutique post production",
-          "description": "เป็นบริษัทที่ทำงานเกี่ยวกับงาน Post production แทบจะทุกด้าน เช่น COLOR GRADING , EDITING , CGI & VFX และ SOUND STUDIO ",
+          "description": "เป็นบริษัทที่ทำงานเกี่ยวกับงาน Post production แทบจะทุกด้าน เช่น COLOR GRADING , EDITING , CGI & VFX และ SOUND STUDIO",
           "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3874.5768807379905!2d100.6049467!3d13.8043617!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29d9249a4a6ab%3A0x710d12338f3cdab8!2sZe-alots%20Boutique%20Post%20Production%20Co.%2CLtd!5e0!3m2!1sth!2sth!4v1630493294029!5m2!1sth!2sth"
         }
       ],
@@ -487,7 +487,7 @@
       "id": 19,
       "name": "นายปรเมษฐ์ เพชรชนะ",
       "major": "IMT - Innovative Multimedia Technology",
-      "position": "Editor",
+      "position": "Video Editor",
       "category": "production",
       "gallerySize": 5,
       "display": "F",
@@ -495,9 +495,9 @@
       "email": "omsinza01@gmail.com",
       "company": [
         {
-          "name": "Cool Kids Thailand Co.,Ltd.",
-          "description": "บริษัท agency, เปิดเพจfacebook, แชนแนลyoutube",
-          "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.1196586712977!2d100.52789761483004!3d13.711201890373768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f9e9b8916cb%3A0x64b1d4394eb30076!2sCool%20Kids%20Thailand%20Co.%2CLtd.!5e0!3m2!1sth!2sth!4v1630493356582!5m2!1sth!2sth"
+          "name": "บริษัท Coolkids (Thailand) Co.,Ltd. ",
+          "description": "บริษัท Agency บริการวางแผนผลิตสื่อโฆษณา รับจ้างจัดอีเว้นท์",
+          "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.1196586712977!2d100.52789761483004!3d13.711201890373768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f9e9b8916cb%3A0x64b1d4394eb30076!2sCool%20Kids%20Thailand%20Co.%2CLtd.!5e0!3m2!1sth!2sth!4v1630493216637!5m2!1sth!2sth"
         }
       ],
       "articles": [
@@ -509,7 +509,7 @@
       "id": 20,
       "name": "นายศุภธัช สุวัฒโน",
       "major": "IT - Information Technology",
-      "position": "Health Informic",
+      "position": "Health Informatics",
       "category": "programming",
       "gallerySize": 5,
       "display": "D",
@@ -518,7 +518,7 @@
       "company": [
         {
           "name": "Siriraj Informatics and Data Innovation Center",
-          "description": "ทำหน้าที่ดูแลและวิจัยข้อมูลต่างๆเพื่อปฏิรูปองค์กร อันนำไปสู่การพัฒนาการให้บริการทางการแพทย์ การศึกษาและการวิจัยด้านการแพทย์ ตามแผนยุทธศาสตร์ของคณะแพทยศาสตร์ศิริราชพยาบาล",
+          "description": "ทำหน้าที่ดูแลและวิจัยข้อมูลเพื่อปนำไปสู่การพัฒนาการให้บริการทางการแพทย์ การศึกษาและการวิจัยด้านการแพทย์ ",
           "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.3098497450073!2d100.48272331483054!3d13.760178890342026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e299755bb38391%3A0x35a05f069276f3b2!2z4Lio4Li54LiZ4Lii4LmM4Lin4Li04LiI4Lix4Lii4LiB4Liy4Lij4LmB4Lie4LiX4Lii4LmM4Lio4Li04Lij4Li04Lij4Liy4LiKIChTaU1SKQ!5e0!3m2!1sth!2sth!4v1630493372550!5m2!1sth!2sth"
         }
       ],
@@ -542,7 +542,7 @@
       "company": [
         {
           "name": "R V Connex Co., Ltd.",
-          "description": "บริษัท R V Connex Co., Ltd. เป็นบริษัทของไทยที่ทำเกี่ยวกับอุปกรณ์การรบและการป้องกันทั้งทางกายภาพและทางไซเบอร์ โดยมีการทำงานร่วมกันกับหน่วยงานรัฐบาลและหน่วยงานในต่างประเทศ",
+          "description": "ทำเกี่ยวกับอุปกรณ์การรบและการป้องกันทั้งทางกายภาพและทางไซเบอร์ โดยมีการทำงานร่วมกันกับหน่วยงานรัฐบาลและหน่วยงานในต่างประเทศ",
           "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.2281023541864!2d100.61336861483325!3d14.004484690184242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e281d4c0cd33e7%3A0x1523e8987d95e9d6!2sR%20V%20Connex%20Co.%2C%20Ltd.!5e0!3m2!1sen!2sth!4v1630493388090!5m2!1sen!2sth"
         }
       ],
@@ -570,7 +570,7 @@
       "company": [
         {
           "name": "R V Connex Co., Ltd.",
-          "description": "บริษัท R V Connex Co., Ltd. เป็นบริษัทไทยที่ทำงานอยู่ในแวดวงของการรบ การป้องกัน และความปลอดภัยทางไซเบอร์ โดยมีการทำงานร่วมกันกับรัฐบาลและบริษัทต่างประเทศมากมาย",
+          "description": "ทำเกี่ยวกับอุปกรณ์การรบและการป้องกันทั้งทางกายภาพและทางไซเบอร์ โดยมีการทำงานร่วมกันกับหน่วยงานรัฐบาลและหน่วยงานในต่างประเทศ",
           "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.2281023541864!2d100.61336861483325!3d14.004484690184242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e281d4c0cd33e7%3A0x1523e8987d95e9d6!2sR%20V%20Connex%20Co.%2C%20Ltd.!5e0!3m2!1sen!2sth!4v1630493388090!5m2!1sen!2sth"
         }
       ],
@@ -587,7 +587,7 @@
       "id": 23,
       "name": "นางสาวพิชามญชุ์ เวียงสมุทร",
       "major": "IT - Information Technology",
-      "position": "management trainee",
+      "position": "Management Trainee",
       "category": "business",
       "gallerySize": 1,
       "display": "E",
@@ -595,7 +595,7 @@
       "email": "filmmy2018@gmail.com",
       "company": [
         {
-          "name": "mom mom mom จำกัด",
+          "name": "บริษัท mom mom mom จำกัด",
           "description": "ทำธุรกิจเชิงพาณิชย์",
           "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.054114116357!2d100.50356131482937!3d13.654472190410486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDM5JzE2LjEiTiAxMDDCsDMwJzIwLjciRQ!5e0!3m2!1sth!2sth!4v1630493414541!5m2!1sth!2sth"
         }
@@ -623,7 +623,7 @@
       "company": [
         {
           "name": "Automa",
-          "description": "Automa เป็นบริษัท startup ของไทยที่ทำโปรเจ็คเกี่ยวกับการนำเทคโนโลยี Artificial Hormone มาใช้กับหุ่นยนต์สัตว์เลี้ยงขนาดเล็กเพื่อเป็นตัวช่วยในการติดตามเก็บข้อมูลพฤติกรรมของเด็ก",
+          "description": "เป็นบริษัท startup ของไทยที่ทำโปรเจ็คเกี่ยวกับการนำเทคโนโลยี Artificial Hormone มาใช้กับหุ่นยนต์สัตว์เลี้ยงขนาดเล็กเพื่อเป็นตัวช่วยในการติดตามเก็บข้อมูลพฤติกรรมของเด็ก",
           "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62003.276281687555!2d100.5110273!3d13.7665217!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f3308db5361%3A0x487731434055c5ed!2z4LmC4Lih4Lia4Li04LiE4Lit4LihIDMg4Lia4Lii4Lil4LiU4Li04LiH!5e0!3m2!1sth!2sth!4v1630493433690!5m2!1sth!2sth"
         }
       ],
@@ -650,8 +650,8 @@
       "company": [
         {
           "name": "Automa",
-          "description": "Automa เป็นบริษัท startup ของไทยที่ทำโปรเจ็คเกี่ยวกับการนำเทคโนโลยี Artificial Hormone มาใช้กับหุ่นยนต์สัตว์เลี้ยงขนาดเล็กเพื่อเป็นตัวช่วยในการติดตามเก็บข้อมูลพฤติกรรมของเด็ก",
-          "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62003.276291152586!2d100.51094157695134!3d13.76652166430095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f3308db5361%3A0x487731434055c5ed!2z4LmC4Lih4Lia4Li04LiE4Lit4LihIDMg4Lia4Lii4Lil4LiU4Li04LiH!5e0!3m2!1sth!2sth!4v1630493479206!5m2!1sth!2sth"
+          "description": "เป็นบริษัท startup ของไทยที่ทำโปรเจ็คเกี่ยวกับการนำเทคโนโลยี Artificial Hormone มาใช้กับหุ่นยนต์สัตว์เลี้ยงขนาดเล็กเพื่อเป็นตัวช่วยในการติดตามเก็บข้อมูลพฤติกรรมของเด็ก",
+          "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62003.276281687555!2d100.5110273!3d13.7665217!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f3308db5361%3A0x487731434055c5ed!2z4LmC4Lih4Lia4Li04LiE4Lit4LihIDMg4Lia4Lii4Lil4LiU4Li04LiH!5e0!3m2!1sth!2sth!4v1630493433690!5m2!1sth!2sth"
         }
       ],
       "articles": [
@@ -679,7 +679,7 @@
       "company": [
         {
           "name": "บริษัท เมนซา บิสิเนส แอนด์ โซลูชั่น จำกัด (สำนักงานใหญ่)",
-          "description": "MensaBiz เป็น Local Software Company รับพัฒนาระบบงานในลักษณะ Web Application โดยใช้ .NET Technology มีความเชี่ยวชาญพิเศษสำหรับธุรกิจ Insurance, Logistics และ Accounting.",
+          "description": "Local Software Company รับพัฒนาระบบงานในลักษณะ Web Application โดยใช้ .NET Technology มีความเชี่ยวชาญพิเศษสำหรับธุรกิจ Insurance, Logistics และ Accounting.",
           "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.9496928185986!2d100.51469551483015!3d13.7214955903671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f29541bff83%3A0xfbdec69de06a0b52!2z4Lia4Lij4Li04Lip4Lix4LiXIOC5gOC4oeC4meC4i-C4siDguJrguLTguKrguLTguYDguJnguKog4LmB4Lit4LiZ4LiU4LmMIOC5guC4i-C4peC4ueC4iuC4seC5iOC4mSDguIjguLPguIHguLHguJQ!5e0!3m2!1sth!2sth!4v1630493494949!5m2!1sth!2sth"
         }
       ],
@@ -728,7 +728,7 @@
       "id": 28,
       "name": "นาย ซามูแอล เดวิด ซอ",
       "major": "IT - Information Technology",
-      "position": "Web Full-Stack Developer",
+      "position": "Full-Stack Developer",
       "category": "programming",
       "gallerySize": 2,
       "display": "D",
@@ -737,7 +737,7 @@
       "company": [
         {
           "name": "WebQuest Co. Ltd.",
-          "description": "เป็นบริษัท Software House ที่รับทำเว็บไซต์โดยเฉพาะ และรับทำทุกสเกลงาน",
+          "description": "Software House ที่รับทำเว็บไซต์โดยเฉพาะ และรับทำทุกสเกลงาน",
           "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62026.424690248896!2d100.5862242!3d13.6789401!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2a11f9ed08397%3A0x458a4fa2c5cefee1!2sWebQuest%20Co.%20Ltd.!5e0!3m2!1sth!2sth!4v1630493526593!5m2!1sth!2sth"
         }
       ],
@@ -752,7 +752,7 @@
       "id": 29,
       "name": "นายสิรภพ ดรัณภพธนกูล",
       "major": "IT - Information Technology",
-      "position": "software / network",
+      "position": "Software / Network",
       "category": "programming",
       "gallerySize": 5,
       "display": "E",
@@ -760,8 +760,8 @@
       "email": "sirapob.dar@gmail.com",
       "company": [
         {
-          "name": "ธนาคารไกลทุง จำกัด มหาชน",
-          "description": "ที่แผนกเป็นหน่วยงานที่ทำงานพัฒนา ระบบsoftware / เขียนโปรแกรม,แอพพลิเคชั่นที่เกี่ยวกับด้านการชำระเงิน ให้กับธนาคาร",
+          "name": "ธนาคารกรุงไทย จำกัด (มหาชน)",
+          "description": "ในแผนกเป็นหน่วยงานที่ทำงานพัฒนา ระบบsoftware / เขียนโปรแกรม,แอพพลิเคชั่นที่เกี่ยวกับด้านการชำระเงิน ให้กับธนาคาร",
           "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d484.44691973271733!2d100.5515225!3d13.7441399!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29edd5ad60d27%3A0xdb7c6e5611204731!2z4Lit4Liy4LiE4Liy4Lij4LmE4Liq4Lin4Lia4Lij4Liy4Lin4LiZ4LmM!5e0!3m2!1sth!2sth!4v1630493544631!5m2!1sth!2sth"
         }
       ],
@@ -776,7 +776,7 @@
       "id": 30,
       "name": "นายปิยะลาภ พันศรี",
       "major": "IMT - Innovative Multimedia Technology",
-      "position": "ตัดต่อวีดีโอ (Editor) ",
+      "position": "Video Editor",
       "category": "production",
       "gallerySize": 4,
       "display": "F",
@@ -784,9 +784,9 @@
       "email": "sun06296@gmail.com",
       "company": [
         {
-          "name": "บริษัท สปริงบอร์ดพลัส จำกัด",
-          "description": "เป็นบริษัทที่อยู่ในเครือของ far east fame line ddb ที่จะทำเกี่ยวกับการโฆษณาลงโทรทัศน์เป็นส่วนใหญ่",
-          "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d484.41676648674866!2d100.5330986!3d13.7587128!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29eb59f6e66e7%3A0x1cbd3dc078764a8e!2sFar%20East%20Fame%20Line%20DDB%20PLC.!5e0!3m2!1sth!2sth!4v1630493559213!5m2!1sth!2sth"
+          "name": "บริษัท สปริงบอร์ด พลัส จํากัด",
+          "description": "บริษัทที่อยู่ในเครือของ far east fame line ddb ทำเกี่ยวกับการโฆษณาลงโทรทัศน์เป็นส่วนใหญ่",
+          "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996963.0316339233!2d98.7360185!3d12.1587113!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29eb54167805b%3A0xd502ecf6b1bd1149!2z4LiL4Lit4LiiIOC4qOC4o-C4teC4reC4ouC4uOC4mOC4ouC4siA1IOC5geC4guC4p-C4hyDguJfguLjguYjguIfguJ7guI3guLLguYTguJcg4LmA4LiC4LiV4Lij4Liy4LiK4LmA4LiX4Lin4Li1IOC4geC4o-C4uOC4h-C5gOC4l-C4nuC4oeC4q-C4suC4meC4hOC4oyAxMDQwMA!5e0!3m2!1sth!2sth!4v1630493076824!5m2!1sth!2sth"
         }
       ],
       "articles": [
@@ -808,9 +808,9 @@
       "email": "oonpangam@gmail.com",
       "company": [
         {
-          "name": "บริษัท Innova Interactive Studio",
-          "description": "บริษัทที่แต่เดิมเป็นทีมที่พัฒนาเกม ARAYA ปัจจุบันทําเกี่ยวกับการพัฒนาเกมและสื่อเชิง Interactive ที่นําไปใช้ในจุดประสงค์ต่างๆ",
-          "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.58575530155!2d100.58742701483177!3d13.863886390274997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29d2ea4ecf74f%3A0x134f69ea21faee86!2sInnova%20Interactive%20Studio!5e0!3m2!1sth!2sth!4v1630493576979!5m2!1sth!2sth"
+          "name": "บริษัท Innova Interactive Studio จำกัด",
+          "description": "เป็นบริษัทที่ผลิตเกมและสื่อ interactive มีทั้งรูปแบบ VR และ AR etc.",
+          "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.58575530155!2d100.58742701483177!3d13.863886390274997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29d2ea4ecf74f%3A0x134f69ea21faee86!2sInnova%20Interactive%20Studio!5e0!3m2!1sth!2sth!4v1630493056555!5m2!1sth!2sth"
         }
       ],
       "articles": [
@@ -829,7 +829,7 @@
       "id": 32,
       "name": "นันท์นภัส มงคลวัฒนากุล",
       "major": "IMT - Innovative Multimedia Technology",
-      "position": "Graphic designer",
+      "position": "Graphic Designer",
       "category": "design",
       "gallerySize": 3,
       "display": "F",
@@ -837,13 +837,8 @@
       "email": "ploylnwza007@gmail.com",
       "company": [
         {
-          "name": "ADVOCRAZY COMPANY (บริษัท แอดโวเครซี่ จำกัด)",
-          "description": "บริษัท แอดโวเครซี่ จำกัด บริษัท Agency รับงานเกี่ยวกับการโฆษณา การทำโฆษณาลงโซเชียลมีเดีย ตัดต่อวิดิโอ ทำกราฟิก",
-          "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.5565093641585!2d100.57359201483102!3d13.80558769031261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29fc81d2275b5%3A0xa96a4823e07cdc35!2sAdvocrazy!5e0!3m2!1sth!2sth!4v1630493118717!5m2!1sth!2sth"
-        },
-        {
-          "name": "DIGIT TRIBE COMPANY (บริษัท ดิจิท ไทรบ์ จำกัด)",
-          "description": "บริษัท ดิจิท ไทรบ์ จำกัด ประกอบธุรกิจประเภท กิจกรรมวิชาชีพวิทยาศาสตร์และกิจกรรมทาง วิชาการ โดยให้บริการด้าน กิจกรรมของบริษัทโฆษณา",
+          "name": "DIGIT TRIBE COMPANY LIMITED (บริษัท ดิจิท ไทรบ์ จำกัด)",
+          "description": "เอเจนซี่โฆษณาออนไลน์",
           "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3874.4536690245773!2d100.5633041!3d13.8117752!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d618db5f14db9%3A0xeeb10cc53308142a!2z4Lit4Liy4LiE4Liy4Lij4Lie4Lij4LmJ4Lit4Lih4Lie4Lix4LiZ4LiY4Li44LmMIDItMw!5e0!3m2!1sth!2sth!4v1630493239298!5m2!1sth!2sth"
         }
       ],
@@ -882,7 +877,7 @@
       "id": 34,
       "name": "นางสาวพัณณิตา กลิ่นประชุม ",
       "major": "IMT - Innovative Multimedia Technology",
-      "position": "3D interior designer",
+      "position": "3D Interior Designer",
       "category": "design",
       "gallerySize": 5,
       "display": "D",
@@ -890,7 +885,7 @@
       "email": "punnita2547@gmail.com",
       "company": [
         {
-          "name": "บุญถาวรเซรามิค จำกัด",
+          "name": "บริษัท บุญถาวรเซรามิค จำกัด",
           "description": "จัดจำหน่ายผลิตภัณฑ์เกี่ยวกับห้องน้ำและห้องครัว รวมถึงผลิตภัณฑ์คุณภาพกว่า 50,000 รายการ เช่น กระเบื้องเซรามิค สุขภัณฑ์ เฟอร์นิเจอร์ครัว หินอ่อน หินแกรนิต และอุปกรณ์ต่าง ๆ ทั้งที่ผลิตในประเทศ และนำเข้าจากต่างประเทศ",
           "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d123991.68457007405!2d100.5036419!3d13.7945324!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29c33466138ab%3A0xcd1e5d29a17cc606!2z4Lia4Li44LiN4LiW4Liy4Lin4LijIOC4o-C4seC4iuC4lOC4sg!5e0!3m2!1sth!2sth!4v1630493624579!5m2!1sth!2sth"
         }
@@ -930,7 +925,7 @@
       "id": 36,
       "name": "นางสาวธนพร แก้วพิชัย",
       "major": "IMT - Innovative Multimedia Technology",
-      "position": "3d designer, Graphic designer",
+      "position": "3D Designer,  Graphic Designer",
       "category": "design",
       "gallerySize": 5,
       "display": "F",
@@ -938,9 +933,9 @@
       "email": "kaembbconyou@gmail.com",
       "company": [
         {
-          "name": "บุญถาวรเซรามิค จำกัด",
+          "name": "บริษัท บุญถาวรเซรามิค จำกัด",
           "description": "จัดจำหน่ายผลิตภัณฑ์เกี่ยวกับห้องน้ำและห้องครัว รวมถึงผลิตภัณฑ์คุณภาพกว่า 50,000 รายการ เช่น กระเบื้องเซรามิค สุขภัณฑ์ เฟอร์นิเจอร์ครัว หินอ่อน หินแกรนิต และอุปกรณ์ต่าง ๆ ทั้งที่ผลิตในประเทศ และนำเข้าจากต่างประเทศ",
-          "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d123991.68457007405!2d100.5036419!3d13.7945324!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29c33466138ab%3A0xcd1e5d29a17cc606!2z4Lia4Li44LiN4LiW4Liy4Lin4LijIOC4o-C4seC4iuC4lOC4sg!5e0!3m2!1sth!2sth!4v1630493764872!5m2!1sth!2sth"
+          "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d123991.68457007405!2d100.5036419!3d13.7945324!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29c33466138ab%3A0xcd1e5d29a17cc606!2z4Lia4Li44LiN4LiW4Liy4Lin4LijIOC4o-C4seC4iuC4lOC4sg!5e0!3m2!1sth!2sth!4v1630493624579!5m2!1sth!2sth"
         }
       ],
       "articles": [
@@ -955,7 +950,7 @@
       "id": 37,
       "name": "นางสาวพัชรนิษฐ์ สุดสว่าง",
       "major": "IMT - Innovative Multimedia Technology",
-      "position": "Media planner",
+      "position": "Media Planner",
       "category": "business",
       "gallerySize": 4,
       "display": "D",
@@ -964,8 +959,8 @@
       "company": [
         {
           "name": "DIGIT TRIBE COMPANY LIMITED (บริษัท ดิจิท ไทรบ์ จำกัด)",
-          "description": "บริษัทเอเจนซี่โฆษณาออนไลน์",
-          "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3874.4536690245773!2d100.5633041!3d13.8117752!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d618db5f14db9%3A0xeeb10cc53308142a!2z4Lit4Liy4LiE4Liy4Lij4Lie4Lij4LmJ4Lit4Lih4Lie4Lix4LiZ4LiY4Li44LmMIDItMw!5e0!3m2!1sth!2sth!4v1630493782379!5m2!1sth!2sth"
+          "description": "เอเจนซี่โฆษณาออนไลน์",
+          "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3874.4536690245773!2d100.5633041!3d13.8117752!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d618db5f14db9%3A0xeeb10cc53308142a!2z4Lit4Liy4LiE4Liy4Lij4Lie4Lij4LmJ4Lit4Lih4Lie4Lix4LiZ4LiY4Li44LmMIDItMw!5e0!3m2!1sth!2sth!4v1630493239298!5m2!1sth!2sth"
         }
       ],
       "articles": [
@@ -979,7 +974,7 @@
       "id": 38,
       "name": "นางสาวกชามาส พัฒนพาณิชไพศาล",
       "major": "IMT - Innovative Multimedia Technology",
-      "position": "graphic design",
+      "position": "Graphic Designer",
       "category": "design",
       "gallerySize": 2,
       "display": "D",
@@ -987,8 +982,8 @@
       "email": "preempreemmm@gmail.com",
       "company": [
         {
-          "name": "แอดโวเครซี่ จำกัด",
-          "description": "บริษัท แอดโวเครซี่ จำกัด บริษัท Agency รับงานเกี่ยวกับการโฆษณา การทำ ADS ลงโซเชียลมีเดีย ตัดต่อวิดิโอ ทำกราฟิก",
+          "name": "บริษัท แอดโวเครซี่ จำกัด",
+          "description": "บริษัท แอดโวเครซี่ จำกัด บริษัท Agency รับงานเกี่ยวกับการโฆษณา การทำ Ads ลงโซเชียลมีเดีย ตัดต่อวิดิโอ ทำกราฟิก",
           "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.5565093641585!2d100.57359201483102!3d13.80558769031261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29fc81d2275b5%3A0xa96a4823e07cdc35!2sAdvocrazy!5e0!3m2!1sth!2sth!4v1630493118717!5m2!1sth!2sth"
         }
       ],
@@ -1032,7 +1027,7 @@
       "id": 40,
       "name": "นายพุฒิพงศ์ ทวีชาติ",
       "major": "IMT - Innovative Multimedia Technology",
-      "position": "คนตัดต่อ , Editor",
+      "position": "Video Editor",
       "category": "production",
       "gallerySize": 0,
       "videoSize": 5,
@@ -1042,7 +1037,7 @@
       "company": [
         {
           "name": "Fineday House Production",
-          "description": "Production House รับทำสื่อหนังสั้น ส่วนใหญ่จะเป็นงานโฆษณา ",
+          "description": "Production House รับทำสื่อหนังสั้น และ โฆษณา",
           "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15497.38715487659!2d100.6162906!3d13.8182029!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x546acfc02e90946!2sFineday%20House%20Production!5e0!3m2!1sth!2sth!4v1630493738916!5m2!1sth!2sth"
         }
       ],
@@ -1057,7 +1052,7 @@
       "id": 41,
       "name": "นายศุภณัฐ อัครกรโยธิน",
       "major": "IMT - Innovative Multimedia Technology",
-      "position": "Editor",
+      "position": "Video Editor",
       "category": "production",
       "gallerySize": 0,
       "videoSize": 1,
@@ -1086,7 +1081,7 @@
       "id": 42,
       "name": "นายภัคพล เปรมประสพโชค",
       "major": "IMT - Innovative Multimedia Technology",
-      "position": "Editor",
+      "position": "Video Editor",
       "category": "production",
       "gallerySize": 5,
       "display": "D",
@@ -1110,7 +1105,7 @@
       "id": 43,
       "name": "นายวรภพ วงศ์รัตน์",
       "major": "IMT - Innovative Multimedia Technology",
-      "position": "คนตัดต่อ , Editor",
+      "position": "Video Editor",
       "category": "production",
       "gallerySize": 3,
       "videoSize": 2,
@@ -1120,8 +1115,8 @@
       "company": [
         {
           "name": "Fineday House Production",
-          "description": "Production House รับทำสื่อโฆษณา",
-          "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15497.38715487659!2d100.6162906!3d13.8182029!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x546acfc02e90946!2sFineday%20House%20Production!5e0!3m2!1sth!2sth!4v1630493685293!5m2!1sth!2sth"
+          "description": "Production House รับทำสื่อหนังสั้น และ โฆษณา",
+          "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15497.38715487659!2d100.6162906!3d13.8182029!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x546acfc02e90946!2sFineday%20House%20Production!5e0!3m2!1sth!2sth!4v1630493738916!5m2!1sth!2sth"
         }
       ],
       "articles": [
@@ -1137,7 +1132,7 @@
       "id": 44,
       "name": "นายณัฐเดชา ศรีใส",
       "major": "IMT - Innovative Multimedia Technology",
-      "position": "Editor",
+      "position": "Video Editor",
       "category": "production",
       "gallerySize": 4,
       "display": "E",
@@ -1146,7 +1141,7 @@
       "company": [
         {
           "name": "สถานีวิทยุโทรทัศน์แห่งประเทศไทย",
-          "description": "บริษัทเกี่ยวกับสื่อประชาสัมพันธ์ มีหน้าที่เป็นสื่อหลักเผยแพร่ข่าวสารและนโยบายจากรัฐบาลไปสู่ประชาชน ภายใต้การดำเนินงานของกรมประชาสัมพันธ์",
+          "description": "บริษัทเกี่ยวกับสื่อประชาสัมพันธ์ มีหน้าที่เป็นสื่อหลักเผยแพร่ข่าวสาร และนโยบายจากรัฐบาลไปสู่ประชาชนภายใต้การดำเนินงานของกรมประชาสัมพันธ์",
           "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d496288.72266746167!2d100.4333054!3d13.6422071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29c2720efc213%3A0x66409bfee8c44f75!2z4Liq4LiW4Liy4LiZ4Li14Lin4Li04LiX4Lii4Li44LmC4LiX4Lij4LiX4Lix4Lio4LiZ4LmM4LmB4Lir4LmI4LiH4Lib4Lij4Liw4LmA4LiX4Lio4LmE4LiX4LiiIOC4geC4o-C4oeC4m-C4o-C4sOC4iuC4suC4quC4seC4oeC4nuC4seC4meC4mOC5jA!5e0!3m2!1sth!2sth!4v1630493670078!5m2!1sth!2sth"
         }
       ],
