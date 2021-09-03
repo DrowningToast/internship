@@ -117,7 +117,7 @@ const About = ({ reference, aboutVideo, internVideo, majorVideo }) => {
       </div>
       <div>
         {/* For Desktop */}
-        <div className="absolute top-0 right-0">
+        <div className="absolute top-0 right-0" style={{ zIndex: "-1" }}>
           <svg
             className="w-32 lg:w-48"
             viewBox="0 0 248 272"
@@ -139,7 +139,7 @@ const About = ({ reference, aboutVideo, internVideo, majorVideo }) => {
             />
           </svg>
         </div>
-        <div className="absolute top-3/4 left-0">
+        <div className="absolute top-3/4 left-0" style={{ zIndex: "-1" }}>
           <svg
             className="w-16 lg:w-24"
             viewBox="0 0 90 126"

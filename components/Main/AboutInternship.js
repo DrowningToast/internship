@@ -67,7 +67,7 @@ const AboutInternship = ({ aboutVideo, internVideo, majorVideo }) => {
       </div>
       <div>
         {/* For Desktop */}
-        <div className="absolute bottom-0 left-0">
+        <div className="absolute bottom-0 left-0" style={{ zIndex: "-1" }}>
           <svg
             className="w-24 lg:w-32"
             viewBox="0 0 270 359"
@@ -100,7 +100,7 @@ const AboutInternship = ({ aboutVideo, internVideo, majorVideo }) => {
             />
           </svg>
         </div>
-        <div className="absolute top-1/4 right-0">
+        <div className="absolute top-1/4 right-0" style={{ zIndex: "-1" }}>
           <svg
             className="w-8 lg:w-24"
             viewBox="0 0 92 126"
