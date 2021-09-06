@@ -38,7 +38,7 @@ const Header = ({ name, number, gallerySize }) => {
         property="og:image"
         content={
           !gallerySize
-            ? config.basePath + "/main/IMG_0045.jpeg"
+            ? config.basePath + "/main/Artboard.png"
             : config.basePath +
               `/data/${number}/image_${randomNumber(1, gallerySize, 0)}.webp`
         }
