@@ -13,9 +13,6 @@ const Portrait = ({
   color,
   route,
   containerWidth,
-  elementWidth,
-  setElementWidth,
-  numberInLine,
 }) => {
   const [shown, setShown] = useState(false);
   const [selected, setSelected] = useState(0);
@@ -24,24 +21,23 @@ const Portrait = ({
 
   const router = useRouter();
 
-  useEffect(() => {
-    if (elementWidth && !Number.isNaN(numberInLine)) {
-      const pos = (i + 1) % numberInLine;
+  const updateReversed = () => {
+    if (!element.current) return;
+    const width = element.current.getBoundingClientRect().width;
+    const numberInRow = Math.round(containerWidth / width);
+    const pos = (i + 1) % numberInRow;
 
-      if (containerWidth >= 1024 && i == elementWidth.length - 1) {
-        setIsReversed(true);
-        return;
-      }
-
-      if (!pos) setIsReversed(true);
-      else setIsReversed(false);
-    }
-  }, [containerWidth, elementWidth, i, numberInLine]);
+    if (!pos) return setIsReversed(true);
+    return setIsReversed(false);
+  };
 
   useEffect(() => {
-    const elementWidth = element.current.offsetWidth;
-    setElementWidth((arr) => [...arr, elementWidth]);
-  }, [element, setElementWidth]);
+    // console.log(element.current);
+    if (!window || !element.current || !containerWidth) return;
+    window?.removeEventListener("resize", updateReversed);
+    window?.addEventListener("resize", updateReversed);
+    updateReversed();
+  }, [element.current, containerWidth]);
 
   useEffect(() => {
     router.prefetch(`${route}`);
@@ -84,7 +80,7 @@ const Portrait = ({
       </AnimatePresence>
       <div
         onClick={handlePrimaryClick}
-        className="w-2/3 md:w-5/6 lg:h-48 lg:w-48 relative"
+        className="w-2/3 md:w-3/4 max-x-lg grid place-items-center relative"
       >
         <div style={{ paddingTop: "100%" }}>
           <Image
@@ -155,9 +151,11 @@ const Portrait = ({
               </div>
               <div
                 className={`w-full ${
-                  company[selected].name.length < 10
-                    ? "text-lg lg:text-2xl"
-                    : "text-xs lg:text-base"
+                  company[selected].name.length < 50
+                    ? company[selected].name.length < 10
+                      ? "text-lg lg:text-2xl"
+                      : "text-xs lg:text-base"
+                    : "text-xs"
                 } text-center ${
                   color.tertiary == "#FFEB94" ? "text-black" : "text-white"
                 } `}

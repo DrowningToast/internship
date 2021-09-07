@@ -117,34 +117,25 @@ const BackgroundVideo = ({ category }) => {
 };
 
 const Category = ({ title, members, color, category }) => {
-  const container = useRef(null);
-  const [containerWidth, setContainerWidth] = useState(0);
-  const [elementWidth, setElementWidth] = useState([]);
+  const container = useRef();
+  const [width, setWidth] = useState(0);
 
-  const [numberInLine, setNumberInLine] = useState(0);
-
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const updateContainerWidth = () => {
-    if (container) {
-      setContainerWidth(container?.current?.offsetWidth);
+    if (!container.current) return;
+    var styles = window?.getComputedStyle(container.current, null);
+    var padding =
+      parseFloat(styles.paddingLeft) + parseFloat(styles.paddingRight);
+    const width = parseFloat(styles.width) - padding;
 
-      const meanElementWidth =
-        elementWidth.reduce((a, b) => a + b, 0) / elementWidth.length;
-
-      setNumberInLine(Math.floor(containerWidth / meanElementWidth));
-    }
+    if (!width) return;
+    setWidth(width);
   };
 
   useEffect(() => {
+    if (!window || !container.current) return;
     window.addEventListener("resize", updateContainerWidth);
     updateContainerWidth();
-  }, [updateContainerWidth]);
-
-  useEffect(() => {
-    // window.addEventListener("popstate", function (event) {
-    //   window.location.assign("/?page=categories");
-    // });
-  }, []);
+  }, [container.current]);
 
   return (
     <>
@@ -179,7 +170,7 @@ const Category = ({ title, members, color, category }) => {
           </div>
           <div
             ref={container}
-            className="grid grid-cols-2 md:grid-cols-3 items-start gap-y-8 lg:flex flex-wrap lg:items-center lg:justify-center my-8 px-4"
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-y-8 my-8 px-4"
           >
             {members.map((member, i) => {
               return (
@@ -196,10 +187,7 @@ const Category = ({ title, members, color, category }) => {
                   color={color}
                   route={`/${member.callsign.toLowerCase()}`}
                   i={i}
-                  containerWidth={containerWidth}
-                  elementWidth={elementWidth}
-                  setElementWidth={setElementWidth}
-                  numberInLine={numberInLine}
+                  containerWidth={width}
                 />
               );
             })}
