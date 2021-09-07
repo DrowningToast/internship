@@ -41,7 +41,7 @@ const Portrait = ({
 
   useEffect(() => {
     router.prefetch(`${route}`);
-  }, [route, router]);
+  }, []);
 
   const handlePrimaryClick = () => {
     setShown(true);
@@ -63,7 +63,7 @@ const Portrait = ({
   return (
     <div
       ref={element}
-      className="flex flex-col justify-center items-center md:p-8"
+      className="grid portrait md:h-72 lg:h-96 place-items-center gap-y-4 md:gap-y-0 w-full h-full"
     >
       <AnimatePresence exitBeforeEnter>
         {shown && (
@@ -80,7 +80,7 @@ const Portrait = ({
       </AnimatePresence>
       <div
         onClick={handlePrimaryClick}
-        className="w-2/3 md:w-3/4 max-x-lg grid place-items-center relative"
+        className="w-2/3 md:w-3/4 max-x-lg grid place-items-center relative "
       >
         <div style={{ paddingTop: "100%" }}>
           <Image
@@ -100,7 +100,7 @@ const Portrait = ({
           whileHover={{ scale: !shown ? 1.225 : 1 }}
           animate={{
             scale: !shown ? 1.15 : 0.9,
-            backgroundColor: shown ? "#ffffff" : "transparent",
+            backgroundColor: shown ? "#ffffff" : "",
           }}
           style={{ borderColor: color.tertiary }}
           className={`absolute cursor-pointer inset-0 rounded-full text-center flex flex-col justify-center items-center ${
@@ -133,11 +133,11 @@ const Portrait = ({
               layout
               className={`absolute ${
                 isReversed
-                  ? "-left-1/2 pl-8 rounded-l-full"
-                  : "-right-1/2 pr-8 rounded-r-full"
-              } top-0 w-full h-full flex flex-col justify-center items-center py-2 z-10`}
+                  ? "-left-1/2 rounded-l-full"
+                  : "-right-1/2 rounded-r-full"
+              } top-0 w-full h-full flex flex-col justify-center items-center py-2 pr-4 z-10`}
             >
-              <div className={`overflow-hidden w-2/5 relative`}>
+              <div className={`overflow-hidden rounded-full w-2/5 relative`}>
                 <div style={{ paddingTop: "100%" }}>
                   <Image
                     src={`/data/${id}/logo_${selected + 1}.webp`}
@@ -151,11 +151,9 @@ const Portrait = ({
               </div>
               <div
                 className={`w-full ${
-                  company[selected].name.length < 50
-                    ? company[selected].name.length < 10
-                      ? "text-lg lg:text-2xl"
-                      : "text-xs lg:text-base"
-                    : "text-xs"
+                  company[selected].name.length < 10
+                    ? "text-lg lg:text-2xl"
+                    : "text-xs lg:text-base"
                 } text-center ${
                   color.tertiary == "#FFEB94" ? "text-black" : "text-white"
                 } `}
@@ -175,7 +173,7 @@ const Portrait = ({
         </motion.div>
       </div>
       <div
-        className={`mt-4 md:mt-8 flex flex-col items-center justify-center md:gap-y-2 ${
+        className={`flex flex-col items-center justify-center md:gap-y-2 ${
           shown ? "z-40 text-white" : ""
         }`}
       >

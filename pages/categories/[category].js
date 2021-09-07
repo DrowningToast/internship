@@ -170,7 +170,7 @@ const Category = ({ title, members, color, category }) => {
           </div>
           <div
             ref={container}
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-y-8 my-8 px-4"
+            className="memberContainer gap-y-8 px-4 lg:px-16 py-4 lg:py-8"
           >
             {members.map((member, i) => {
               return (
