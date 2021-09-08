@@ -137,7 +137,7 @@ const Portrait = ({
                   : "-right-1/2 rounded-r-full"
               } top-0 w-full h-full flex flex-col justify-center items-center py-2 pr-4 z-10`}
             >
-              <div className={`overflow-hidden rounded-full w-2/5 relative`}>
+              <div className={`overflow-hidden w-2/5 relative`}>
                 <div style={{ paddingTop: "100%" }}>
                   <Image
                     src={`/data/${id}/logo_${selected + 1}.webp`}
