@@ -13,7 +13,7 @@ const BackgroundVideo = ({ category }) => {
   switch (category) {
     case "programming":
       return (
-        <div className="absolute top-0 left-0 w-full h-full z-0">
+        <div className="hidden lg:block absolute top-0 left-0 w-full h-full z-0">
           <video
             className="h-full w-full"
             autoPlay
@@ -35,7 +35,7 @@ const BackgroundVideo = ({ category }) => {
       break;
     case "production":
       return (
-        <div className="absolute top-0 left-0 w-full h-full z-0">
+        <div className="hidden lg:block absolute top-0 left-0 w-full h-full z-0">
           <video
             className="h-full w-full"
             autoPlay
@@ -57,7 +57,7 @@ const BackgroundVideo = ({ category }) => {
       break;
     case "design":
       return (
-        <div className="absolute top-0 left-0 w-full h-full z-0">
+        <div className="hidden lg:block absolute top-0 left-0 w-full h-full z-0">
           <video
             className="h-full w-full"
             autoPlay
@@ -79,7 +79,7 @@ const BackgroundVideo = ({ category }) => {
       break;
     case "business":
       return (
-        <div className="absolute top-0 left-0 w-full h-full z-0">
+        <div className="hidden lg:block absolute top-0 left-0 w-full h-full z-0">
           <video
             className="h-full w-full"
             autoPlay
@@ -101,7 +101,7 @@ const BackgroundVideo = ({ category }) => {
       break;
     case "gamedevelopment":
       return (
-        <div className="absolute top-0 left-0 w-full h-full z-0">
+        <div className="hidden lg:block absolute top-0 left-0 w-full h-full z-0">
           <video
             className="h-full w-full"
             autoPlay

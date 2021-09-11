@@ -120,7 +120,7 @@ const AboutInternship = ({ aboutVideo, internVideo, majorVideo }) => {
           </svg>
         </div>
         <div
-          className="absolute top-0 left-0 w-full h-full"
+          className="hidden lg:block absolute top-0 left-0 w-full h-full"
           style={{ zIndex: "-1" }}
         >
           <video

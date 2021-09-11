@@ -170,7 +170,7 @@ const About = ({ reference, aboutVideo, internVideo, majorVideo }) => {
           </svg>
         </div>
         <div
-          className="absolute top-0 left-0 h-full w-full"
+          className="hidden lg:block absolute top-0 left-0 h-full w-full"
           style={{ zIndex: "-1" }}
         >
           <video

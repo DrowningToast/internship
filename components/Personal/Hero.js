@@ -69,7 +69,7 @@ const Hero = ({
           </div>
         </div>
         <div
-          className="absolute top-0 left-0 h-full w-full z-10"
+          className="hidden lg:block absolute top-0 left-0 h-full w-full z-10"
           style={{ zIndex: "-1" }}
         >
           <video
@@ -121,7 +121,7 @@ const Hero = ({
           </div>
         </div>
         <div
-          className="absolute top-0 left-0 h-full w-full z-10"
+          className="hidden lg:block absolute top-0 left-0 h-full w-full z-10"
           style={{ zIndex: "-1" }}
         >
           <video
@@ -173,7 +173,7 @@ const Hero = ({
           </div>
         </div>
         <div
-          className="absolute top-0 left-0 h-full w-full z-10"
+          className="hidden lg:block absolute top-0 left-0 h-full w-full z-10"
           style={{ zIndex: "-1" }}
         >
           <video
