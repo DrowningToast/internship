@@ -8,6 +8,7 @@ import { AnimatePresence } from "framer-motion";
 import { motion, AnimateSharedLayout } from "framer-motion";
 
 import { useInView } from "react-intersection-observer";
+const config = require("../../next.config");
 
 const Major = ({ aboutVideo, internVideo, majorVideo }) => {
   const [selected, setSelected] = useState(null);
@@ -182,8 +183,11 @@ const Major = ({ aboutVideo, internVideo, majorVideo }) => {
             loop
             preload="auto"
           >
-            <source src="/assets/LandingPageMajor.webm" type="video/webm" />
-            <source src="/assets/LandingPageMajor.mov" />
+            <source
+              src={`${config.basePath}/assets/LandingPageMajor.webm`}
+              type="video/webm"
+            />
+            <source src={`${config.basePath}/assets/LandingPageMajor.mov`} />
           </video>
         </div>
       </motion.div>

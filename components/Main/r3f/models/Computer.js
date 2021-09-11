@@ -8,9 +8,13 @@ import { useFrame } from "@react-three/fiber";
 import { useSpring } from "framer-motion";
 import { useMotionAsState } from "framer-motion-hooks";
 
+const config = require("../../../../next.config");
+
 export default function Computer(props) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/main/models/Computer.gltf");
+  const { nodes, materials } = useGLTF(
+    `${config.basePath}/main/models/Computer.gltf`
+  );
   const scale = useSpring(0, {
     damping: 200,
     stiffness: 1200,
@@ -50,4 +54,4 @@ export default function Computer(props) {
   );
 }
 
-useGLTF.preload("/main/models/Computer.gltf");
+useGLTF.preload(`${config.basePath}/main/models/Computer.gltf`);

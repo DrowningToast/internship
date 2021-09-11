@@ -9,9 +9,13 @@ import { useSpring } from "framer-motion";
 import { useMotionAsState } from "framer-motion-hooks";
 import * as THREE from "three";
 
+const config = require("../../../../next.config");
+
 export default function Slate(props) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/main/models/Slate.gltf");
+  const { nodes, materials } = useGLTF(
+    `${config.basePath}/main/models/Slate.gltf`
+  );
   const scale = useSpring(0, {
     damping: 200,
     stiffness: 1200,
@@ -56,4 +60,4 @@ export default function Slate(props) {
   );
 }
 
-useGLTF.preload("/main/models/Slate.gltf");
+useGLTF.preload(`${config.basePath}/main/models/Slate.gltf`);

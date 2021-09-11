@@ -1,5 +1,6 @@
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+const config = require("../../next.config");
 
 const VideoComponent = ({ display, video2 }) => {
   if (display == "D") {
@@ -16,8 +17,11 @@ const VideoComponent = ({ display, video2 }) => {
           loop
           preload="auto"
         >
-          <source src="/assets/DTrooperCircle2.webm" type="video/webm" />
-          <source src="/assets/DTrooperCircle2.mov" />
+          <source
+            src={`${config.basePath}/assets/DTrooperCircle2.webm`}
+            type="video/webm"
+          />
+          <source src={`${config.basePath}/assets/DTrooperCircle2.mov`} />
         </video>
       </div>
     );
@@ -35,8 +39,11 @@ const VideoComponent = ({ display, video2 }) => {
           loop
           preload="auto"
         >
-          <source src="/assets/DTrooperRectangle1.webm" type="video/webm" />
-          <source src="/assets/DTrooperRectangle1.mov" />
+          <source
+            src={`${config.basePath}/assets/DTrooperRectangle1.webm`}
+            type="video/webm"
+          />
+          <source src={`${config.basePath}/assets/DTrooperRectangle1.mov`} />
         </video>
       </div>
     );
@@ -54,8 +61,11 @@ const VideoComponent = ({ display, video2 }) => {
           loop
           preload="auto"
         >
-          <source src="/assets/DTrooperTriangle1.webm" type="video/webm" />
-          <source src="/assets/DTrooperTriangle1.mov" />
+          <source
+            src={`${config.basePath}/assets/DTrooperTriangle1.webm`}
+            type="video/webm"
+          />
+          <source src={`${config.basePath}/assets/DTrooperTriangle1.mov`} />
         </video>
       </div>
     );

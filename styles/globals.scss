@@ -21,6 +21,7 @@ a {
 }
 
 .hero {
+  // background-image: url("/internship/2021/main/hero.png");
   background-image: url("/main/hero.png");
   background-position: center;
   background-size: cover;
@@ -128,7 +129,6 @@ a {
 
 .memberContainer {
   display: grid;
-  place-items: center;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
 }
 
@@ -143,7 +143,6 @@ a {
 @media screen and (max-width: 768px) {
   .memberContainer {
     display: grid;
-    place-items: center;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   }
 }

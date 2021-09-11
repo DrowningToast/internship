@@ -7,9 +7,13 @@ import { Box, Circle, Sphere, useGLTF } from "@react-three/drei";
 import { useSpring } from "framer-motion";
 import { useMotionAsState } from "framer-motion-hooks";
 
+const config = require("../../../../next.config");
+
 export default function CategoryBusiness(props) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/main/models/CategoryBusiness.gltf");
+  const { nodes, materials } = useGLTF(
+    `${config.basePath}/main/models/CategoryBusiness.gltf`
+  );
   const rotation = useSpring(0, {
     damping: 200,
     stiffness: 1200,
@@ -73,4 +77,4 @@ export default function CategoryBusiness(props) {
   );
 }
 
-useGLTF.preload("/main/models/CategoryBusiness.gltf");
+useGLTF.preload(`${config.basePath}/main/models/CategoryBusiness.gltf`);

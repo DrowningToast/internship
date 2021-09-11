@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
+const config = require("../../next.config");
 
 const AboutInternship = ({ aboutVideo, internVideo, majorVideo }) => {
   const { inView, entry, ref } = useInView();
@@ -46,21 +47,22 @@ const AboutInternship = ({ aboutVideo, internVideo, majorVideo }) => {
                 ผศ.สุคนธ์ อักษรชู
               </h2>
               <h5 className="text-sm md:text-xl lg:text-2xl">
-                หัวหน้าสาขาวิชา นวัตกรรมเทคโนโลยีมัลติมีเดีย
+                หัวหน้าวิชาเอก นวัตกรรมเทคโนโลยีมัลติมีเดีย
               </h5>
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center text-right my-2">
+        <div className="flex flex-col justify-center items-end text-right my-2">
           <div className="text-center lg:text-right">
-            <h1 className="text-4xl lg:text-6xl font-bold mb-4">การฝึกงาน</h1>
-            <p className="md:text-lg lg:text-xl xl:text-2xl">
-              เป็นวิชาเอกคอมพิวเตอร์ของโรงเรียนสาธิตมหาวิทยาลัยศรีนครินทรวิโรฒประสานมิตร
-              (ฝ่ายมัธยม) โดยเล็งเห็นถึงความสำคัญของการใช้เทคโนโลยีคอมพิวเตอร์
-              โดยหลักสูตรมีแบ่งแยกย่อยเป็นสองเอกคือ นวัตกรรมเทคโนโลยีมัลติมีเดีย
-              (IMT) และ เทคโนโลยีสารสนเทศ (IT)
-              ซึ่งวิชาเอกคอมพิวเตอร์นั้นมีการฝึกประสบการณ์วิชาชีพเป็นเกณฑ์การจบการศึกษา
-              ทางผู้จัดทำจึงนำประสบการณ์การฝึกประสบการณ์วิชาชีพนี้มาแบ่งปัน
+            <h1 className="text-4xl lg:text-6xl font-bold mb-4">
+              วัตถุประสงค์
+            </h1>
+            <p className="md:text-lg lg:text-xl">
+              เพื่อให้นักเรียนได้นำเสนอ แบ่งปัน ประสบการณ์จากการฝึกงาน{" "}
+              <span className="hidden md:inline">
+                <br />
+              </span>
+              และเพื่อส่งเสริมทักษะการทำงานเป็นทีมให้กับนักเรียน
             </p>
           </div>
         </div>
@@ -130,10 +132,12 @@ const AboutInternship = ({ aboutVideo, internVideo, majorVideo }) => {
             preload="auto"
           >
             <source
-              src="/assets/LandingPageInternshipInfo2.webm"
+              src={`${config.basePath}/assets/LandingPageInternshipInfo2.webm`}
               type="video/webm"
             />
-            <source src="/assets/LandingPageInternshipInfo2.mov" />
+            <source
+              src={`${config.basePath}/assets/LandingPageInternshipInfo2.mov`}
+            />
           </video>
         </div>
       </div>

@@ -63,7 +63,7 @@ const Portrait = ({
   return (
     <div
       ref={element}
-      className="grid portrait md:h-72 lg:h-96 place-items-center gap-y-4 md:gap-y-0 w-full h-full"
+      className="flex flex-col justify-start items-center w-full"
     >
       <AnimatePresence exitBeforeEnter>
         {shown && (
@@ -173,7 +173,7 @@ const Portrait = ({
         </motion.div>
       </div>
       <div
-        className={`flex flex-col items-center justify-center md:gap-y-2 ${
+        className={`mt-4 md:mt-8 flex flex-col items-center justify-center md:gap-y-2 ${
           shown ? "z-40 text-white" : ""
         }`}
       >

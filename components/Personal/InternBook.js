@@ -3,6 +3,8 @@ import { useState, useRef, useEffect } from "react";
 
 import { useResizeDetector } from "react-resize-detector";
 
+const config = require("../../next.config");
+
 const InternBook = ({ number }) => {
   pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -46,7 +48,7 @@ const InternBook = ({ number }) => {
       <div className="p-4 shadow-lg">
         <div ref={ref} className="flex flex-col justify-center items-center">
           <Document
-            file={`/data/${number}/${number}.pdf`}
+            file={`${config.basePath}/data/${number}/${number}.pdf`}
             onLoadSuccess={onDocumentLoadSuccess}
           >
             <Page pageNumber={page} />

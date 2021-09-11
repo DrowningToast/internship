@@ -26,15 +26,28 @@ const About = ({ reference, aboutVideo, internVideo, majorVideo }) => {
         <div className="flex flex-col justify-center items-center">
           <div className="text-center lg:text-left">
             <h1 className="text-4xl lg:text-6xl font-bold mb-4">
-              เอกคอมพิวเตอร์
+              วิชาเอกคอมพิวเตอร์
             </h1>
-            <p className="md:text-lg lg:text-xl xl:text-2xl">
-              เป็นวิชาเอกคอมพิวเตอร์ของโรงเรียนสาธิตมหาวิทยาลัยศรีนครินทรวิโรฒประสานมิตร
-              (ฝ่ายมัธยม) โดยเล็งเห็นถึงความสำคัญของการใช้เทคโนโลยีคอมพิวเตอร์
-              โดยหลักสูตรมีแบ่งแยกย่อยเป็นสองเอกคือ นวัตกรรมเทคโนโลยีมัลติมีเดีย
-              (IMT) และ เทคโนโลยีสารสนเทศ (IT)
-              ซึ่งวิชาเอกคอมพิวเตอร์นั้นมีการฝึกประสบการณ์วิชาชีพเป็นเกณฑ์การจบการศึกษา
-              ทางผู้จัดทำจึงนำประสบการณ์การฝึกประสบการณ์วิชาชีพนี้มาแบ่งปัน
+            <p
+              className="md:text-lg lg:text-xl"
+              style={{ textIndent: "1.5em" }}
+            >
+              วิชาเอกคอมพิวเตอร์
+              เป็นเอกที่โรงเรียนสาธิตมหาวิทยาลัยศรีนครินทรวิโรฒ ประสานมิตร
+              (ฝ่ายมัธยม) ได้จัดตั้งขึ้น
+              เนื่องจากทางโรงเรียนได้เล็งเห็นถึงความสำคัญของการนำเทคโนโลยีมาเป็นหลักสูตรเพื่อพัฒนาศักยภาพทางด้านคอมพิวเตอร์แขนงต่าง
+              ๆ ของนักเรียนที่มีความสนใจจะนำไปใช้ต่อยอดในอนาคต
+            </p>
+            <p
+              className="md:text-lg lg:text-xl"
+              style={{ textIndent: "1.5em" }}
+            >
+              โดยหลักสูตรจะถูกแบ่งเป็น 2 วิชาเอก ได้แก่
+              วิชาเอกนวัตกรรมเทคโนโลยีมัลติมีเดีย (IMT)
+              และวิชาเอกเทคโนโลยีสารสนเทศ (IT)
+              ซึ่งทั้งสองวิชาเอกมีเกณฑ์การจบหลักสูตร คือ
+              นักเรียนต้องผ่านประสบการณ์การฝึกงานไม่ต่ำกว่า 140 ชั่วโมง
+              ดังนั้นทางผู้จัดทำจึงได้สร้างเว็บไซต์นี้ขึ้นเพื่อนำประสบการณ์ที่ได้รับตลอดช่วงการฝึกงานมาแบ่งปันให้แก่ผู้ที่สนใจ
             </p>
           </div>
         </div>
@@ -59,9 +72,9 @@ const About = ({ reference, aboutVideo, internVideo, majorVideo }) => {
             ></div>
             <div className="absolute -top-8 -left-8 lg:-top-16 lg:-left-16 z-0">
               <svg
-                className="w-32 lg:w-72"
                 viewBox="0 0 355 478"
                 fill="none"
+                className="w-32 lg:w-72"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <g filter="url(#filter0_d)">
@@ -71,7 +84,7 @@ const About = ({ reference, aboutVideo, internVideo, majorVideo }) => {
                     strokeWidth="3"
                   />
                 </g>
-                <ellipse cx="162.5" cy="14" rx="13.5" ry="14" fill="#CF4450" />
+                <ellipse cx="162.5" cy="28" rx="13.5" ry="14" fill="#CF4450" />
                 <circle cx="10.5" cy="232.5" r="10.5" fill="#ECBA2C" />
                 <defs>
                   <filter

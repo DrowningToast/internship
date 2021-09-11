@@ -7,9 +7,13 @@ import { Box, Circle, Sphere, useGLTF } from "@react-three/drei";
 import { useSpring } from "framer-motion";
 import { useMotionAsState } from "framer-motion-hooks";
 
+const config = require("../../../../next.config");
+
 export default function Model(props) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/main/models/CategoryGame.gltf");
+  const { nodes, materials } = useGLTF(
+    `${config.basePath}/main/models/CategoryGame.gltf`
+  );
   const rotation = useSpring(0, {
     damping: 200,
     stiffness: 1200,
@@ -28,6 +32,7 @@ export default function Model(props) {
   useEffect(() => {
     rotation.set(0);
   }, []);
+
   return (
     <group ref={group} {...props} dispose={null}>
       <group
@@ -52,4 +57,4 @@ export default function Model(props) {
   );
 }
 
-useGLTF.preload("/main/models/CategoryGame.gltf");
+useGLTF.preload(`${config.basePath}/main/models/CategoryGame.gltf`);

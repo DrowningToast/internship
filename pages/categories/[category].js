@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Portrait from "../../components/Profile/Portrait";
 import meta from "../../meta.json";
 import Header from "../../components/Header";
+const configFile = require("../../next.config");
 /**
  *
  * Profile type = Standard 5 photo (standard), Flexible 5+ (flex), video (video), instragram stories (stories)
@@ -22,10 +23,12 @@ const BackgroundVideo = ({ category }) => {
             preload="auto"
           >
             <source
-              src="/assets/LandingPageCategoryProgramming.webm"
+              src={`${configFile.basePath}/assets/LandingPageCategoryProgramming.webm`}
               type="video/webm"
             />
-            <source src="/assets/LandingPageCategoryProgramming.mov" />
+            <source
+              src={`${configFile.basePath}/assets/LandingPageCategoryProgramming.mov`}
+            />
           </video>
         </div>
       );
@@ -42,10 +45,12 @@ const BackgroundVideo = ({ category }) => {
             preload="auto"
           >
             <source
-              src="/assets/LandingPageCategoryProduction.webm"
+              src={`${configFile.basePath}/assets/LandingPageCategoryProduction.webm`}
               type="video/webm"
             />
-            <source src="/assets/LandingPageCategoryProduction.mov" />
+            <source
+              src={`${configFile.basePath}/assets/LandingPageCategoryProduction.mov`}
+            />
           </video>
         </div>
       );
@@ -62,10 +67,12 @@ const BackgroundVideo = ({ category }) => {
             preload="auto"
           >
             <source
-              src="/assets/LandingPageCategoryDesign.webm"
+              src={`${configFile.basePath}/assets/LandingPageCategoryDesign.webm`}
               type="video/webm"
             />
-            <source src="/assets/LandingPageCategoryDesign.mov" />
+            <source
+              src={`${configFile.basePath}/assets/LandingPageCategoryDesign.mov`}
+            />
           </video>
         </div>
       );
@@ -82,10 +89,12 @@ const BackgroundVideo = ({ category }) => {
             preload="auto"
           >
             <source
-              src="/assets/LandingPageCategoryBusiness.webm"
+              src={`${configFile.basePath}/assets/LandingPageCategoryBusiness.webm`}
               type="video/webm"
             />
-            <source src="/assets/LandingPageCategoryBusiness.mov" />
+            <source
+              src={`${configFile.basePath}/assets/LandingPageCategoryBusiness.mov`}
+            />
           </video>
         </div>
       );
@@ -102,10 +111,12 @@ const BackgroundVideo = ({ category }) => {
             preload="auto"
           >
             <source
-              src="/assets/LandingPageCategoryGameDevelopment.webm"
+              src={`${configFile.basePath}/assets/LandingPageCategoryGameDevelopment.webm`}
               type="video/webm"
             />
-            <source src="/assets/LandingPageCategoryGameDevelopment.mov" />
+            <source
+              src={`${configFile.basePath}/assets/LandingPageCategoryGameDevelopment.mov`}
+            />
           </video>
         </div>
       );
@@ -170,7 +181,7 @@ const Category = ({ title, members, color, category }) => {
           </div>
           <div
             ref={container}
-            className="memberContainer gap-y-8 px-4 lg:px-16 py-4 lg:py-8"
+            className="mt-8 memberContainer gap-y-8 px-4 lg:px-16 py-4 lg:py-8"
           >
             {members.map((member, i) => {
               return (
@@ -193,7 +204,9 @@ const Category = ({ title, members, color, category }) => {
             })}
           </div>
         </div>
-        <BackgroundVideo category={category} />
+        <div className="hidden lg:block">
+          <BackgroundVideo category={category} />
+        </div>
       </div>
     </>
   );

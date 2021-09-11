@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+const config = require("../../next.config");
 
 const Divider = () => {
   return (
@@ -79,8 +80,11 @@ const Hero = ({
             loop
             preload="auto"
           >
-            <source src="/assets/DTrooperCircle1.webm" type="video/webm" />
-            <source src="/assets/DTrooperCircle1.mov" />
+            <source
+              src={`${config.basePath}/assets/DTrooperCircle1.webm`}
+              type="video/webm"
+            />
+            <source src={`${config.basePath}/assets/DTrooperCircle1.mov`} />
           </video>
         </div>
         <Divider />
@@ -128,8 +132,11 @@ const Hero = ({
             loop
             preload="auto"
           >
-            <source src="/assets/DTrooperRectangle1.webm" type="video/webm" />
-            <source src="/assets/DTrooperRectangle1.mov" />
+            <source
+              src={`${config.basePath}/assets/DTrooperRectangle1.webm`}
+              type="video/webm"
+            />
+            <source src={`${config.basePath}/assets/DTrooperRectangle1.mov`} />
           </video>
         </div>
         <Divider />
@@ -177,8 +184,11 @@ const Hero = ({
             loop
             preload="auto"
           >
-            <source src="/assets/DTrooperTriangle1.webm" type="video/webm" />
-            <source src="/assets/DTrooperTriangle1.mov" />
+            <source
+              src={`${config.basePath}/assets/DTrooperTriangle1.webm`}
+              type="video/webm"
+            />
+            <source src={`${config.basePath}/assets/DTrooperTriangle1.mov`} />
           </video>
         </div>
         <Divider />

@@ -1,3 +1,5 @@
+const config = require("../../next.config");
+
 const VideoList = ({ number, videoSize }) => {
   if (videoSize == 1) {
     return (
@@ -10,9 +12,12 @@ const VideoList = ({ number, videoSize }) => {
           controls
           preload="auto"
         >
-          <source src={`/data/${number}/video_1.webm`} type="video/webm" />
-          <source src={`/data/${number}/video_1.mov`} />
-          <source src={`/data/${number}/video_1.mp4`} />
+          <source
+            src={`${config.basePath}/data/${number}/video_1.webm`}
+            type="video/webm"
+          />
+          <source src={`${config.basePath}/data/${number}/video_1.mov`} />
+          <source src={`${config.basePath}/data/${number}/video_1.mp4`} />
         </video>
       </div>
     );
@@ -26,9 +31,12 @@ const VideoList = ({ number, videoSize }) => {
               controls
               preload="auto"
             >
-              <source src={`/data/${number}/video_1.webm`} type="video/webm" />
-              <source src={`/data/${number}/video_1.mov`} />
-              <source src={`/data/${number}/video_1.mp4`} />
+              <source
+                src={`${config.basePath}/data/${number}/video_1.webm`}
+                type="video/webm"
+              />
+              <source src={`${config.basePath}/data/${number}/video_1.mov`} />
+              <source src={`${config.basePath}/data/${number}/video_1.mp4`} />
             </video>
           </div>
         </div>
@@ -39,9 +47,12 @@ const VideoList = ({ number, videoSize }) => {
               controls
               preload="auto"
             >
-              <source src={`/data/${number}/video_2.webm`} type="video/webm" />
-              <source src={`/data/${number}/video_2.mov`} />
-              <source src={`/data/${number}/video_2.mp4`} />
+              <source
+                src={`${config.basePath}/data/${number}/video_2.webm`}
+                type="video/webm"
+              />
+              <source src={`${config.basePath}/data/${number}/video_2.mov`} />
+              <source src={`${config.basePath}/data/${number}/video_2.mp4`} />
             </video>
           </div>
         </div>
@@ -57,9 +68,12 @@ const VideoList = ({ number, videoSize }) => {
               controls
               preload="auto"
             >
-              <source src={`/data/${number}/video_1.webm`} type="video/webm" />
-              <source src={`/data/${number}/video_1.mov`} />
-              <source src={`/data/${number}/video_1.mp4`} />
+              <source
+                src={`${config.basePath}/data/${number}/video_1.webm`}
+                type="video/webm"
+              />
+              <source src={`${config.basePath}/data/${number}/video_1.mov`} />
+              <source src={`${config.basePath}/data/${number}/video_1.mp4`} />
             </video>
           </div>
         </div>
@@ -70,9 +84,12 @@ const VideoList = ({ number, videoSize }) => {
               controls
               preload="auto"
             >
-              <source src={`/data/${number}/video_2.webm`} type="video/webm" />
-              <source src={`/data/${number}/video_2.mov`} />
-              <source src={`/data/${number}/video_2.mp4`} />
+              <source
+                src={`${config.basePath}/data/${number}/video_2.webm`}
+                type="video/webm"
+              />
+              <source src={`${config.basePath}/data/${number}/video_2.mov`} />
+              <source src={`${config.basePath}/data/${number}/video_2.mp4`} />
             </video>
           </div>
         </div>
@@ -83,9 +100,12 @@ const VideoList = ({ number, videoSize }) => {
               controls
               preload="auto"
             >
-              <source src={`/data/${number}/video_3.webm`} type="video/webm" />
-              <source src={`/data/${number}/video_3.mov`} />
-              <source src={`/data/${number}/video_3.mp4`} />
+              <source
+                src={`${config.basePath}/data/${number}/video_3.webm`}
+                type="video/webm"
+              />
+              <source src={`${config.basePath}/data/${number}/video_3.mov`} />
+              <source src={`${config.basePath}/data/${number}/video_3.mp4`} />
             </video>
           </div>
         </div>
@@ -96,9 +116,12 @@ const VideoList = ({ number, videoSize }) => {
               controls
               preload="auto"
             >
-              <source src={`/data/${number}/video_4.webm`} type="video/webm" />
-              <source src={`/data/${number}/video_4.mov`} />
-              <source src={`/data/${number}/video_4.mp4`} />
+              <source
+                src={`${config.basePath}/data/${number}/video_4.webm`}
+                type="video/webm"
+              />
+              <source src={`${config.basePath}/data/${number}/video_4.mov`} />
+              <source src={`${config.basePath}/data/${number}/video_4.mp4`} />
             </video>
           </div>
         </div>
@@ -109,9 +132,12 @@ const VideoList = ({ number, videoSize }) => {
               controls
               preload="auto"
             >
-              <source src={`/data/${number}/video_5.webm`} type="video/webm" />
-              <source src={`/data/${number}/video_5.mov`} />
-              <source src={`/data/${number}/video_5.mp4`} />
+              <source
+                src={`${config.basePath}/data/${number}/video_5.webm`}
+                type="video/webm"
+              />
+              <source src={`${config.basePath}/data/${number}/video_5.mov`} />
+              <source src={`${config.basePath}/data/${number}/video_5.mp4`} />
             </video>
           </div>
         </div>
