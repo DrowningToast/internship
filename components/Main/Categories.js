@@ -52,11 +52,7 @@ const Category = ({
       >
         <AnimatePresence>
           {!(selected === i) && (
-            <motion.div
-              animate={{ scale: 1 }}
-              exit={{ scale: 0 }}
-              className="w-full h-full overflow-hidden hidden xl:block"
-            >
+            <motion.div className="w-full h-full overflow-hidden hidden xl:block">
               <motion.div
                 animate={{
                   opacity: selected === i ? 0 : 1,
