@@ -27,9 +27,9 @@ const AboutInternship = ({ aboutVideo, internVideo, majorVideo }) => {
             <h1 className="text-4xl lg:text-6xl font-bold mb-4">
               วัตถุประสงค์
             </h1>
-            <p className="md:text-lg lg:text-xl">
-              <ol className="list-decimal">
-                <li>เพื่อให้นักเรียนค้นพบความถณัดและความสนใจ</li>
+            <p className="md:text-lg lg:text-xl text-left">
+              <ol className="list-decimal list-inside">
+                <li>เพื่อให้นักเรียนค้นพบความถนัดและความสนใจ</li>
                 <li>
                   เพื่อเสริมสร้างความรู้ ทักษะ
                   ประสบการณ์ทางด้านเทคโนโลยีมัลติมีเดีย และเทคโนโลยีสารสนเทศ
@@ -69,15 +69,13 @@ const AboutInternship = ({ aboutVideo, internVideo, majorVideo }) => {
               style={{ backgroundColor: "#F6D854" }}
               className="w-1/2 h-1/2 absolute top-0 right-0 z-10"
             ></div>
-            <div className="absolute left-0 -bottom-3 transform translate-y-full text-center lg:text-left">
-              <h2 className="font-semibold text-lg md:text-2xl lg:text-4xl">
-                ผศ.สุคนธ์ อักษรชู
-              </h2>
-              <h5 className="text-sm md:text-xl lg:text-2xl">
-                หัวหน้าวิชาเอก นวัตกรรมเทคโนโลยีมัลติมีเดีย
-              </h5>
-            </div>
-          </div>
+          </div>{" "}
+          <h2 className="font-semibold text-lg md:text-2xl lg:text-4xl">
+            ผศ.สุคนธ์ อักษรชู
+          </h2>
+          <h5 className="text-sm md:text-xl lg:text-2xl">
+            หัวหน้าวิชาเอก นวัตกรรมเทคโนโลยีมัลติมีเดีย
+          </h5>
         </div>
       </div>
       <div>
