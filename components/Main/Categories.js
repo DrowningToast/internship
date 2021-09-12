@@ -7,7 +7,7 @@ const CategoryScene = dynamic(() => import("./r3f/CategoryScene"), {
 });
 // import CategoryScene from "./r3f/CategoryScene";
 
-const delay = 0.8;
+const delay = 0.4;
 const delayA = 0.45;
 const delayB = 0.5;
 const delayC = 0.7;
