@@ -18,6 +18,7 @@ const Portrait = ({
   const [selected, setSelected] = useState(0);
   const element = useRef();
   const [isReversed, setIsReversed] = useState(false);
+  const [logoLoaded, setLogoLoaded] = useState(false);
 
   const router = useRouter();
 
@@ -128,28 +129,37 @@ const Portrait = ({
           } ${shown ? "z-40" : "z-10"}`}
         >
           {shown && (
-            <motion.div
+            <div
               style={{ backgroundColor: color.tertiary }}
-              layout
               className={`absolute ${
                 isReversed
                   ? "-left-1/2 rounded-l-full"
                   : "-right-1/2 rounded-r-full"
               } top-0 w-full h-full flex flex-col justify-center items-center py-2 pr-4 z-10`}
             >
-              <div className={`overflow-hidden w-2/5 relative`}>
-                <div style={{ paddingTop: "100%" }}>
+              <motion.div
+                layout
+                className={`overflow-hidden w-2/5 ${
+                  logoLoaded ? "relative" : "opacity-0 absolute"
+                }`}
+              >
+                <motion.div style={{ paddingTop: "100%" }}>
                   <Image
                     src={`/data/${id}/logo_${selected + 1}.webp`}
                     layout="fill"
                     objectFit="contain"
                     objectPosition="center"
                     alt=""
-                    loading="eager"
+                    priority
+                    onLoad={(e) => {
+                      console.log(e);
+                      setLogoLoaded(true);
+                    }}
                   />
-                </div>
-              </div>
-              <div
+                </motion.div>
+              </motion.div>
+              <motion.div
+                layout
                 className={`w-full ${
                   company[selected].name.length < 10
                     ? "text-lg lg:text-2xl"
@@ -159,8 +169,8 @@ const Portrait = ({
                 } `}
               >
                 {company[selected].name}
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
           )}
           {/* {company.length > 1 && (
             <motion.div
