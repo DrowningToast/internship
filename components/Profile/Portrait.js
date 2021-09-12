@@ -113,7 +113,7 @@ const Portrait = ({
               initial={{ scale: 0.35, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               style={{ color: color.primary }}
-              className="text-2xl font-bold"
+              className="text-2xl font-bold w-full h-full flex flex-col justify-center items-center rounded-full"
             >
               View more
             </motion.h1>
