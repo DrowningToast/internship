@@ -103,13 +103,13 @@ const Portrait = ({
             backgroundColor: shown ? "#ffffff" : "",
           }}
           style={{ borderColor: color.tertiary }}
+          onClick={shown ? handleSecondaryClick : () => {}}
           className={`absolute cursor-pointer inset-0 rounded-full text-center flex flex-col justify-center items-center ${
             shown ? "border-0" : "border-4"
           } ${shown ? "z-50" : "z-20"}`}
         >
           {shown && (
             <motion.h1
-              onClick={handleSecondaryClick}
               initial={{ scale: 0.35, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               style={{ color: color.primary }}
