@@ -23,35 +23,7 @@ const About = ({ reference, aboutVideo, internVideo, majorVideo }) => {
         className="min-h-screen container mx-auto px-6 lg:px-8 py-8 section flex flex-col gap-8 justify-center lg:grid grid-cols-2"
         ref={ref}
       >
-        <div className="flex flex-col justify-center items-center">
-          <div className="text-center lg:text-left">
-            <h1 className="text-4xl lg:text-6xl font-bold mb-4">
-              วิชาเอกคอมพิวเตอร์
-            </h1>
-            <p
-              className="md:text-lg lg:text-xl"
-              style={{ textIndent: "1.5em" }}
-            >
-              วิชาเอกคอมพิวเตอร์
-              เป็นเอกที่โรงเรียนสาธิตมหาวิทยาลัยศรีนครินทรวิโรฒ ประสานมิตร
-              (ฝ่ายมัธยม) ได้จัดตั้งขึ้น
-              เนื่องจากทางโรงเรียนได้เล็งเห็นถึงความสำคัญของการนำเทคโนโลยีมาเป็นหลักสูตรเพื่อพัฒนาศักยภาพทางด้านคอมพิวเตอร์แขนงต่าง
-              ๆ ของนักเรียนที่มีความสนใจจะนำไปใช้ต่อยอดในอนาคต
-            </p>
-            <p
-              className="md:text-lg lg:text-xl"
-              style={{ textIndent: "1.5em" }}
-            >
-              โดยหลักสูตรจะถูกแบ่งเป็น 2 วิชาเอก ได้แก่
-              วิชาเอกนวัตกรรมเทคโนโลยีมัลติมีเดีย (IMT)
-              และวิชาเอกเทคโนโลยีสารสนเทศ (IT)
-              ซึ่งทั้งสองวิชาเอกมีเกณฑ์การจบหลักสูตร คือ
-              นักเรียนต้องผ่านประสบการณ์การฝึกงานไม่ต่ำกว่า 140 ชั่วโมง
-              ดังนั้นทางผู้จัดทำจึงได้สร้างเว็บไซต์นี้ขึ้นเพื่อนำประสบการณ์ที่ได้รับตลอดช่วงการฝึกงานมาแบ่งปันให้แก่ผู้ที่สนใจ
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col justify-center items-center lg:items-end">
+        <div className="flex flex-col justify-center items-center lg:items-start">
           <div className="relative w-2/3 sm:w-1/2 md:w-2/3 lg:w-3/4 xl:w-2/3">
             <div style={{ paddingTop: "100%" }}>
               <Image
@@ -127,6 +99,34 @@ const About = ({ reference, aboutVideo, internVideo, majorVideo }) => {
             </div>
           </div>
         </div>
+        <div className="flex flex-col justify-center items-center">
+          <div className="text-center lg:text-right">
+            <h1 className="text-4xl lg:text-6xl font-bold mb-4">
+              วิชาเอกคอมพิวเตอร์
+            </h1>
+            <p
+              className="md:text-lg lg:text-xl"
+              style={{ textIndent: "1.5em" }}
+            >
+              วิชาเอกคอมพิวเตอร์
+              เป็นเอกที่โรงเรียนสาธิตมหาวิทยาลัยศรีนครินทรวิโรฒ ประสานมิตร
+              (ฝ่ายมัธยม) ได้จัดตั้งขึ้น
+              เนื่องจากทางโรงเรียนได้เล็งเห็นถึงความสำคัญของการนำเทคโนโลยีมาเป็นหลักสูตรเพื่อพัฒนาศักยภาพทางด้านคอมพิวเตอร์แขนงต่าง
+              ๆ ของนักเรียนที่มีความสนใจจะนำไปใช้ต่อยอดในอนาคต
+            </p>
+            <p
+              className="md:text-lg lg:text-xl"
+              style={{ textIndent: "1.5em" }}
+            >
+              โดยหลักสูตรจะถูกแบ่งเป็น 2 วิชาเอก ได้แก่
+              วิชาเอกนวัตกรรมเทคโนโลยีมัลติมีเดีย (IMT)
+              และวิชาเอกเทคโนโลยีสารสนเทศ (IT)
+              ซึ่งทั้งสองวิชาเอกมีเกณฑ์การจบหลักสูตร คือ
+              นักเรียนต้องผ่านประสบการณ์การฝึกงานไม่ต่ำกว่า 140 ชั่วโมง
+              ดังนั้นทางผู้จัดทำจึงได้สร้างเว็บไซต์นี้ขึ้นเพื่อนำประสบการณ์ที่ได้รับตลอดช่วงการฝึกงานมาแบ่งปันให้แก่ผู้ที่สนใจ
+            </p>
+          </div>
+        </div>
       </div>
       <div>
         {/* For Desktop */}
@@ -174,7 +174,7 @@ const About = ({ reference, aboutVideo, internVideo, majorVideo }) => {
           style={{ zIndex: "-1" }}
         >
           <video
-            className="h-full w-full"
+            className="h-full w-full flip-video"
             playsInline
             muted
             loop

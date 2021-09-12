@@ -22,7 +22,34 @@ const AboutInternship = ({ aboutVideo, internVideo, majorVideo }) => {
   return (
     <div className="relative" ref={ref}>
       <div className="min-h-screen container mx-auto px-6 lg:px-8 py-8 section flex flex-col-reverse justify-center lg:grid grid-cols-2">
-        <div className="flex flex-col justify-center items-center lg:items-start my-2">
+        <div className="flex flex-col justify-center items-start text-right my-2">
+          <div className="text-center lg:text-left">
+            <h1 className="text-4xl lg:text-6xl font-bold mb-4">
+              วัตถุประสงค์
+            </h1>
+            <p className="md:text-lg lg:text-xl">
+              <ol className="list-decimal">
+                <li>เพื่อให้นักเรียนค้นพบความถณัดและความสนใจ</li>
+                <li>
+                  เพื่อเสริมสร้างความรู้ ทักษะ
+                  ประสบการณ์ทางด้านเทคโนโลยีมัลติมีเดีย และเทคโนโลยีสารสนเทศ
+                </li>
+                <li>
+                  เพื่อให้นักเรียนได้ฝึกตนเองเกี่ยวกับการมีบุคลิกภาพที่ดี
+                  และความรับผิดชอบในการทำงาน
+                </li>
+                <li>
+                  เพื่อให้นักเรียนได้เรียนรู้ทักษะการปรับตัวเข้ากับเพื่อนร่วมงาน
+                </li>
+                <li>
+                  เพื่อค้นพบแนวทางในอาชีพและประกอบการตัดสินใจในการเลือกคณะ
+                  สาขาวิชาในระดับมหาวิทยาลัยในอนาคต
+                </li>
+              </ol>
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col justify-center items-center lg:items-end my-2">
           <div className="relative w-2/3 sm:w-1/2 md:w-2/3 lg:w-3/4 xl:w-2/3">
             <div style={{ paddingTop: "100%" }}>
               <Image
@@ -50,20 +77,6 @@ const AboutInternship = ({ aboutVideo, internVideo, majorVideo }) => {
                 หัวหน้าวิชาเอก นวัตกรรมเทคโนโลยีมัลติมีเดีย
               </h5>
             </div>
-          </div>
-        </div>
-        <div className="flex flex-col justify-center items-end text-right my-2">
-          <div className="text-center lg:text-right">
-            <h1 className="text-4xl lg:text-6xl font-bold mb-4">
-              วัตถุประสงค์
-            </h1>
-            <p className="md:text-lg lg:text-xl">
-              เพื่อให้นักเรียนได้นำเสนอ แบ่งปัน ประสบการณ์จากการฝึกงาน{" "}
-              <span className="hidden md:inline">
-                <br />
-              </span>
-              และเพื่อส่งเสริมทักษะการทำงานเป็นทีมให้กับนักเรียน
-            </p>
           </div>
         </div>
       </div>
