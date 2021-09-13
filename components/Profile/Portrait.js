@@ -26,6 +26,9 @@ const Portrait = ({
     if (!element.current) return;
     const width = element.current.getBoundingClientRect().width;
     const numberInRow = Math.round(containerWidth / width);
+    if (numberInRow < 2) {
+      numberInRow = 2;
+    }
     const pos = (i + 1) % numberInRow;
 
     if (!pos) return setIsReversed(true);
