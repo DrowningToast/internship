@@ -17,7 +17,6 @@ const MajorScene = ({ selected, id, className, iteration }) => {
     <>
       <Canvas
         // iteration={iteration}
-
         id={id}
         ref={ref}
         camera={{ position: [0, 0, 13] }}

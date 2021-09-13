@@ -8,10 +8,13 @@ import * as THREE from "three";
 import CategoryProduction from "./models/CategoryProduction";
 import CategoryProgramming from "./models/CategoryProgramming";
 
+import { ResizeObserver } from "@juggle/resize-observer";
+
 const CategoryScene = ({ selected }) => {
   return (
     <>
       <Canvas
+        resize={{ polyfill: ResizeObserver }}
         camera={{ position: [0, 0, 3] }}
         dpr={2}
         gl={{
