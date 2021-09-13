@@ -93,7 +93,7 @@ const Major = ({ aboutVideo, internVideo, majorVideo }) => {
           animate={{ opacity: 1, transition: { delay: 0.35 } }}
           className={`majorDetails my-8 lg:my-4 ${
             selected ? "h-auto md:h-auto" : "hidden absolute"
-          } px-8 md:px-12 grid place-items-center gap-y-4 relative container mx-auto z-10`}
+          } px-8 lg:px-12 grid place-items-center gap-y-4 relative container mx-auto z-10`}
         >
           {selected === "it" && (
             <motion.div
@@ -130,7 +130,7 @@ const Major = ({ aboutVideo, internVideo, majorVideo }) => {
             </motion.div>
           )}
 
-          <motion.div layout className="w-full hidden md:block">
+          <motion.div className="w-full h-full container hidden md:block min-w-full">
             <Scene selected={selected} />
           </motion.div>
         </motion.div>
