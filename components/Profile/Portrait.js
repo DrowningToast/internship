@@ -133,8 +133,8 @@ const Portrait = ({
               style={{ backgroundColor: color.tertiary }}
               className={`absolute ${
                 isReversed
-                  ? "-left-1/2 rounded-l-full"
-                  : "-right-1/2 rounded-r-full"
+                  ? "-left-1/2 pl-8 rounded-l-full"
+                  : "-right-1/2 pr-8 rounded-r-full"
               } top-0 w-full h-full flex flex-col justify-center items-center py-2 pr-4 z-10`}
             >
               <motion.div
@@ -161,9 +161,11 @@ const Portrait = ({
               <motion.div
                 layout
                 className={`w-full ${
-                  company[selected].name.length < 10
-                    ? "text-lg lg:text-2xl"
-                    : "text-xs lg:text-base"
+                  company[selected].name.length < 50
+                    ? company[selected].name.length < 10
+                      ? "text-lg lg:text-2xl"
+                      : "text-xs lg:text-base"
+                    : "text-xs"
                 } text-center ${
                   color.tertiary == "#FFEB94" ? "text-black" : "text-white"
                 } `}
