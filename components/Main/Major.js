@@ -130,7 +130,7 @@ const Major = ({ aboutVideo, internVideo, majorVideo }) => {
             </motion.div>
           )}
 
-          <motion.div className="w-full h-full container hidden md:block min-w-full">
+          <motion.div className="w-full h-full container min-w-full">
             <Scene selected={selected} />
           </motion.div>
         </motion.div>
