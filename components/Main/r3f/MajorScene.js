@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import { Suspense } from "react";
 import Computer from "./models/Computer";
 import Slate from "./models/Slate";
-import { ResizeObserver } from "@juggle/resize-observer";
+// import { ResizeObserver } from "@juggle/resize-observer";
 
 const MajorScene = ({ selected, id, className, iteration }) => {
   const ref = useRef(null);
@@ -20,9 +20,9 @@ const MajorScene = ({ selected, id, className, iteration }) => {
         id={id}
         ref={ref}
         camera={{ position: [0, 0, 13] }}
-        resize={{
-          polyfill: ResizeObserver,
-        }}
+        // resize={{
+        //   polyfill: ResizeObserver,
+        // }}
       >
         <ambientLight intensity={0.6} />
         <Suspense fallback={null}>

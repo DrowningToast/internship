@@ -52,6 +52,7 @@ a {
 
 .majorDetails {
   grid-template-columns: 0.7fr 0.3fr;
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
@@ -61,9 +62,10 @@ a {
   }
 }
 
-@media screen and (max-width: 1280px) and (min-width: 768px) {
+@media screen and (max-width: 1024px) and (min-width: 768px) {
   .majorDetails {
-    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-columns: 0.7fr 0.3fr;
+    width: 100%;
   }
 }
 
