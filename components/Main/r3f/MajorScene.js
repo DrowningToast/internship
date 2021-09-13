@@ -4,6 +4,8 @@ import { Suspense } from "react";
 import Computer from "./models/Computer";
 import Slate from "./models/Slate";
 
+import { ResizeObserver } from "@juggle/resize-observer";
+
 const MajorScene = ({ selected, id, className, iteration }) => {
   const ref = useRef(null);
 
@@ -16,7 +18,7 @@ const MajorScene = ({ selected, id, className, iteration }) => {
     <>
       <Canvas
         // iteration={iteration}
-
+        resize={{ polyfill: ResizeObserver }}
         id={id}
         ref={ref}
         camera={{ position: [0, 0, 13] }}
