@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
+import "intersection-observer";
 
 const About = ({ reference, aboutVideo, internVideo, majorVideo }) => {
   const { inView, entry, ref } = useInView();

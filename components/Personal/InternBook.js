@@ -1,7 +1,8 @@
 import { Document, Page, pdfjs } from "react-pdf";
 import { useState, useRef, useEffect } from "react";
 
-import { useResizeDetector } from "react-resize-detector";
+// import { useResizeDetector } from "react-resize-detector";
+import { useResizeDetector } from "react-resize-detector/build/withPolyfill";
 
 const config = require("../../next.config");
 

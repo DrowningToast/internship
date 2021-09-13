@@ -9,8 +9,6 @@ import Categories from "../components/Main/Categories";
 import Hero from "../components/Main/Hero";
 import Major from "../components/Main/Major";
 
-import { useInView } from "react-intersection-observer";
-
 const Home = () => {
   const router = useRouter();
   const about = useRef(null);

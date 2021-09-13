@@ -8,6 +8,7 @@ import { AnimatePresence } from "framer-motion";
 import { motion, AnimateSharedLayout } from "framer-motion";
 
 import { useInView } from "react-intersection-observer";
+import "intersection-observer";
 const config = require("../../next.config");
 
 const Major = ({ aboutVideo, internVideo, majorVideo }) => {

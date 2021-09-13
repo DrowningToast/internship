@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
+import "intersection-observer";
 const config = require("../../next.config");
 
 const AboutInternship = ({ aboutVideo, internVideo, majorVideo }) => {
