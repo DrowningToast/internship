@@ -1,4 +1,5 @@
 import { useInView } from "react-intersection-observer";
+import "intersection-observer";
 import { useEffect } from "react";
 const config = require("../../next.config");
 
