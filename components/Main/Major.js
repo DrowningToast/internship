@@ -79,7 +79,7 @@ const Major = ({ aboutVideo, internVideo, majorVideo }) => {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { delay: 0.2 } }}
-                className="absolute h-full"
+                className="absolute h-full hidden md:block"
               >
                 <Scene selected={selected} id="it" iteration={iteration} />
               </motion.div>
@@ -88,10 +88,9 @@ const Major = ({ aboutVideo, internVideo, majorVideo }) => {
         </motion.section>
 
         <motion.div
-          layout
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { delay: 0.35 } }}
-          className={`majorDetails my-2 lg:my-4 ${
+          className={`majorDetails my-8 lg:my-4 ${
             selected ? "h-auto md:h-auto" : "hidden absolute"
           } px-8 md:px-12 grid place-items-center gap-y-4 relative container mx-auto z-10`}
         >
@@ -130,7 +129,7 @@ const Major = ({ aboutVideo, internVideo, majorVideo }) => {
             </motion.div>
           )}
 
-          <motion.div layout className="w-full">
+          <motion.div layout className="w-full hidden md:block">
             <Scene selected={selected} />
           </motion.div>
         </motion.div>
@@ -164,7 +163,7 @@ const Major = ({ aboutVideo, internVideo, majorVideo }) => {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { delay: 0.2 } }}
-                className="absolute h-full"
+                className="absolute h-full hidden md:block"
               >
                 <Scene selected={selected} id="mt" iteration={iteration} />
               </motion.div>
