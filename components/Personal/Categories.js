@@ -15,7 +15,7 @@ const Categories = ({
       </h1>
       <div className="flex flex-row flex-wrap justify-center mt-8">
         <button
-          className="relative m-4 md:m-8 lg:m-16 rounded-3xl cursor-pointer transform hover:translate-x-1 hover:translate-y-1 transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-purple-600 h-24 w-24 lg:h-44 lg:w-44 outline-none"
+          className="relative m-2 md:m-4 lg:m-8 rounded-3xl cursor-pointer transform hover:translate-x-1 hover:translate-y-1 transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-purple-600 h-24 w-24 lg:h-44 lg:w-44 outline-none"
           style={{ backgroundColor: "#7246D1" }}
           onClick={scrollToArticles}
         >
@@ -27,7 +27,7 @@ const Categories = ({
           </div>
         </button>
         <button
-          className="relative m-4 md:m-8 lg:m-16 rounded-3xl cursor-pointer transform hover:translate-x-1 hover:translate-y-1 transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-purple-600 h-24 w-24 lg:h-44 lg:w-44 outline-none"
+          className="relative m-2 md:m-4 lg:m-8 rounded-3xl cursor-pointer transform hover:translate-x-1 hover:translate-y-1 transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-purple-600 h-24 w-24 lg:h-44 lg:w-44 outline-none"
           style={{ backgroundColor: "#7246D1" }}
           onClick={scrollToPictures}
         >
@@ -50,7 +50,7 @@ const Categories = ({
           </div>
         </button>
         <button
-          className="relative m-4 md:m-8 lg:m-16 rounded-3xl cursor-pointer transform hover:translate-x-1 hover:translate-y-1 transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-purple-600 h-24 w-24 lg:h-44 lg:w-44 outline-none"
+          className="relative m-2 md:m-4 lg:m-8 rounded-3xl cursor-pointer transform hover:translate-x-1 hover:translate-y-1 transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-purple-600 h-24 w-24 lg:h-44 lg:w-44 outline-none"
           style={{ backgroundColor: "#7246D1" }}
           onClick={scrollToCompany}
         >
@@ -62,7 +62,7 @@ const Categories = ({
           </div>
         </button>
         <button
-          className="relative m-4 md:m-8 lg:m-16 rounded-3xl cursor-pointer transform hover:translate-x-1 hover:translate-y-1 transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-purple-600 h-24 w-24 lg:h-44 lg:w-44 outline-none"
+          className="relative m-2 md:m-4 lg:m-8 rounded-3xl cursor-pointer transform hover:translate-x-1 hover:translate-y-1 transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-purple-600 h-24 w-24 lg:h-44 lg:w-44 outline-none"
           style={{ backgroundColor: "#7246D1" }}
           onClick={scrollToConclusion}
         >
@@ -79,7 +79,7 @@ const Categories = ({
           </div>
         </button>
         <button
-          className="relative m-4 md:m-8 lg:m-16 rounded-3xl cursor-pointer transform hover:translate-x-1 hover:translate-y-1 transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-purple-600 h-24 w-24 lg:h-44 lg:w-44 outline-none"
+          className="relative m-2 md:m-4 lg:m-8 rounded-3xl cursor-pointer transform hover:translate-x-1 hover:translate-y-1 transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-purple-600 h-24 w-24 lg:h-44 lg:w-44 outline-none"
           style={{ backgroundColor: "#7246D1" }}
           onClick={scrollToContact}
         >
