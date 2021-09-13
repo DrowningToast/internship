@@ -28,7 +28,7 @@ const AboutInternship = ({ aboutVideo, internVideo, majorVideo }) => {
             <h1 className="text-4xl lg:text-6xl font-bold mb-4">
               วัตถุประสงค์
             </h1>
-            <p className="md:text-lg lg:text-xl text-left">
+            <div className="md:text-lg lg:text-xl text-left">
               <ol className="list-decimal list-inside">
                 <li>เพื่อให้นักเรียนค้นพบความถนัดและความสนใจ</li>
                 <li>
@@ -47,7 +47,7 @@ const AboutInternship = ({ aboutVideo, internVideo, majorVideo }) => {
                   สาขาวิชาในระดับมหาวิทยาลัยในอนาคต
                 </li>
               </ol>
-            </p>
+            </div>
           </div>
         </div>
         <div className="flex flex-col justify-center items-center lg:items-end my-2">
