@@ -119,7 +119,7 @@ const Blog = (props) => {
           video3={video3}
           video4={video4}
         />
-        <InternBook number={props.id} />
+        {/* <InternBook number={props.id} /> */}
         <Contact reference={contact} email={props.email || ""} />
       </main>
     </div>
